@@ -1,0 +1,12 @@
+{
+ "family": "random K4-free graphs, K4s deleted greedily",
+ "n_range": [
+  20,
+  24
+ ],
+ "graphs_checked": 168,
+ "undecided": 26,
+ "with_tc_ge_3": 0,
+ "hits": [],
+ "seconds": 549.6
+}

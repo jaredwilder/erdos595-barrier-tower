@@ -1,0 +1,30 @@
+- Induced subgraphs of graphs with large chromatic number. I. Odd holes || 10.1016/j.jctb.2015.10.002
+- On graphs with small subgraphs of large chromatic number || 10.1007/bf02582932
+- Induced Subgraphs of Graphs with Large Chromatic Number. III. Long Holes || 10.1007/s00493-016-3467-x
+- Induced subgraphs of graphs with large chromatic number. XIII. New brooms || 10.1016/j.ejc.2019.103024
+- Induced Subgraphs of Graphs With Large Chromatic Number. X. Holes of Specific Residue || 10.1007/s00493-019-3804-y
+- Chromatic Number of Ordered Graphs with Forbidden Ordered Subgraphs || 10.1007/s00493-017-3593-0
+- Induced subgraphs of graphs with large chromatic number. XI. Orientations || 10.1016/j.ejc.2018.09.003
+- Induced subgraphs of graphs with large chromatic number. VI. Banana trees || 10.1016/j.jctb.2020.01.004
+- Induced subgraphs of graphs with large chromatic number. IV. Consecutive holes || 10.1016/j.jctb.2018.03.006
+- Induced Subgraphs of Graphs with Large Chromatic Number IX: Rainbow Paths || 10.37236/6768
+- Orientations of graphs with uncountable chromatic number || 10.1002/jgt.22233
+- Subgraphs of Kneser graphs with large girth and large chromatic number || 10.26493/2590-9770.1491.14a
+- Partition graphs of independence number 2 into two subgraphs with large chromatic numbers || 10.1016/j.disc.2021.112781
+- Infinitely connected subgraphs in graphs of uncountable chromatic number || 10.1007/s00493-016-3436-4
+- On chromatic number of graphs and set systems || 10.1007/bfb0066788
+- A partition calculus in set theory || 10.1090/s0002-9904-1956-10036-0
+- On chromatic number of graphs and set-systems || 10.1007/bf02020444
+- A Partition Calculus in Set Theory || 10.1007/978-0-8176-4842-8_14
+- Hajnal?s contributions to combinatorial set theory and the partition calculus || 10.1090/dimacs/058/02
+- PDF On chromatic number of graphs and set-systems - Springer || 10.1007/bf02020444.pdf
+- On chromatic number of graphs and set-systems - CORE || https://core.ac.uk/display/24689401
+- On chromatic number of graphs and set systems - PhilPapers || https://philpapers.org/rec/ERDOCN
+- On chromatic number of graphs and set-systems | Scilit || https://www.scilit.com/publications/6f77ab07c
+- PDF ON CHROMATIC NUMBER OF GRAPHS AND SET-SYSTEMS - ResearchGate || https://www.researchgate.net/profile/Andras-H
+- Critical Subgraphs of Schrijver Graphs for the Fractional Chromatic Number || 10.1007/s00373-024-02782-9
+- Triangle-free subgraphs with large fractional chromatic number || 10.1017/s0963548321000250
+- A bound on the chromatic number of graphs without certain induced subgraphs || 10.1016/0095-8956(80)90093-3
+- A triangle-free circle graph with chromatic number 5 || 10.1016/0012-365x(95)00349-2
+- Subgraphs of large connectivity and chromatic number in graphs of large chromatic number || 10.1002/jgt.3190110311
+- Cycles in graphs of uncountable chromatic number || 10.1007/bf02579349

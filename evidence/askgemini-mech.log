@@ -1,0 +1,22 @@
+MODEL REQUESTED : google/gemini-3.7-flash
+TEMPERATURE     : 0.3
+PROMPT          : 1772 characters
+----------------------------------------------------------------------
+Partition calculus question, and I want a flat answer including 'I do not know'. Erdos problem 595 asks for an infinite K4-free graph G such that every colouring of E(G) by countably many colours has a monochromatic triangle (equivalently G is not a union of countably many triangle-free graphs). I have proved and machine-checked that: (a) every graph on at most 2^kappa vertices IS a union of kappa triangle-free graphs, so a witness needs more than continuum many vertices; (b) for K4-free G the triangle cover number is at most the triangle-free chromatic ceiling, at most the domination number, at most the least number of triangle-free-inducing vertex classes, and at most the chromatic number of the triangle-adjacency graph on the edges. My question is about MECHANISM, not about these bounds. The three mechanisms I know for forcing a monochromatic triangle under a colouring are: induction on the number of colours (Folkman, Nesetril-Rodl - has no infinite base), diagonalization over colourings (cannot enumerate 2^lambda colourings in lambda steps), and a partition-calculus pigeonhole such as Erdos-Rado (2^aleph0)^+ -> (aleph1)^2_aleph0 (whose conclusion is a large monochromatic CLIQUE
+... [572 more characters]
+----------------------------------------------------------------------
+MODEL ANSWERED  : google/gemini-3.7-flash
+tokens          : prompt 392, completion 1001
+receipt         : C:\Users\jared\Local Sites\woocommerce-enterprise\oracle\evidence\ask-gemini\20260906T120237-5843d2e0.json
+======================================================================
+I do not know of any fourth mechanism in the literature for forcing a monochromatic triangle under an infinite-colour edge colouring in a $K_4$-free (or large-clique-free) host graph. 
+
+To the best of my knowledge, the standard set-theoretic techniques that usually generate new partition mechanisms fail here for known structural reasons:
+
+1. **Erdős–Hajnal Stepping-Up**: Typically steps up partition relations to higher cardinals at the cost of expanding clique size, making it fundamentally incompatible with maintaining $K_4$-freeness.
+2. **Infinite Structural Ramsey Theory / Compactness**: While infinite-exponent and infinite-structure Ramsey theorems exist (e.g., Carlson–Simpson trees, Halpern–Läuchli, or topological Ramsey spaces in the vein of Todorčević), their combinatorial transfer to graphs either requires finite colourings or unavoidably admits infinite monochromatic cliques.
+3. **Forcing / Generic Graphs (Komjáth, Shelah)**: Forcing has been used extensively to build graphs with high chromatic number and no small cycles, or to construct decompositions (e.g., Komjáth's consistency results on decomposing graphs into triangle-free subgraphs). However, forcing an arrow relation of the form $G \to (K_3)^2_\omega$ with $G$ being $K_4$-free remains an open bottleneck precisely because generic additions of paths/witnesses without creating $K_4$ do not provide enough compactness to control countably many colours simultaneously.
+
+Problem 595 remains completely open, and no concrete paper in the literature introduces a fourth mechanism that successfully produces an infinite-colour partition arrow with forbidden cliques.
+======================================================================
+ONE MODEL'S READ. Every number above is a lead to verify, not a fact to quote.

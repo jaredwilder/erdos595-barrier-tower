@@ -1,0 +1,12 @@
+{
+ "id": "erdos595-k16-three-cover",
+ "imports": "Mathlib",
+ "definitions": "/-- The GF(16) coset table: index by the XOR difference, value is the colour class. -/\ndef cosetColour : Fin 16 → Fin 3 :=\n  ![0, 0, 1, 1, 2, 2, 2, 1, 0, 2, 0, 1, 0, 1, 2, 0]\n\n/-- Colour the pair {a,b} of vertices of the complete graph on sixteen vertices by the\ncoset of their difference in the field of order sixteen, where the difference is the\nbitwise exclusive or. -/\ndef k16Colour (a b : Fin 16) : Fin 3 :=\n  cosetColour ⟨Nat.xor a.val b.val % 16, Nat.mod_lt _ (by norm_num)⟩",
+ "hypotheses": [],
+ "conclusion": "∀ a b c : Fin 16, a ≠ b → a ≠ c → b ≠ c → ¬ (k16Colour a b = k16Colour a c ∧ k16Colour a c = k16Colour b c)",
+ "proof": "by decide",
+ "set_options": [
+  "set_option maxRecDepth 100000",
+  "set_option maxHeartbeats 2000000"
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "id": "erdos595-hereditary-dispersion",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsProperC {V : Type} (G : SimpleGraph V) {C : Type} (f : V → C) : Prop :=\n  ∀ a b : V, G.Adj a b → f a ≠ f b",
+ "hypotheses": [
+  "{V C I : Type}",
+  "(P : SimpleGraph V → Prop)",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "(∀ H₁ H₂ : SimpleGraph V, H₁ ≤ H₂ → P H₂ → P H₁) → (∀ H : SimpleGraph V, H ≤ G → P H → ∃ f : V → C, IsProperC H f) → (∀ f : V → (I → C), ¬ IsProperC G f) → ¬ ∃ H : I → SimpleGraph V, (∀ i, P (H i)) ∧ G = ⨆ i, H i",
+ "proof": "by\n  classical\n  intro hP htau hchi\n  rintro ⟨H, hHP, hEq⟩\n  have hle : ∀ i, H i ≤ G := by\n    intro i\n    rw [hEq]\n    exact le_iSup H i\n  choose f hf using fun i => htau (H i) (hle i) (hHP i)\n  refine hchi (fun v => fun i => f i v) ?_\n  intro a b hab hcon\n  rw [hEq, SimpleGraph.iSup_adj] at hab\n  obtain ⟨i, hi⟩ := hab\n  exact hf i a b hi (congrFun hcon i)"
+}

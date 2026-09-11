@@ -1,0 +1,27 @@
+{
+  "claim": "There is consistently a graph of chromatic number aleph-2 all of whose triangle-free subgraphs have chromatic number at most aleph-1; under CH such a graph, if K4-free, is not a countable union of triangle-free graphs and answers Erdos problem 595.",
+  "domain": "infinite graph theory / set theory / partition calculus",
+  "facets": {
+    "entities": "infinite graphs of uncountable chromatic number and their triangle-free or high-girth subgraphs",
+    "mechanism": "a chromatic gap between a graph and its triangle-free subgraphs, forced by a set-theoretic construction",
+    "method": "Rodl subgraph theorem, Erdos-Hajnal partition calculus, Hajnal consistency constructions, Todorcevic walks on ordinals, forcing and negative square-bracket partition relations",
+    "outcome": "existence or consistency of a graph whose triangle-free subgraphs all have strictly smaller chromatic number than the graph"
+  },
+  "constraints": {
+    "search_queries": [
+      "Rodl chromatic number of subgraphs of a given graph 1977 uncountable girth",
+      "graph chromatic number aleph 2 triangle-free subgraphs chromatic number aleph 1 consistent",
+      "Erdos Hajnal on chromatic number of graphs and set systems 1966 partition",
+      "Komjath Shelah uncountable chromatic number triangle-free subgraph consistency forcing",
+      "Todorcevic walks on ordinals negative partition relation graph chromatic number",
+      "Hajnal 1969 graphs of chromatic number aleph 2 girth subgraphs smaller chromatic number",
+      "obligatory subgraphs of graphs with uncountable chromatic number"
+    ],
+    "patent_queries": []
+  },
+  "candidate_differentiators": ["the chromatic gap between a graph and its triangle-free subgraphs above the continuum"],
+  "alternative_facets": {"mechanism": ["bounded triangle-free chromatic number with unbounded ambient chromatic number"]},
+  "min_corpus": 20,
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_target": "paper"
+}

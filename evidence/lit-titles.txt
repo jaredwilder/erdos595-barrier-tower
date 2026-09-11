@@ -1,0 +1,30 @@
+- Properties of Descartes' Construction of Triangle-Free Graphs with High Chromatic Number || 10.1017/s0963548399004022
+- Triangle?free graphs with large chromatic number and no induced wheel || 10.1002/jgt.22906
+- ON SMALLEST ORDER OF TRIANGLE-FREE GRAPHS WITH PRESCRIBED (3, k)-DEFECTIVE CHROMATIC NUMBER || 10.17654/ms103040717
+- A partition calculus in set theory || 10.1090/s0002-9904-1956-10036-0
+- A counterexample to a conjecture about triangle-free induced subgraphs of graphs with large chromatic number || 10.1016/j.jctb.2022.09.001
+- Triangle-free subgraphs with large fractional chromatic number || 10.1017/s0963548321000250
+- Triangle-free $d$-degenerate graphs have small fractional chromatic number || https://www.semanticscholar.org/paper/5f6a362
+- On minimal triangle-free planar graphs with prescribed 1-defective chromatic number || https://www.semanticscholar.org/paper/d0e25b1
+- On triangle-free graphs of order 10 with prescribed 1-defective chromatic number || https://www.semanticscholar.org/paper/b6c6b68
+- Suns in Triangle-Free Graphs of Large Chromatic Number || 10.37236/14443
+- Problems in infinite graph theory with finite counterpart || 10.15476/elte.2017.025
+- On the Chromatic Number of Random Triangle?Free Graphs || 10.1002/rsa.70081
+- On the Chromatic Number of Triangle-Free Graphs of Large Minimum Degree || 10.1007/s00493-002-0009-5
+- Determining the chromatic number of triangle-free 2P3-free graphs in polynomial time || 10.1016/j.tcs.2011.12.076
+- A triangle-free circle graph with chromatic number 5 || 10.1016/0012-365x(95)00349-2
+- On minimal triangle-free graphs with prescribed 1-defective chromatic number || 10.1016/j.disc.2010.08.013
+- Cycles in triangle-free graphs of large chromatic number || 10.1007/s00493-015-3262-0
+- On the Chromatic Number of Simple Triangle-Free Triple Systems || 10.37236/845
+- The fractional chromatic number of triangle-free subcubic graphs || 10.1016/j.ejc.2013.06.006
+- An Upper Bound on the Fractional Chromatic Number of Triangle-Free Subcubic Graphs || 10.1137/120900678
+- The chromatic number of triangle-free graphs || 10.1007/bfb0067369
+- Upper bounds on the chromatic number of triangle-free graphs with a forbidden subtree || 10.1007/s10878-015-9929-z
+- Determining the chromatic number of triangle-free 2 P 3 -free graphs in polynomial time (cid:63) || https://www.semanticscholar.org/paper/c51b100
+- On Ramsey number R(4, 3, 3) and triangle-free edge-chromatic graphs in three colors || 10.1016/s0012-365x(96)00057-x
+- The chromatic number of triangle-free and broom-free graphs in terms of the number of vertices || 10.1007/s00010-020-00760-z
+- Chromatic Number of Triangle-free Graphs With Some Forbidden Subgraphs || 10.11845/sxjz.2014055b
+- Triangle-free subgraphs with large fractional chromatic number || 10.1016/j.endm.2015.06.089
+- Circular chromatic number of triangle-free hexagonal graphs 1 || https://www.semanticscholar.org/paper/e7af617
+- Star chromatic number of triangle-free planar graphs || 10.1016/0893-9659(94)90057-4
+- Triangle-free graphs with large chromatic numbers || 10.1016/s0012-365x(99)00109-0

@@ -1,0 +1,12 @@
+{
+ "id": "erdos595-continuum-blindness",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsCUTF {V : Type} (G : SimpleGraph V) : Prop :=\n  ∃ H : ℕ → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V : Type}",
+  "(G : SimpleGraph V)",
+  "(e : V → (ℕ → Bool))"
+ ],
+ "conclusion": "Function.Injective e → IsCUTF G",
+ "proof": "by\n  classical\n  intro he\n  have hdiff : ∀ a b : V, G.Adj a b → ∃ n : ℕ, e a n ≠ e b n := by\n    intro a b hab\n    by_contra hcon\n    push_neg at hcon\n    exact (G.ne_of_adj hab) (he (funext hcon))\n  refine ⟨fun n => SimpleGraph.fromRel (fun a b => ∃ h : G.Adj a b, Nat.find (hdiff a b h) = n), ?_, ?_⟩\n  · intro n t ht\n    obtain ⟨hcl, hcard⟩ := ht\n    obtain ⟨a, b, d, hab, had, hbd, hteq⟩ := Finset.card_eq_three.mp hcard\n    have ha : a ∈ t := by rw [hteq]; simp\n    have hb : b ∈ t := by rw [hteq]; simp\n    have hd : d ∈ t := by rw [hteq]; simp\n    have get : ∀ x y : V, (SimpleGraph.fromRel (fun a b => ∃ h : G.Adj a b, Nat.find (hdiff a b h) = n)).Adj x y →\n        e x n ≠ e y n := by\n      intro x y hxy\n      rw [SimpleGraph.fromRel_adj] at hxy\n      rcases hxy.2 with ⟨h, hn⟩ | ⟨h, hn⟩\n      · have := Nat.find_spec (hdiff x y h)\n        rw [hn] at this; exact this\n      · have := Nat.find_spec (hdiff y x h)\n        rw [hn] at this; exact fun hc => this hc.symm\n    have d1 := get a b (hcl ha hb hab)\n    have d2 := get a d (hcl ha hd had)\n    have d3 := get b d (hcl hb hd hbd)\n    rcases Bool.eq_false_or_eq_true (e a n) with h | h <;>\n      rcases Bool.eq_false_or_eq_true (e b n) with h' | h' <;>\n      rcases Bool.eq_false_or_eq_true (e d n) with h'' | h'' <;>\n      simp_all\n  · ext a b\n    rw [SimpleGraph.iSup_adj]\n    constructor\n    · intro hab\n      refine ⟨Nat.find (hdiff a b hab), ?_⟩\n      rw [SimpleGraph.fromRel_adj]\n      exact ⟨G.ne_of_adj hab, Or.inl ⟨hab, rfl⟩⟩\n    · rintro ⟨n, hn⟩\n      rw [SimpleGraph.fromRel_adj] at hn\n      rcases hn.2 with ⟨h, -⟩ | ⟨h, -⟩\n      · exact h\n      · exact h.symm"
+}

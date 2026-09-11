@@ -1,0 +1,9 @@
+{
+ "n": 8,
+ "tested": 250,
+ "violations": 0,
+ "with_K4": 130,
+ "max_tc": 3,
+ "max_tau": 3,
+ "examples": []
+}

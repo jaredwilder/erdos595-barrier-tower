@@ -1,0 +1,6 @@
+{
+ "best_score_partitions_that_avoid": 6,
+ "edges": 52,
+ "triangles": 50,
+ "nu_ge_3": false
+}

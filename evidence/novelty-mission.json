@@ -1,0 +1,32 @@
+{
+  "claim": "For every graph G and cardinal kappa, if the edge set of G is not the union of kappa triangle-free subgraphs then the chromatic number of G exceeds 2^kappa; in particular any graph that is not a union of countably many triangle-free subgraphs has chromatic number and vertex cardinality strictly above the continuum.",
+  "domain": "graph theory / infinite combinatorics",
+  "facets": {
+    "entities": "infinite simple graphs and their edge sets",
+    "mechanism": "binary coding of a proper vertex colouring by 2^kappa colours into kappa Boolean coordinates, one bipartite hence triangle-free layer per coordinate",
+    "method": "cardinal exponentiation bound relating triangle-free cover number to chromatic number",
+    "outcome": "chromatic, vertex and edge cardinality lower bound above the continuum for any Erdos problem 595 witness"
+  },
+  "constraints": {
+    "search_queries": [
+      "\"Erdos problem 595\" continuum chromatic number lower bound",
+      "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+      "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+      "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+      "union of countably many triangle-free graphs uncountable chromatic number"
+    ],
+    "patent_queries": []
+  },
+  "candidate_differentiators": [
+    "the cardinal-general form tc(G) > kappa implies chi(G) > 2^kappa",
+    "the kernel-checked Lean statement of the continuum barrier"
+  ],
+  "alternative_facets": {
+    "mechanism": [
+      "bipartite cover number equals the cardinal logarithm of the chromatic number"
+    ]
+  },
+  "min_corpus": 20,
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_target": "both"
+}

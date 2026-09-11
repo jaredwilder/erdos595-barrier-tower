@@ -1,0 +1,65 @@
+MODEL REQUESTED : google/gemini-3.7-flash
+TEMPERATURE     : 0.3
+PROMPT          : 1463 characters
+----------------------------------------------------------------------
+Erdos problem 595 (Erdos-Hajnal, $250, erdosproblems.com/595): is there an infinite graph containing no K4 that is NOT the union of countably many triangle-free graphs? I need the PUBLISHED state of the art, stated precisely and with citations, not a solution attempt. Specifically: (1) Is the problem still open as of your knowledge, and has anyone proved partial results in either direction? Name theorems and papers. (2) Is there any published theorem forcing a countable triangle-free decomposition of every K4-free graph, analogous to 'every C4-free graph is a countable union of trees' (the Erdos-Hajnal escape that makes (C4,C6) an exceptional pair in problem 596)? (3) Conversely, is there any published construction, consistency result, or ZFC-independence result about a K4-free graph with triangle-cover number above aleph-null? Komjath, Shelah, Erdos-Hajnal-Rado, Rodl, Nesetril are the likely names. (4) What is known about the quantity tau(G) = sup of chromatic numbers of triangle-free SUBGRAPHS (not induced subgraphs) of G? Is there a published K4-free graph with chi(G) large while every triangle-free subgraph has small chromatic number? Note Carbonero-Hompe-Moore-Spirkl 2022 hand
+... [263 more characters]
+----------------------------------------------------------------------
+MODEL ANSWERED  : google/gemini-3.7-flash
+tokens          : prompt 373, completion 4084
+receipt         : C:\Users\jared\Local Sites\woocommerce-enterprise\oracle\evidence\ask-gemini\20260905T163029-f0b18578.json
+======================================================================
+### 1. Current Status and Published State of the Art
+
+* **Status:** **Open.** Erdős Problem 595 (Erdős–Hajnal, prize \$250) remains unsolved.
+* **Original Formulation:** Introduced by P. Erdős and A. Hajnal in *“On chromatic number of graphs and set-systems”* (Acta Math. Acad. Sci. Hungar., 1966) and reiterated in Erdős's problem collections (e.g., *“On the combinatorial problems which I would most like to see solved”*, Combinatorica, 1981).
+* **Precise Statement:** Does there exist an infinite graph $G$ containing no $K_4$ such that $E(G)$ cannot be expressed as a countable union of triangle-free subgraphs:
+  $$E(G) \neq \bigcup_{n=1}^\infty E(G_n), \quad \text{where each } G_n \text{ is } K_3\text{-free}?$$
+  *(Equivalently, in partition arrow notation: Is there a $K_4$-free graph $G$ such that $G \to (K_3)^2_\omega$?)*
+
+---
+
+### 2. Is there a theorem forcing a countable triangle-free decomposition?
+
+* **No.** There is no known published theorem proving that every infinite $K_4$-free graph can be decomposed into countably many triangle-free graphs.
+* **The $C_4$ / Tree Comparison:**
+  * Erdős and Hajnal famously proved that **every $C_4$-free graph is a countable union of forests (trees)**. Because trees are bipartite (hence triangle-free), every $C_4$-free graph trivially admits a countable triangle-free edge partition.
+  * For $K_4$-free graphs, no analogous structural reduction or decomposition theorem is known to exist.
+
+---
+
+### 3. Constructions, Consistency, and ZFC Independence Results
+
+* **ZFC Status:** There is no known ZFC construction of a $K_4$-free graph with triangle-cover number $> \aleph_0$.
+* **Independence / Forcing Status:** 
+  * Researchers in infinite graph theory (notably **Péter Komjáth** and **Saharon Shelah**) have produced extensive consistency results regarding graph decompositions and chromatic numbers:
+    * *Example:* Komjáth (1988) proved consistency results on decomposing graphs of uncountable chromatic number into planar graphs or cycle-free graphs under CH / forcing extensions.
+    * *Example:* Shelah has established consistency results regarding graphs with forbidden subgraphs and their chromatic/partition properties.
+  * **However, none of these consistency results resolves Problem 595.** To date, there is no published forcing model in which the answer is known to be strictly affirmative or strictly negative. The problem is open both in ZFC and from a set-theoretic independence perspective.
+
+---
+
+### 4. Triangle-Free Edge-Subgraphs vs. $\chi(G)$
+
+Let $\tau(G) = \sup \{\chi(H) : H \subseteq G \text{ is a triangle-free edge subgraph}\}$.
+
+* **Finite Case:**
+  * By the **Nešetřil–Rödl Theorem** (*“The Ramsey property for graphs with forbidden complete subgraphs”*, J. Combin. Theory Ser. B, 1976; generalizing Folkman 1970): For every $k \in \mathbb{N}$, there exists a finite $K_4$-free graph $G$ that cannot be partitioned into $k$ triangle-free edge subgraphs ($G \to (K_3)^2_k$).
+  * Hence, the finite *triangle-cover number* is unbounded over finite $K_4$-free graphs.
+* **Infinite Edge Subgraphs and $\chi(G)$:**
+  * By countable subadditivity of the chromatic number, if an infinite graph $G$ with $\chi(G) > \aleph_0$ is the union of countably many triangle-free subgraphs $G = \bigcup_{n<\omega} G_n$, then at least one $G_n$ must have $\chi(G_n) > \aleph_0$.
+  * Thus, any hypothetical counterexample $G$ to Problem 595 would automatically possess uncountable chromatic number ($\chi(G) \ge \aleph_1$).
+  * While the *induced* subgraph variant is constrained by recent structural work (such as Carbonero, Hompe, Moore, Spirkl 2022 on induced subgraphs), the *edge-subgraph* version $\tau(G)$ for infinite graphs remains governed by the unresolved partition properties of infinite graphs with forbidden cliques.
+
+---
+
+### 5. Summary Assessment
+
+* **Flat Conclusion:** Erdős Problem 595 is wide open. There has been **no substantial published partial progress** that establishes either the positive claim (a ZFC decomposition into countably many triangle-free subgraphs) or the negative claim (a ZFC or consistent construction of a non-decomposable $K_4$-free graph).
+* **Verification Tags:**
+  * *Verified:* Problem is open on erdosproblems.com (Problem 595) and standard infinite Ramsey problem lists.
+  * *Verified:* Nešetřil–Rödl (1976) resolves all finite $k$-partition analogues.
+  * *Verified:* Erdős–Hajnal $C_4$-free decomposition into $\aleph_0$ forests does not extend to $K_4$-free graphs.
+  * *Verified:* No independence result (consistency of YES or NO) specifically resolving Problem 595 has appeared in the published literature of Komjáth, Shelah, or their co-authors.
+======================================================================
+ONE MODEL'S READ. Every number above is a lead to verify, not a fact to quote.

@@ -1,0 +1,56 @@
+{
+ "tool": "tc_tau_exact.py",
+ "K7": {
+  "K7_2_coverable": false,
+  "K7_3_coverable": true,
+  "tc_K7": 3
+ },
+ "exhaustive_n5": {
+  "n": 5,
+  "graphs_enumerated": 1024,
+  "labelled_graphs_with_a_triangle_and_tau_eq_2": 430,
+  "of_those_edge_maximal": 45,
+  "labelled_graphs_with_a_triangle_and_tau_eq_3": 206,
+  "violations_tc_gt_tau": [],
+  "seconds": 0.0
+ },
+ "exhaustive_n6": {
+  "n": 6,
+  "graphs_enumerated": 32768,
+  "labelled_graphs_with_a_triangle_and_tau_eq_2": 8745,
+  "of_those_edge_maximal": 435,
+  "labelled_graphs_with_a_triangle_and_tau_eq_3": 18234,
+  "violations_tc_gt_tau": [],
+  "seconds": 0.4
+ },
+ "exhaustive_n7": {
+  "n": 7,
+  "graphs_enumerated": 2097152,
+  "labelled_graphs_with_a_triangle_and_tau_eq_2": 209076,
+  "of_those_edge_maximal": 5656,
+  "labelled_graphs_with_a_triangle_and_tau_eq_3": 1754575,
+  "violations_tc_gt_tau": [],
+  "seconds": 45.1
+ },
+ "maximal_sample_n8": {
+  "n": 8,
+  "samples": 400,
+  "distinct_maximal_tau2_graphs_found": 361,
+  "violations_tc_gt_2": [],
+  "seconds": 0.5
+ },
+ "maximal_sample_n9": {
+  "n": 9,
+  "samples": 400,
+  "distinct_maximal_tau2_graphs_found": 374,
+  "violations_tc_gt_2": [],
+  "seconds": 8.5
+ },
+ "maximal_sample_n10": {
+  "n": 10,
+  "samples": 200,
+  "distinct_maximal_tau2_graphs_found": 194,
+  "violations_tc_gt_2": [],
+  "seconds": 52.8
+ }
+}

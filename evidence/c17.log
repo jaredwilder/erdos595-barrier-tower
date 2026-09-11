@@ -1,0 +1,12 @@
+{
+ "graph": "C17(1,2,4,8)",
+ "n": 17,
+ "edges": 68,
+ "triangles": 68,
+ "K4_count": 0,
+ "K4_free": true,
+ "nu_ge_3": true,
+ "partitions_checked": 65536,
+ "tc_le_2": true,
+ "monochromatic_triangles_under_the_found_colouring": 0
+}

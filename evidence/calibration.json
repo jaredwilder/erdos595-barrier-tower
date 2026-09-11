@@ -1,0 +1,73 @@
+{
+ "sampled_K4free_with_triangles": 40,
+ "violations_of_tc_le_nu_gamma_chi": 8,
+ "tight_vs_nu": 40,
+ "tight_vs_gamma": 29,
+ "max_tc_seen": 2,
+ "examples": [
+  {
+   "n": 6,
+   "edges": 9,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  },
+  {
+   "n": 6,
+   "edges": 7,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  },
+  {
+   "n": 6,
+   "edges": 6,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  },
+  {
+   "n": 6,
+   "edges": 8,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  },
+  {
+   "n": 6,
+   "edges": 8,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  },
+  {
+   "n": 6,
+   "edges": 7,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 1
+  },
+  {
+   "n": 6,
+   "edges": 8,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  },
+  {
+   "n": 6,
+   "edges": 8,
+   "tc": 2,
+   "chi": 3,
+   "nu": 2,
+   "gamma": 2
+  }
+ ]
+}

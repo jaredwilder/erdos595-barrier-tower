@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-triangle-adjacency",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsCUTF {V : Type} (G : SimpleGraph V) : Prop :=\n  ∃ H : ℕ → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V : Type}",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "(∃ c : Sym2 V → ℕ, ∀ a b d : V, G.Adj a b → G.Adj a d → G.Adj b d → c s(a, b) ≠ c s(a, d)) → IsCUTF G",
+ "proof": "by\n  classical\n  rintro ⟨c, hc⟩\n  refine ⟨fun n => SimpleGraph.fromEdgeSet {e | e ∈ G.edgeSet ∧ c e = n}, ?_, ?_⟩\n  · intro n t ht\n    obtain ⟨hcl, hcard⟩ := ht\n    obtain ⟨a, b, d, hab, had, hbd, hteq⟩ := Finset.card_eq_three.mp hcard\n    have ha : a ∈ t := by rw [hteq]; simp\n    have hb : b ∈ t := by rw [hteq]; simp\n    have hd : d ∈ t := by rw [hteq]; simp\n    have e1 := hcl ha hb hab\n    have e2 := hcl ha hd had\n    have e3 := hcl hb hd hbd\n    rw [SimpleGraph.fromEdgeSet_adj] at e1 e2 e3\n    exact hc a b d e1.1.1 e2.1.1 e3.1.1 (by rw [e1.1.2, e2.1.2])\n  · ext a b\n    rw [SimpleGraph.iSup_adj]\n    constructor\n    · intro hab\n      exact ⟨c s(a, b), by\n        rw [SimpleGraph.fromEdgeSet_adj]\n        exact ⟨⟨hab, rfl⟩, G.ne_of_adj hab⟩⟩\n    · rintro ⟨n, hn⟩\n      rw [SimpleGraph.fromEdgeSet_adj] at hn\n      exact hn.1.1"
+}

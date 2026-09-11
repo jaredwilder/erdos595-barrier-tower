@@ -1,0 +1,8 @@
+{
+ "circulants_checked": 11306,
+ "timeouts": 170,
+ "K4free_with_tc_ge_3": 0,
+ "hits": [],
+ "n_range_completed_to": 34,
+ "seconds": 582.7
+}

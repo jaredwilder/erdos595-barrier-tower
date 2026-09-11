@@ -1,0 +1,10 @@
+LEAN_RESULT erdos595-vertex-partition-bound
+  FORMAL_STATUS KERNEL_CHECKED
+  FILE oracle/frontier_formalizer/cable/theorems/msl_erdos595-vertex-partition-bound.lean
+  THEOREMS msl_erdos595_vertex_partition_bound
+  BACKEND wsl
+  AXIOMS Classical.choice, Quot.sound, propext
+  TACTIC (supplied proof)
+  BUDGET 120s:KERNEL_CHECKED
+  FAILURE NONE
+receipt: C:\Users\jared\Local Sites\woocommerce-enterprise\oracle\frontier_formalizer\cable\receipts\erdos595-vertex-partition-bound.cable.json

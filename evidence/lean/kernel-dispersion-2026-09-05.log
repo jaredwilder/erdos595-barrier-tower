@@ -1,0 +1,3 @@
+'Erdos595D.isProper_iSup_pi' depends on axioms: [propext, Quot.sound]
+'Erdos595D.not_countableUnion_of_dispersion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595D.erdos595_witness_of_dispersion' depends on axioms: [propext, Classical.choice, Quot.sound]

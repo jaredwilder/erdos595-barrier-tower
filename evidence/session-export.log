@@ -1,0 +1,13 @@
+SESSION EXPORT - 51d79886-4264-4b3d-88a3-5cab52ee9831
+  zip           C:\Users\jared\Downloads\session-export-51d79886-20260906-060154.zip  (7.3 MB, 879 members)
+  chat log      5.0 MB, 2303 records  sha256 aba79cfede7bc12e
+  turns         6 human / 385 assistant / 305 tool calls / 304 tool results
+  subagents     1 logs
+  tool-results  6 files
+  workspace     20 files, 90.3 KB  (tasks: 20)
+  ARTIFACT CLOSURE: 5170 referenced / 437 included / 0 missing  (406 blobs, 15.0 MB)
+  estate        305 runs (0 receipted / 305 observed) / 55 tasks / 584 MSL objects
+                1481 events / 304 tool results / 72 rounds
+  SNAPSHOT      ACTIVE   VERIFY: SEE VERIFY.json
+
+  feed it to VVC:  python oracle/tools/session_packet.py --zip "C:\Users\jared\Downloads\session-export-51d79886-20260906-060154.zip"

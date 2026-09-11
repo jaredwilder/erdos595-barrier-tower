@@ -1,0 +1,27 @@
+{
+  "claim": "The minimum number of triangle-free colour classes needed to colour the edges of an uncountable complete or K4-free graph is determined; and the Erdos-Hajnal obligatory subgraph conjecture that every kappa-chromatic graph contains a kappa-chromatic triangle-free subgraph decides whether a chromatic-gap route to Erdos problem 595 can work.",
+  "domain": "infinite graph theory / combinatorial set theory",
+  "facets": {
+    "entities": "uncountable graphs, their edge colourings with triangle-free colour classes, K4-free uncountably chromatic graphs",
+    "mechanism": "extremal triangle-free and odd-cycle-free edge colourings of uncountable graphs; obligatory triangle-free subgraphs of a kappa-chromatic graph",
+    "method": "partition calculus, forcing constructions for uncountably chromatic graphs, Hajnal-Mate graphs, diamond and CH constructions, Todorcevic walks",
+    "outcome": "the exact number of triangle-free colour classes needed, and whether a K4-free graph can require uncountably many"
+  },
+  "constraints": {
+    "search_queries": [
+      "Extremal triangle-free and odd-cycle-free colourings of uncountable graphs",
+      "Erdos Hajnal obligatory subgraph conjecture kappa chromatic triangle-free subgraph",
+      "forcing constructions for uncountably chromatic graphs Komjath",
+      "Hajnal Mate graphs triangle-free uncountable chromatic diamond",
+      "what must and what need not be contained in a graph of uncountable chromatic number",
+      "Rodl 1977 chromatic number of subgraphs of a given graph girth four",
+      "triangle-free colouring number of the complete graph on an uncountable set"
+    ],
+    "patent_queries": []
+  },
+  "candidate_differentiators": ["triangle-free edge colourings of uncountable graphs"],
+  "alternative_facets": {"mechanism": ["covering the edges of an uncountable graph by triangle-free subgraphs"]},
+  "min_corpus": 20,
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_target": "paper"
+}

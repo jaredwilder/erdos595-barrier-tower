@@ -1,0 +1,11 @@
+{
+ "class_sizes": [
+  40,
+  40,
+  40
+ ],
+ "edges": 120,
+ "triples": 560,
+ "monochromatic_triangles": 0,
+ "K16_3_coverable": true
+}

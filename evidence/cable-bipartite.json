@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-bipartite-level-down",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsProperC {V : Type} (G : SimpleGraph V) {C : Type} (f : V → C) : Prop :=\n  ∀ a b : V, G.Adj a b → f a ≠ f b\n\nopen SimpleGraph in\ndef IsCUB {V : Type} (G : SimpleGraph V) : Prop :=\n  ∃ H : ℕ → SimpleGraph V, (∀ i, ∃ f : V → Bool, IsProperC (H i) f) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V : Type}",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "IsCUB G ↔ ∃ f : V → (ℕ → Bool), IsProperC G f",
+ "proof": "by\n  constructor\n  · rintro ⟨H, hbip, hEq⟩\n    choose f hf using hbip\n    refine ⟨fun v => fun i => f i v, ?_⟩\n    intro a b hab hcon\n    rw [hEq, SimpleGraph.iSup_adj] at hab\n    obtain ⟨i, hi⟩ := hab\n    exact hf i a b hi (congrFun hcon i)\n  · rintro ⟨g, hg⟩\n    refine ⟨fun i => SimpleGraph.fromRel (fun a b => G.Adj a b ∧ g a i ≠ g b i), ?_, ?_⟩\n    · intro i\n      refine ⟨fun v => g v i, ?_⟩\n      intro a b hab\n      rw [SimpleGraph.fromRel_adj] at hab\n      rcases hab.2 with h | h\n      · exact h.2\n      · exact fun hc => h.2 hc.symm\n    · ext a b\n      rw [SimpleGraph.iSup_adj]\n      constructor\n      · intro hab\n        obtain ⟨i, hi⟩ := Function.ne_iff.mp (hg a b hab)\n        exact ⟨i, by rw [SimpleGraph.fromRel_adj]; exact ⟨G.ne_of_adj hab, Or.inl ⟨hab, hi⟩⟩⟩\n      · rintro ⟨i, hi⟩\n        rw [SimpleGraph.fromRel_adj] at hi\n        rcases hi.2 with h | h\n        · exact h.1\n        · exact h.1.symm"
+}

@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-monotone-general",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsUTF {V : Type} (I : Type) (G : SimpleGraph V) : Prop :=\n  ∃ H : I → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V I : Type}",
+  "(G H : SimpleGraph V)"
+ ],
+ "conclusion": "H ≤ G → IsUTF I G → IsUTF I H",
+ "proof": "by\n  classical\n  rintro hle ⟨L, hfree, hEq⟩\n  refine ⟨fun i => H ⊓ L i, fun i => (hfree i).anti inf_le_right, ?_⟩\n  ext a b\n  rw [SimpleGraph.iSup_adj]\n  constructor\n  · intro hab\n    have hG : G.Adj a b := hle hab\n    rw [hEq, SimpleGraph.iSup_adj] at hG\n    obtain ⟨i, hi⟩ := hG\n    exact ⟨i, ⟨hab, hi⟩⟩\n  · rintro ⟨i, hi⟩\n    exact hi.1"
+}

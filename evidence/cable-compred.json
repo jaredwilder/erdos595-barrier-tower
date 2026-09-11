@@ -1,0 +1,13 @@
+{
+ "id": "erdos595-component-reduction",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsUTF {V : Type} (I : Type) (G : SimpleGraph V) : Prop :=\n  ∃ H : I → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V I K : Type}",
+  "(G : SimpleGraph V)",
+  "(part : V → K)",
+  "(H : K → I → SimpleGraph V)"
+ ],
+ "conclusion": "(∀ a b : V, G.Adj a b → part a = part b) → (∀ k i, (H k i).CliqueFree 3) → (∀ k i a b, (H k i).Adj a b → part a = k) → (∀ a b : V, G.Adj a b → ∃ i, (H (part a) i).Adj a b) → (∀ k i, H k i ≤ G) → IsUTF I G",
+ "proof": "by\n  classical\n  intro hsep hfree hin hcov hle\n  refine ⟨fun i => ⨆ k : K, H k i, ?_, ?_⟩\n  · intro i t ht\n    obtain ⟨hcl, hcard⟩ := ht\n    obtain ⟨a, b, d, hab, had, hbd, hteq⟩ := Finset.card_eq_three.mp hcard\n    have ha : a ∈ t := by rw [hteq]; simp\n    have hb : b ∈ t := by rw [hteq]; simp\n    have hd : d ∈ t := by rw [hteq]; simp\n    obtain ⟨k1, e1⟩ := SimpleGraph.iSup_adj.mp (hcl ha hb hab)\n    obtain ⟨k2, e2⟩ := SimpleGraph.iSup_adj.mp (hcl ha hd had)\n    obtain ⟨k3, e3⟩ := SimpleGraph.iSup_adj.mp (hcl hb hd hbd)\n    have p1 : part a = k1 := hin k1 i a b e1\n    have p2 : part a = k2 := hin k2 i a d e2\n    have p3 : part b = k3 := hin k3 i b d e3\n    have pb : part b = k1 := hin k1 i b a e1.symm\n    have hk12 : k1 = k2 := p1.symm.trans p2\n    have hk13 : k1 = k3 := pb.symm.trans p3\n    subst hk12\n    subst hk13\n    exact hfree k1 i {a, b, d} (SimpleGraph.is3Clique_triple_iff.mpr ⟨e1, e2, e3⟩)\n  · ext a b\n    rw [SimpleGraph.iSup_adj]\n    constructor\n    · intro hab\n      obtain ⟨i, hi⟩ := hcov a b hab\n      exact ⟨i, SimpleGraph.iSup_adj.mpr ⟨part a, hi⟩⟩\n    · rintro ⟨i, hi⟩\n      obtain ⟨k, hk⟩ := SimpleGraph.iSup_adj.mp hi\n      exact hle k i hk"
+}

@@ -1,0 +1,1005 @@
+
+===PAGE 1===
+Consistency of positive partition theorems for 
+graphs and models 
+by 
+Saharon Shelah 
+Institute of Mathematics 
+The Hebrew University 
+Jerusalem, Israel 
+Department of Mathematics 
+Rutgers University 
+New Brunswick N.J.U.S.A. 
+Recently A. Hajnal, P. Komjath [I] have dealt with the partition relation 
+H ~ (G)~ : if we colour the edges of a graph H by ~ colours, there is an 
+induced subgraph isomorphic to G which is monochromatic (i.e. all edges get 
+the same colour). They prove (generalizing a proof from Shelah [2]) that i% is 
+consistent (with ZFC) that there is a graph G of cardinality R 1 such that 
+no graph H : H ~ (Gi~ . for 
+They ask whether the negation is consistent. We give here an affirmative 
+answer (even for much stronger partition relations). We first prove it using a 
+class of measurable cardinals (in §I, §2). In §3, §4 we eliminate this. 
+(we get an iso- We can also generalize M ~ (N) 8(*) to M ~ L J8,81 rNl<~(*) 
+morphism of N in which only < 81 colours occurs). Our positive independence 
+R0 2 result ([3],[4]) like 2 ~ [~l]n, 2 are generalized naturally. This will be 
+discussed elsewhere. Later are given generalizations wlth finite conclusion, 
+but infinite number of colours ; and we improve the bounds for wsp 
+This research was partially supported by the United States Israel Binational 
+Science Foundation (Number 289). We thank Juris Steprans for handling the 
+paper. 
+Sh:289
+
+===PAGE 2===
+168 
+§ i. The consistency of the partition theorem from a measurable cardinal. 
+I.I Notation: ~ (for @ < w , ~ a cardinal) is the class of triples 
+M = (A,<,F) where < is a well ordering of the nonempty set A and 
+F : [A] <~ ~ ~ such that F(~) = 0 . We let [A] n = {u : u E A , [u[ = n} , 
+[A] <a = U{A In] : n < ~} , and do not distinguish strictly between F and 
+<F [n] : n < a) . If A is a set of ordinals, < will be the usual order and 
+we omit it. 
+We write S = ([M[, <M, FM) , and use M for IMI sometimes. Now 
+f : M ~ N is an (K~)-embedding if (Vx,y E M)[x <My {=~ f(x) <N f(y)] and 
+(Vu e [IM[]<G)[FM(u) = FN(f'(u))] and we write M C N (M a submodel of N) if 
+the identity is an embedding. 
+I.IA Explanation: We are thinking of M as a model, FM(u) as the 
+quantifier free type of u , more formally, if u = {a0,...,an_ I} , a0<...<an_ 1 
+we call 
+A F('"'xi''")iEv = F(''''ai .... )iEv A x0<...<Xn_ 1 vCu 
+the quantifier free type tpqf of u (this notation happens when we do not 
+have a fixed model). 
+Below in 1.2, d is thought of as a coloring of M . 
+1.2 Definition: For M,N E ~ , ~ ~ w and cardinal 8 , M- (N)~ ~ if: 
+for every function d : [M] <~ ~ 8 , there is an embedding f of N into M 
+such that for every non empty u E IN] <~ , d(f'(u)) depend only on the 
+quantifier free type of u in N . 
+eh The arrow ~sp is defined in 2.1. First we define the weaker notion 
+where eh stands for end homogeneity. 
+1.3 Definition: For M,N E ~ , ~ < w and cardinal 8 (eh stands for 
+end homogeneous) M eh (N)~ ~ if: for every function d : [M] <~ ~ 8 , there is 
+an embedding f of N into M such that: if m < ~, <a 0 ..... am_l,am> a 
+Sh:289
+
+===PAGE 3===
+169 
+N < -increasing sequence of members of N , and 
+tpqf((a 0 ..... am_2,am_l),~,N) = tpqf((a 0 ..... am_2,am),~,N) 
+then 
+d(f(a O) ..... f(am_ 2) , f(am_l)) = d(f(ao) ..... f(am_ 2) , f(am)) • 
+1.3A Remark: There are obvious monotonicity properties. Here qf 
+stands for quantifier free. 
+1.4 Fact: If A 0 < Al<...<ln_ 1 and L is a finite vocabulary with 
+predicates only and if for m < n 
+(*)m for every model N E ~a of cardinality lm 
+for some model M 6 Ka~ of cardinality Am+ 1 
+M eh (N)~n holds. 
+then for every model N 6 K~ of cardinality A 0 there is an model M E Ka a 
+cardinality An_ 1 such that M ~ (N)~ n . 
+Proof: Trivial. 
+of 
+1.4A Remark: We can define canonization relations - say, in how many 
+variables the coloring does not depend. See [EI~ilR]: [Sh95]. 
+1.5 Lemma: Suppose p = p<P , a < p < 8 < ~ < A , ~,~ < w , and 
+"sp(~+l)<~i~ (see Definition 2.1), let P be the forcing notion defined by: 
+p E P iff p is a partial function from [A] <~ to ~ of cardinality < p and 
+p(~) = 0 and ordered by inclusion. 
+Then in V P for some M E K~ a , IM[ = ~ , and for every N 6 Kaa of order 
+type < p+l we have: M ~eh(N)~ . 
+1.5A Remark: (I) P is really just adding A Cohen subsets of p . 
+(2) If we let INI < p , the proof is somewhat simplified. 
+Sh:289
+
+===PAGE 4===
+170 
+Proof of Le~ma 1.5 : Let M = (~,<,F~), where F~(u) = j iff for some 
+f E Gp f(u) = j . Let ~ : [~]<~ 8 , and N e ~a be P-names. Without loss 
+of generality {~1 is an ordinal e+l < p + 1 , and (as N depends on at most 
+of the Cohen subsets and doing P in two stages) without loss of generality 
+= N . Let X be a large enough regular cardinal and let <* a well-ordering X 
+of H(X) . Let p* E P • By the hypothesis (see Definition 2.1 and 2.3) (for 
+second phrase in (I) use for i < /~ the function 
+def 
+F(x 0 .... ,xj .... )j<i = (xj : j < i>) . 
+(*) There is B C ~ , B of order type 
+Hu, v , (u,v E [B] </~ , [u{ = [v[) such that: 
+(I) su~ (H(x),e,<~) , (¥a e [Nul<~)[a e N u] 
+and 
++ I and <N u : u E [B]<~> and 
+(hence D ~ N u) 
+e N u 
+(II) (b) - (h) of 2.1 
+$ 
+(hi) p e PNN¢ . 
+Let B = {~i : i < ¢} and [i < j ~ ~i < ~j] " 
+be the unique order preserving function from ¢ + 1 onto 
+Let for i < e 
+I i = [{~j : j < i or j = ~}]<~ . 
+Next let for u E I i , K(u) = {(u,h) : h is a function from [u] <a to 
+~,h(~) = 0) 
+First assume ¢ < D . Let g 
+B , i.e. g(i) = ~i " 
+Note that 
+(Ul,h 1) _< (u2,h 2) 
+[Explanation: 
+embedding will take 
+def 
+J. = {(u,h) : u E I. and (u,h) E K(u)} . 
+1 1 
+[i < j ~ I i C lj] , and [i < j ~ Ji ~ Jj] " We say 
+I = {~i : i ~ e} . What we have to do is to find a condition in P 
+that the embedding is as required. Now ~6 is simultaneously a good 
+forcing 
+if u 1 [ u2,h 1C h 2 . 
+Note that we have already decided that the desired 
+i to g(i) , so the universe of the image of N will be 
+Sh:289
+
+===PAGE 5===
+171 
+"approximation" to ~j over {~i : i < j) and we define a condition for 
+{~j : j < i or g(j) = e} by induction on i , though in N , Jl ~ J2 may 
+realize different quantifier free type over {i : i < Jl fl J2 ) " We are saved 
+by dealing simultaneously with conditions P(u,h) for (u,h) 6 Ji "] 
+We now define by induction on i < e , < i - P(u,h) : (u,h) E Ji) such that: 
+i i (a) P(u,h) E P n N u , and P* ~ P(u,h) 
+i (b) h C P(u,h) 
+j < i (c) if j < i , (u,h) E Jj , then P(u,h) - P(u,h) " 
+(d) if (ul,h 1) < (u2,h2) then i i _ P(ul,hl ) = P(u2,h2 ) r (A O Nul) • 
+i (e) P(u,h) forces a value to ~(v) for every v C u . 
+i+l i 
+(f) puo{~i},h i > HuU{¢},uU(~i} (P(uU{e),he)) if u C i and hi,h e are 
+functions such that (u U ((i),hi) E Ji+l ' (u 0 {~i},<,hi) ~ (u 0 {e),<,h e) • 
+We shall carry out the definition in detail. 
+[Explanation: Condition (a) is in order to have control over the condi- 
+tions and to utilize the indiscernibility. 
+i Condition (b), note it is the role of P(u,h) 
+deal with the case h = (F N o (g-l)) ~ u . 
+Condition (c) should be clear. 
+Condition (d) enables us to form the condition 
+X . 
+to ensure our being able to 
+U for suitable 
+xEX P(ux'hx) 
+Condition (e) as we want to form a condition forcing the "right" values 
+of ~ ~ we certainly have to have approximations forcing some values for them. 
+Condition (f) This comes for the end-homogeneity, we want to say that 
+~i,e are similar over {~j : j < i) , of course the minute we want to force a 
+value to ~({~i,~e}) this similarity cannot be maintained.] 
+The Induct ion. 
+Case A: i = 0 . 
+Sh:289
+
+===PAGE 6===
+172 
+So I. = {C} <fl so I. = {~, {e}} (except when ~ < t which is not so J . _ 
+1 1 
+interesting). 
+(so 
+where 
+i For every (u,h) E Ji we have to define P(u,h) " Let u 0 = ~,u 1 = {~} . 
+Let us enumerate the functions h : u I ~ ~ , h(~) = 0 : {h 7 : 7 < 7 O} , 
+70 < ~) . We define P7 by induction on 7 such that: 
+(i) P7 E N{c } ~ P 
+(ii) h 7 C P7 
+(iii) for every ~ < 7 , p~ I N~ < P7 
+(iv) P7 forces a value to ~({~}) . 
+There is no problem in doing this by el,e 2 below. In the end let 
+i 
+PCuo,¢) = U P7 I N~ 
+7<70 
+i i 
+P(ul,h) = P7 U P(uo,~) 
+• l if q7 6 P for 7 < 7(*) < ~ , then U q is in P and is the 
+7<7(,) 7 
+least upper bound of {q7 : 7 < 7(*)) if and only if for any 71,72 < 7($) the 
+functions are compatible 
+qTl'q72 
+• 2 if ql E Nul S P , q2 E Nu2 
+only if ql t NlflU2, q2 t NulflU2 
+fl P then: ql,q 2 are compatible if and 
+are compatible [by 2.I d]. 
+Case B: i limit. 
+For any (u,h) E Ji there is J(u,h) < i such that (u,h) E J. 
+O(u,h) 
+de( 
+i = U{p~ : j < i and (u,h) 6 Jj} We let P(u,h) u,h) . There are no problems 
+in checking the conditions (note: i P(u,h) E N u because 
+[eEN uA [aJ <~aeN u] by Z) 
+Case C: i = j + 1 . 
+Sh:289
+
+===PAGE 7===
+173 
+Let us enumerate 
+Note that 7(*) < ~ • 
+Ji) 
+(a)' 7 q(u,h) E P n N u 
+(b)' h C 7 - q(u,h) 
+(C)' /3 < 7 implies 
+(d)' if 
+(e) ' 
+Ji = {(uT'h 7) : 7 < 7(*)} - 
+We define by induction on 7 ~ 7($) a sequence 
+such that (compare with (a) - (f) above): 
+u,h) -~ qTu, h) 
+(Ul,h 1) ~_ (u2,h 2) then 
+7 = q7 
+q(Ul,h I) (u2,h 2) 
+if /3 < 7 then 7 q(u/3, h/3) 
+V ~ U • 
+(f)' 
+Subcase C (a) : 
+(e) 
+(/3) 
+(7) 
+the parallel of (f) . 
+tN 
+u I 
+forces a value to ~(v) for every 
+7 0 Define 7 = " q(u,h) as follows: 
+J it is P(u,h) if u EIj 
+it is Hul,u(P~u,h)) if u E I i , ~i E u , e ~ u , 
+def 
+v = u\{~i} EIj ; and we let: 
+def 
+u I : v O{e) , 
+J J 
+it is P(uo,hluo ) U HUo,Ul(P(uo,ho )) 
+u : v U {~j,¢} , ~j ~ v , c ~ v , and we let 
+u 0 = v U {c) . 
+if 
+def 
+: v U {Ej)_ U 1 
+Subcase C (b): 7 is limit. 
+7 : U 4 u Use unions q(u,h) ,h) " 
+/3<_~ 
+Subcase C (c): 7 = /3+ 1 . 
+Note that the only demand on 7 in 
+satisfiedby (4u,h) : (u,h) E Ji) 
+such that: 
+(qTu,h) : (u,h) E Ji) which is not clearly 
+is (e) ~ for /3 . We first choose r = r V , 
+Sh:289
+
+===PAGE 8===
+174 
+(i) ~us'h8 ) < r e Nup n P 
+(ii) r forces a value to ~(v) for every v C u~ . 
+Clearly such r exists. Now for every (u,h) E J. let 
+1 
+def ~(u : v C u n u~,h I v = h~ t v} [note that it is q(u,h) = ,h) OOfr r N v _ 
+possible that Vl,V 2 C u n u~ mad h I v I = h~ I v I , h [ v 2 = h~ ~ v 2 but 
+h t (v 1 U v 2) # h~ I (v 1 U v 2) .3 
+Now qTu,h) E P by el,e 2 and as q(u,h) v = q(v,htv) - q(u~,h~) - 
+whenever (v C u n u~,h t v = h~ r v) . It is easy to check that 
+<qTu,h) : (u,h) E Jl> is as required: i.e. conditions (a)' - (f)' are 
+satisfied. 
+So we have defined 
+can finish Case C: 
+<qTu,h) : (u,h) E JT> 
+i def .7(*) let P(u,h) = ~g(U, h) 
+for 7 ~ 7(*) as required, and we 
+for (u,h) E J. • 1 
+i J (u,h) E for i < . So we have finished the definition of <P(u,h) Ji > c 
+Lastly let 
+p = U{P(u,h ) : (u,h) E J¢ , u C e , and 
+h(v) = FN(g-l(v)) for v E [u] <~)~ • 
+Clearly the union is well defined and forces what we need except when 
+> ~ , then we have to add information to make g an embedding of N to 
+So we have finished the case e < p . 
+Secondly, we assume ~ = p . We cannot use the definition above as the 
+union will not be a condition (too large cardinality). But we can work in 
+V[Gp] , and choose by induction on i < p , an ordinal ai ' such that 
+i sup a. < a. < Max B and P(u,h) such that u C _ {aj : j < i) U (e) and j<i J x 
+(u,h) 6 J satisfying the parallel of (a) - (f) above such that: if 
+u C {aj : j < i) U {¢} , and (u,h) E Je and h(v) = FN(g-l(v) for 
+i then P(u,h) E ~p • End of proof of le~na 1.5. 
+M . 
+v e [u] <~ 
+Sh:289
+
+===PAGE 9===
+175 
+1.6 Conclusion: Assume that there is a class of measurable cardinals. 
+Then in some generic extension 
+V m,n < w V 8 V N E K~n(~4)[M EK~ n A {M l ~ im+l((INl + ~ +e) +) A M - (s)~] 
+Proof: Iterate the forcing (with e.g. Easton support) Q6+n (6 limit or 
+zero) is adding ~6+n+l Cohen subsets to ~6+n ' where ~0 = R0 ' for limit 
++ 
+ordinal 6 , ~6 = U ~ , if s 6 is singular s6+ I = ~6 " In all other cases 
+a<6 
+~c~+l is the first measurable > ~ . By 1.5 we get enough instances of eh 
+Iterating their use by 1.4 we get the desired conclusion. 
+N -~ N the unique 
+U -- V 
+§ 2. On ~sp " 
+. .<#,<n 2.1 Definition: We define A ~sp(~)p,8 where A,~,~,~ 
+and n < w . It says that if N is an algebra with universe A 
+operations each with < a places, then there is A E [A] ~ and 
+u E [A] <n such that: 
+(a) N is a subalgebra of N 
+U 
+(b) N u has cardinality 
+(c) N NA=u 
+U 
+(d) N u N N v = Nu0 v (the main point!) 
+(e) for u,v E [A] <n of the same cardinality, 
+isomorphism from N onto N , order preserving, exists, we call it H 
+U V U,V 
+(f) H maps u to v 
+U~V 
+= 
+(g) Hu, u = the identity, Hu2,u3O Hul,u2 Hul,u3 and for u I C u , 
+t NUl C_ HVl,Ul where v I C v is such that Hu,v maps u I onto v I H 
+U#V 
+equality holds), 
+(h) for u E [A] <n , N u N 8 C N~ . 
+are cardinals 
+and with < p 
+N for 
+U 
+(so 
+. . <o', <n 2.2 Definition: (I) We define A "spn (s)/~,0 
+(i) if v C u E [A] <n, (3~)v = u fl ~ then [Nv[ 
+similarly adding 
+is an initial segment 
+Sh:289
+
+===PAGE 10===
+176 
+of INul; 
+(2) We omit 8 when 8 = R 0 , i.e. omit (h) in 2.1 . 
+2.3 Observation: (i) If A ~ (~)<~,<n and 8 < A 
+spn ~'~0 
+(~)<a,<n A sp p,O 
+(2) Those arrows have obvious monotonicity properties: 
+s,~,n,8 . For dsp we can increase A . 
+(3) In 2.1, 2.2 we can use as N any algebra such that 
+(See [Sh3] and § 3). 
+then 
+we can decrease 
+A c INI 
+then 
+2.4 Fact: (I) If A is measurable, ~ < A , ~ + 8 + ff < A , n < w 
+. .<~,<n 
+A ~spnt~)~,O 
+<W,<W 
+(2) If A is minimal such that A ~ (~)~wu ' @ ~ ~ then A ~spn(N)~,8 
+<w,<3 
+2.5 la~mma: If ~ > 3 , A ~sp(~)w,D then A ~ (<)~w ~ r 6 
+Proof: Let X > 2A be a regular cardinal and let <* be a well order of 
+x 
+H(X ) . So we have <M u : u E [~]<2> such that: 
+s u ~(H(X),E,<;) , (a) 
+(h) M uNM v =Muf ~ 
+(c) A E M u 
+(d) if [u[ = [v[ , Mu,M v are isomorphic and let Hu, v denote the 
+(unique) isomorphism 
+(e) if u = {il,i2} , v = {jl,J2} , i I < i 2 and Jl < J2 
+H(il},{jl ) ~ Hu, v , H{iz},{d2 ) ~ Hu, v , idMo ~ H{il},{jl }" 
+(f) M{i } N A # M~ n A . (This follows from (c) of 2.1.) 
+then 
+Let a i = a(i) = Min(M{i } N J - M#) . Clearly H{i},{j}(a i) : ~j (use 
+(d),(e)) and p < @i " Also ~i # ~j (as M{i } A M{j} = M~) for i # j . 
+So for all i < j < < , "~. < a." has the same truth value. Since z j 
+Sh:289
+
+===PAGE 11===
+177 
+gi # aj if ( > ~ , as the ordinals are well ordered: 
+(A) (~i : i < (> is strictly increasing. If ( < w 
+the indexing and also have (A). 
+we could inverse 
+Next we shall prove 
+(B) If i < j and ~ 6 M{i ) , then ~ and H{i},{j)(~) realize the 
+same type over {7 : 7 < @i } (in (H(x), E, <~) • ) 
+[Proof: Let ~(~,~) be a formula, Ig(~) = Ig(~),Ig(y) = n . Let < gd 
+be the following order (of Godel) on n-tuples of ordinals: ~ <gd ~ if and 
+only if Mex(~) < Max(~) or Max(~) = Max(~) and ~ is smaller than ~ in 
+the lexicographic order. 
+that: 
+F 
+i B 
+Let F~(Xl,X 2) = the <gd-first sequence 
+V(Xl,~) ~ ~ ~(x2,y) • 
+Clearly F is definable in (H(x),E,<~) 
+(n-tuple of ordinals) such 
+hence each M is closed under 
+U 
+Let ~j = H{i},{j}(c) for each j < ( and assume that F(Cjl,Cj2) is 
+defined for some (2 all) Jl < 32 < 3: otherwise (B) is immediate. So 
+F(Cjl,Cj2) E M{jl,j2 } . However by a classical trick, if Jl < J2 < J3 then 
+the set {Z(Cjl,Cj2) , ~(cjl,cj3),~(cjz,cj3)) has only two members. Assu~e 
+e.g. that the first two are equal, so 
+%(Cjl,Cj2) = F~(Cjl,Cj3) E M{jI,J2 ) N M{jl,j3 } = M{31) . Generally (according 
+to which of the three possible equalities holds) F (~jl ) belongs to M{jI} 
+M{j2} = F{i},{j2} or to . As clearly (for £ = 1,2 , as ~Jm (~)) 
+F~(Cjl,Cj2) > sup(~jln aj2n M~) = sup(~jN M{j~}) we can deduce 
+(Cjl,Cj2) > " As ~ any formula, we have finished the proof _ Mzn{@jl,@J2} . was 
+of (~)]. 
+(C) a. is strongly inaccessible. 
+l 
+Sh:289
+
+===PAGE 12===
+178 
+[Proof: Note that all ~i realize the same type in (H(x),E,< ~) • 
+If each ~i is singular, there is fl E M~ such that for 6 < A 
+singular, fl(6) is a club of 6 of order type cf(6) • As cf(~i) < @i 
+cf(a i) E M{i } clearly cf(~ i) E ~ hence for some 8 E M~ , 
+(Vi < ~)[cf(~ i) = 8] . Let f2 E M# be such that for 6 < A of cofinality 
+8,f2(6) is a one-to-one function from 8 onto fl(6) . So easily 
+fl(@i) N M{i } = fl(ai) N M~ = {f2(@i)(7) : 7 E 8 n M#} ; w.l.o.g, fl,f2 are 
+definable over # (in the model (H(X),6,<~)) . Now if i I < i 2 , we get a 
+contradiction to (B). 
+Next if ~i are not strong limit, then there is ~ < ~i ' 
+, 's 2 ~ > Gj for each E M{i }, 2 ~ ~ ~i " So ~ E M~ and by the H{i},{j } , _ 
+j , so in M~ there is a (definable from #) one-to-one function from 2 ~ to 
+~(~) and we get contradiction to (B).] 
+(D) W.l.o.g. M{i,j ) is the Skolem hull of M{i } U M{~} . 
+(E) For i < j < ~ the intersection of the Skolem hull of 
+M{~} U (Gj N M{i }) with Gj is included in M{i } . 
+[Proof; If not, there are ~ E Gj N M{i } , d E M{j} , y = G(~,d) , G 
+definable, y E Gj \ M{i } . 
+Let w.l.o.g. J < Jl < ~ (we use that w.l.o.g, i = 0 , j = 1 and 
+As 
+and 
+remember ( > 3 ~ and ~, def {j1}(~ ) • = H{j}, realize the same type over 
+{7 : 7 < aj} , clearly y = G(~,d') too, so 
+y E M{i,j } n M{i,JI} = M{i ) .] 
+We shall code, for each formula ~(x0,...,Xn_l,y ) , ~-types of n-tuples 
+over {7 : 7 < @i } by an ordinal < 2 ~ 
+(F) For each ~ , and n > 1 , there is 
+I 
+(1) c ,n, i codes the ?-type of 
+whenever i < i I <...<in_ 1 < ~ . 
+(2) H{i),{j)(~,n,i) = ~,n,j 
+~ ,n,i E M{i } such that: 
+<~i,Gil, .... Gin_l ) over {7 : 7 < Gi } 
+Sh:289
+
+===PAGE 13===
+179 
+[Proof: For n = 1 this is easy. 
+For n + 1 if i < i I , ~,n,i can be computed from 
+think of the meaning) so %,n+l,i = G(~i'C~,n,il ) where G 
+function (over ~) . 
+m 
+However, by coding such things naturally %,n+l,i 
+hence < ~I (by (C)) . So it necessarily belongs to M{i } 
+holds. 
+By the way 
+If there is 
+ai, ~,n,il (just 
+a definable 
+is an ordinal < 2 1 , 
+by (E) , so (0),(i) 
+c- ,n+l, i was defined, also (2) holds.] 
+F : [A] <W ~ ~ which is a counterexample to the desired 
+conclusion of 2.5, then such F belongs to M~ and is definable over ~ (in 
+(H(x),e,< ~) !) , and <a i : i < (> contradict its choice (by (F) above), so 
+that the lemma 2.5 follows. 
+§ 3 Refining the combinatorics 
+3.1. Definition: 
+(I) For x E {sp, spn} we define 
+r~<~,n (~<~,n ~ ~j like ~ --4 
+ex(k) ~,8 x ~p,8 
+(see definitions 2.1 and 2.2) except that we replace (e), (f), (g) by 
+(e) e if u,v E [A] <n and u ~k v (which means that for some w , w is an 
+_ ~ N and let initial segment of u and v and lu\wl = Iv\wl < k) then N u = v 
+H be the unique isomorphism 
+U,V 
+(f)e H when defined maps u onto v ; UsV 
+(g)e if u I ~k u2 ~k u3 ' ui E [A] <n(*) 
+then H o H = Hul ' and for any 
+u2,us Ur% % 
+H 
+Ul,% 
+H = id 
+U~U 
+u~ C u I if 
+t Nu~ ~ Hu, I,u, 2 (so equality holds). 
+: Hul,u2(U i) then 
+(2) If k = 1 we omit it. 
+(3) For x E {sp, spn, esp, espn) we define 
+Sh:289
+
+===PAGE 14===
+180 
+. .<g,<n 
+---4wx [~)~,8" .<~,<n just like A---4x [~)~,8 
+replacing (d) by (d) w N u ~ N v C Nun v and if ~ < ~ are from ~ , u E [~]<n 
+and (a,~) ~ u = @ then (~,~) ~ M = # . U 
+(Note that now in (g) equality does not follow.) 
+. .<~,<n (4) For any of the x for which P was defined A ---* [~)~,8 is 
+X XV ' 
+defined as above except that also d : [~]<n(~) ~ 8 is given and (h) is 
+replaced by: 
+(h) v For each £ , d ~ [A] £ . is constant when e does not appear in x ; and 
+h(u) (u E [A] TM) does not depend on max(u) when it appears and, more 
+generally, exv(k) does not depend on the last k members of u (i.e. if 
+Ul,U 2 E [A [] and w is a co.on initial segment of Ul,U 2 ]u[ - w] ~ k then 
+h(Ul) : h(u2) ) • 
+3.2. Observation: 
+. .<~,<n . .<~,<n (I) We have A ---# ~)~,A v ~ A .... ~ (~)~,A v where: y is x when we omit 
+x y 
+n or x is y when we omit e or w or v. 
+t<a,<n ...<~,<n (2) If (e appears in x and) J2 --~ (tl.D,8 and Al t LAO)D,~v 
+x(k) x(~) 
+then A2---# <a,<n x(k+£)(AO)#,O 
+(3) If A t . ,<~,<n and k > n -I then A---~ ~,8 where y is x(k) t~)~'O _ Y (~)<~,<n 
+x with e omitted. 
+... <~, <n (4) If 12---* [AI)~, 8 , and £ = n - 1 - k , y is x with e omitted 
+x(k) 
+...<~,<n 
+and ~I ~ (~0) M then ~2 ~ ~aO)~,8 " 
+Y 
+3.2A Rmrk. By 3.2(4) even A .... 
+x(0) 
+strong (when w does not appear in x). 
+. <0", <n ~)~,~ v , when n > 3 , is quite 
+Sh:289
+
+===PAGE 15===
+181 
+3.3. Definition. A t+ (~)<~ means: for each club C C A and for 
+# 
+n < ~ , i < ~ , Fn, i : [A] n ~ A there is A 6 [C] ~ such that if aO<...<~n_ 1 
+belongs to A and m < n , i < ~ and Fn,i({a 0 ..... an_l} ) < a m then it does 
+not depend on ~m,...,~n_l . 
+3.3.A. Remark: Neplacing "a club C ~ A" by "a final segment C C A" 
+does not change anything except that in the later version, if I = U A i , each 
+i<l 
+A. satisfying the first definition the A satisfies the second definition. 1 
+3.4. Fact. If ~ < 8 < I , A ~ (~)~ then A spn~ ~)~,@" "<w'<~ (~ can 
+be, in fact, any limit ordinal, w~ = ~ ). 
+3.5. umm. If A spnP (~)<w,<3w,~ , ~ >_ 3 then ~ --~ (~)~w . 
+Proof. Similar to the proof of 2.5 but by the definition of 
+spn 
+sup(N~ N A) < ~0 = A . In the end, if there is a sequence 
+(C, (Fn, i : n < w , i < ~>> contradicting the conclusion, wlog it is 
+definable over ~ as C E ~ and easily ~i 6 C and continue as before. 
+3.6. ~a. (I) For every n < w , there is k = k I < w (e.g. n 
+we know 
+• +.<a,<n k = (2n-l) 2)" " such that : if s<# = ~ then k(S) + # (~)~,~ e 
+wsp 
+(2) Vn < w 3 k = k 2 < ~ such that : if ~,~,~ < A and A is (a+k)-Mahlo n 
+, .<~,<n strongly inaccessible cardinal then A---~ ~)~,H 
+wspn 
+Remark. i. Using part I for 4.1 note that t is stronger than --~ . 
+wsp wesp 
+2. Part 2 is used for e.g. consistency of 2 H + 2 [~ ]0,3 " 
+3. We do not try here to get the best bound (but see 3.8 and see [4]). 
+(1) Let A 0 = ~ , A£ + 1 = 2n+l(A£) . Suppose N* is an Proof. 
+algebra with universe A and at most ~ functions each with < e places. We n 
+define, by induction on m < n , a set A m and ~u (u £ [Am]<n) : 
+I (i) A 0 : A n 
+Sh:289
+
+===PAGE 16===
+182 
+(ii) Am+l C Am 
+(iii) IAml : ~_~ 
+II (i) N~u (for u E [Am]<n) is a submodel of N* of cardinality < m . 
+(ii) The answer to "is the 71-th element of ~vv equal to the 72-th 
+element of ~u ?" where u,v E [Am+l ]<n depends just on 71,72 and the 
+isomorphism type of (u U v, u,v, < [ (u U v)) . 
+(iii) If u,v E [Am]<n then 
+(i,,) ~f u ~ jAm+l] TM , lul >_ n - 1 - m then N~u = N m+lu 
+For m = 0 let A 0 = A n , N~u is the subalgebra of N $ generated by the 
+set u U s • If m < n - 1 , choose Am+ 1 C A m [Am+ll = An_m_ 1 such that 
+"A .2(n-l)) . Now for u 6 [Am+l ]<n, let N m+l II.(ii) holds (using An-m ~ ( n-m-1)2~ u 
+be: if lul < n - I - m , the Skolem hull of u{~ n ~ : w,v e jAm+l] n and 
+u = w N v) and if [u I > n - I - m N m The cardinality of N m+l is < 
+-- ~ U * U -- 
+by II (ii) i.e. if X E < N N~v and Wl,V l E [Am+l }<n , 
+Iwll = Iwl,lhl : Ivl, w lnv l:wnv 
+and (VC~ E wUv)(~# E wlUv 1) {I,,~1 : Iwlrml A Ivr~l : IVlrml] then 
+(2) We need 3.7 below instead of Erdos-Rado and then the proof is similar to 
+that of part i. 
+3.7. I~mma: If A is (a+n)-Mahlo and strongly inaccessible and N $ is 
+an algebra with universe A and < I operations each with arity < A and A 0 
+is unbounded in A then for every /~ < A there is ~ : /~ < ~ < A , ~ is 
+@-Mahlo and strongly inaccessible and there is A C A 0 [I ~ unbounded in s : 
+(*) If for £ = 1,2 ~ < a <...c~n_ 1 are from A then 
+<~01 . 1 2 2 
+'~n_l), <G 0 ..... ~n_l > 
+realize the same type over {3 : 7 < ~} is N$ . 
+Sh:289
+
+===PAGE 17===
+183 
+3.7A Historical Remark: We proved 3.7 in 1968 as part of some research 
+on transfer theorems in model theory. As Schmerl was doing parallel research, 
+it appeared in [ScSh20] but somehow this version does not appear - only the 
+version with a finite conclusion. Subsequently Schmerl found a better lower 
+bound for A (how Mahlo it should be) and proved that it was exact. Hajnal 
+independently proved 3.7 and the author wrongly told him it had appeared in 
+[ScSh20]. 
+Proof: We prove it by induction on n . 
+For n = 0 there is nothing to prove. For n > 1 use the induction hypothesis 
+to find s < I which is (~+l)-Mahlo and A 0 fi ~ as there for n - 1 . Expand 
+M r ~ by a predicate for A 0 and (as n > I) apply the induction hypothesis 
+for n = 1 . For n = 1 , let C = {6 < I : ~ is a strong limit and for each 
+p < ~ , there is (N,A r N) ~L (M,A) such that ~ [ INI [ ~} • Clearly C 
+is a club of I , so there is ~ E C which is ~-Mahlo. 
+Choose 7 E A - ~ , define a function f : ~ ~ ~ by 
+f(a) = min{71E A N ~ : 7' realizes the type of 7 over {i : i < ~}} Let 
+C' = {~ < $ : (~G < ~)f(G) < ~} . Clearly C' is a club of $ and 
+A 0 : {f(#) : ~ E C'} is as required. 
+3.8. Lemma 
+Suppose A = 8+,8 ~ = 8 , ~ = ~ , ~<~ = ~ , T is a vocabulary such that 
+Irl < H and each member of r has arity < ~ . If M is a r-model with 
+universe A tke, we can find 6,~,B, ( M s : s E [B] ~2 > , (M;i } : i E B) 
+(Hs, t : [s[ = Itl ; s,t E [B] ~2) and W such that: 
++ 
+(a) 6 < A , cf~ =~ . 
++ +i, (b) B is a subset of 6 of order type ~ (we could get ~+ 
+actually but then M{maxB} is not defined). 
+(c) Ms ~L M for s E [B] 2 and M{i} ~L M{i} ~L M for i E B 
+~,~ ~,~ ~,~ 
+and 
+Sh:289
+
+===PAGE 18===
+184 
+(d) 
+(e) 
+Me <L M . 
+~,a 
+M s n B = s , M{i } N B = M{i } n B = {i} , M~ fl B = ~ . 
+For s,t fi [B] ~2 tsl = It] : Hs, t is an isomorphism from M 
+S 
+= = H -1 and H = H o Hs0,sl) (and Hs, s idM ' Hs,t t,s s s0's2 Sl'S2 
+H{i},{j } maps M{i } onto M{j} . 
+(f) All Its, t are compatible; 
+(g) M s NM t C Man t . 
+(h) Vi < j < k from B 
+(a) Mfi,j } 
+(~) M{i,j } 
+(7) M{i,k ) 
+(i) For i < j 
+(j) M~ CM{k } , M~ CM s 
+(k) (a) w C A , V~ e w cf~ = 
+(~) 6 = maxW 
+(7) If 
+(6) If 
+and 
+(c) If 
+i<jEB 
+onto M t 
+and 
+3.8A Remark: 
+H mops s onto t . s,t 
+M{i,k ) = M(i ) , 
+n M{j,k ) = M{j) , 
+n M{j,k ) = M{k ) . 
+from B , j is the first element of 
+for k E S , s 6 [B] ~2 
+M{i,j}\ M{i} • 
+Hs,t(fl) = 7 and k E W then ~ < k [ 7 < k 
+eM{i )-r~,ieB, ~:min{~ : ~ew,~<~} then ~# 
+<H{i},{j}(~) : j E B> is increasing converging to 6 . 
+$i,~2 6 M{i } -M~ , ~e = min{~ 6 W : Be < ~} , ~l # ~2 ' and 
+then ~{i},{j}(~l) > ~2 " 
+(I) We can instead " A = 8 + " assume A is inaccessible 
+Va < A [I@I ~ < A] . Similarly for D . 
+(2) For simplicity, 8,~,D,a are regular and 
+(3) We can replace L by any fragment of L D,a 
+Proof: Let MO ~L +M where IMoI 
+~+) so I1%11 = 8 . Let 
+M 0 there is a model 
+8 , (or at least 
+By the choice of 
+< is a relation of M . 
+of cardinality /~ . + 
+is an ordinal 6 < A of cofinality a 
+Na 4L +M , 6 a E N a , INal = s; . 
+Nb ~L +M 0 and an isomorphism f from 
+~,p 
+Sh:289
+
+===PAGE 19===
+185 
+N a onto N b over N : M ~({Na{ 0 {M0l) • Let 6 b = f(6 a) . Let N* ~L M , 
+{N* I = p be such that 6 a E N* and {N, NB,Nb,f} E N* in some coding. We let 
+= - = N* = N* ~ {M0{ = the M{6a} N* t INB{ and M{6h} t {Nb{ ; M{6b} , M{6b,6a } 
+Skolem hull in M of M{~B} U M{6b} . Let 
+h : IM{6b} I ~ INal : h(~) = min{7:7 E INal , ~ < 7) • Let 
+W = range (h) - {6a} . Let ~ he minimal element of N such that 
+(V~)[~ £ Mi~b} A (3 7 E N) ~ < 7 ~ ~ < (~] i.e. ~ : supW . 
+Now we define by induction on ~ < ~+, 6j , M{6~}, M{6(} , M{6~,6~ } for 
+(~ < ~) , M{6~,6a } and H{~},{(} , H{~,6a} ,{~,6a} for ~ < ~ (understand 6~ 
+to he the ¢-th member of B) such that: the relevant cases of the desired 
+conclusion holds, and M{6~} C N , for ~ < ~ , M{6~,6~ } C N , M{6~,6a ) C N a , 
+etc. and lemma 3.8 is proved. 
+3.9. Le~m: Suppose GCH for simplicity ~ ~<~ ~  > ~++ 
+< ~ < ~ < ~+ < A 8re regular. There is a forcing notion P such that: 
++ I A. P is strategically ~¢ -complete. 
+B. P preserves cardinalities and cofinalities. 
+c. {Pl ~ • 
+II (In V P) 
+(*) There are S* C S [ ~ , {C 6 : 6 E S} and for 6 E S* , 
+< "* 2 ~.s : s~ [s]<2>. ("~.s: se [,~]i>. ~:< .t : s.t~ 
+Is{ : {t{> . .~, ~, C8, ~" 
+(A) The relevant conclusion of 1.1 holds for each 6 E S* with B 6 an 
+unbounded subset of ~6 < ~++' ~0 = min W < ~+ 
+(B) If ~6(I) = C6(2) then there is a function H6(n),6(2 ) from 
+U M6(1),s U W6(1) U C6(i) onto U M6(2),s U W6(2) U C6(2) which is order- 
+s S 
+preserving end preserves all relevant properties and the domain and range are 
+disjoint. 
+Sh:289
+
+===PAGE 20===
+186 
+(C) 6 E S* ~ cf 6 = ~ (follows from (A)) and for 6 E S C 6 is a club of 6 
+of cardinality < ~ and 
+(D) if 6 E S* , @ is an accumulation point of C 6 then ~ E S A C a = C 6 N 
+(follows from (B)). 
+(E) For 6 { S*, W~ [ C 6 . 
+++ 
+Proof. If A = ~ we shall force by approximations of cardinality ~ . 
+If we succeed to force for A , we can force for A + by approximations of 
++ +n +w cardinality ~ For A = ~ , we iterate this, for A > ~ we have to take 
+care of the singular case. 
+§ 4. Eliminating the Measurables 
+4.1. Lena. 
+(I) Suppose p = p<~ , p < 0 < ~ < A , ~ < w , ~(*) < 
+~----~ ("+1 ~'<~(*) (see def. 3.1) 'p,O wesp 
+Let P be the forcing action as in 1.5. 
+of cardinality ~ for every N E K G of power 
+v 
+(2) 
+and 
+Then in V P for some M 6 I~ 
+~ , M-.--q eh (N)~ (*) 
+In applying ~ we can weaken it replacing (d) in 3.1 (3) by 
+wesp 
+(d)-: if u U v U{@,~) C A , (Vi E u U v)[i < ~ A i < ~] A [lul, Ivl < n-l] 
+then NuO{@ } N N0(H) N A C N u N N However we still need N u O A = u ! 
+A = ~(,)_2(~ ++) suffices for ~+ 
+Proof: We indicate the changes in the proof of 1.5. Of course, we 
+but 
+replace "(b) to (h) of 2.1" by the appropriate variants from definition 
+i 3.1 (3). Defining P(u,h) for (u,h) E Ji by induction on i we change (d) 
+to: 
+h I 
+(d) If (Ul,hl), (u2,h 2) (both from J), are compatible (i.e. 
+r (u lOu 2) : h 2 r (u lOu 2)) t~e. 
+i t N NN NA i t N NN NA 
+P(ul,h I) u I u 2 = P(u2,h2 ) u I u 2 
+and in case (C) we change (d) l to 
+Sh:289
+
+===PAGE 21===
+187 
+w E don ~(u,h) 
+qifu, h) (w) is 
+(a)' - (f)' . 
+(d)' If (Ul,hl),(u2,h2) are compatible 
+7 t (Nul 0 0 ~) : 7 t (NulN Nu2fl ~) • q(Ul,h 1) Nu 2 q(u2,h 2) 
+In subcase (C)(a), we use (d) above (this influence 47) there) and in the 
+proof of subcase (C)(c), we let, for ~s defined iff 
+or r(w) The value of 
+~(u,h)(W) when defined and r(w) otherwise. Let us check 
+7 (w) (u,h) E Ji ; q(u,h) 
+is defined and w E IN u N ~]<~(*) 
+(a)' Trivially q(u,h)7 E P as q(u,h)7 C N u (as a set of pairs, by its 
+definition) clearly 7 E N u by the demand ((Va E [Nu]<P)[a E N u] from I q(u,h) 
+in the beginning of the proof of 1.5). 
+' 
+(b) as h C ,h) C q(u,h) 
+(c) l fll < 7 implies fll < fl or fll = fl and check 
+(d)' assuming (Ul,hl),(u2,h2) are compatible we have 
+q~(Ul,hl) t (NUlfl Nu2 0 ~) = q~(u2,h2)(Nul0 Nu2 o ~) • 
+AS clearly, dem q(ue,he) = dom e,he ) U(Dom (r) n Nue) the equality of the 
+domains is easy, similarly check equalities of values. 
+(e)t (f)s immediate. 
+4.2. Conclusion: Assume, for simplicity only, that V satisfies 
+Then in some generic extension, not collapsing cardinals nor changing 
+cofinalities, 
+(a) 2 R~ < ~+w for every 
+(b) for every n < w and model N E K <n 
+k < w and model M , JMJ < k(HNJ{ + ~ + 8) and 
+remark) and 4.1. ) 
+Proof: Like 1.6 using 4.1 instead of 2.5. 
+GCH. 
+and m < w and 0 for some 
+M ~ (N) m . (By 3.6 (i) (see 
+{7 
+Sh:289
+
+===PAGE 22===
+§ 5 K 4 C G~ (3)~0 
+188 
+The question we address is an old one of Erdos and Hajnal. 
+complete graph with n vertices. 
+Question: Is there a graph G which embeds no K 4 such that 
+We get here the consistency of a slightly stronger statement. 
+K is the 
+n 
+G ~ (3)~ ? 
+0 
+We still deal 
+with graphs although the proof says something more general. More on the case we 
+are interested in (forbidden infinite subgraphs) will appear later. 
+5.1. Leman: Suppose p < I < ~ , ~ is measurable (or just s > l(A) or 
+A ~ (2k(*)) W'<3) 2 < m < ~I and A = A <A For some A+-c.c. A-complete wsp ~,~ ' - 
+, 2 A forcing notion P of power ~ fp" = ~ and for some graph G of power 
+2 
+(i) G ~ (Kk(,)) P 
+(ii) G embeds no 
+Proof: The forcing 
+of vertices of G be 
+Zk(,)+l ." 
+P introduces just the graph G . Let ]G[ , the set 
+m 
+G 1 < G 2 if and only if G 1 = G 2 t [dom Gl]in c . Clearly P is A-complete, 
+P ~ A-c.c., fp "2 A = ~" and ]P[ = ~ . Let ~r be the P-name of 
+U{L : L E ~p} . It is a graph of the right form. Let ~ be a P-name of a 
+function from the set of edges of ~r to # and p E P • Let X be large 
+enough. By the choice of ~ and the partition theorem, we can find U C 
+such that [U I = A (U is really larger but this does not help). Let 
+I s = {s E U : Is[ < 2 m} and let {M s : s E I s} be such that U 0 M s = s , 
+m 
+[m]inc = {(~0 .... '~-1 ) : ~O<'''<~m-1 < ~} " 
+m 
+We say ~/ = (c~ 0 ..... ~m-I ) ' ~ = (~0 ..... ~m-I ) from [~]inc are potentially 
+connected if s O < ~0 ( ~I ( ~I <'"<am-I < ~m-I (or interchange them). 
+Let P = {G : Kk(,)+l is not embeddable into G and G is a graph as above on 
+m 
+[dom(G)]in c where dora G is a subset of s of power < A} . We say 
+Sh:289
+
+===PAGE 23===
+189 
+(Va,~)[a < ~h a E u ^ ~ E U~ (a,~) N MS = ~] ; M s N s t = MsN t (or just 
+s sNM tcssn t) (VaCSs)(lal < A aeS s) and llMsl I=A andfo  
+s,t e Isi = Itl we have 
+Hs,t(s) = t all the M t an isomorphism onto, so that Hs, t : M s 
+diagrams commute and A s [p,P,A,p, le.,~r,d E M s] • 
+Now we want to find p _( q E P such that q forces a monochromatic 
+= e e e 
+Kk(,) . Let We (aO,a I, .... am_ 1 ) E [U] m for e < k(*) such that 
+2 .aok(*)-I al<...ak(*)-l<...<a. E U , aO < aol < ao<." < aO < e 
+= range We t e 
+We shall find a condition q > p . If q E P N Mto , p ~ q then we can find 
+r E MtoUt I N P and ~ < p such that i. - 6. below holds, where 
+i. r ~ (~O,~l) E edges of Gr 
+2. r ~ Sto ~ q 
+3. t > r Mtl _ hto,tl(q) 
+4. r ~ ~ (WO,~I) = 
+5. r F Vx,y E vertices (q)~ if x,y ~ ~ 
+[{x,y} ~ {TO} ~ (x,hto,tl(Y)) ~ edges of ~r]. 
+6. if r t Mto _ < q' E P N Mto and q' | M~ = q" r M~ and 
+r | Mtl K q" E P N Mtl then we can find r' such that ql q, K r' E MtoUt I 
+and r I satisfies i - 4 and: [x E vertices q' - M~ and y E vertices 
+q" - ~ and (x,y) E edges r I ~ (xy) = (WO,WI) and r' F "~(WO,~I) = ~" 
+As P is A-complete also P N Mto is p+-complete so there are qo,~o , 
+such that P ~ qo E P N Mto and: Vq : qo ~ q E P N Mto we can find r as 
+above for ~ = ~0 " Note t "the distance in ~r of 70 from vertices in 
+~r NM~ N~ 0 is > m'. 
+Now we can find ~0 < ~ and (q~ : ~ < k(*)) such that 
+Sh:289
+
+===PAGE 24===
+190 
+(i) q~ E Mt£ 
+(iii) hto,ti(q) ( q~ 
+(iv) for £1 < £2 < k(*) we have: 
+0 
+q£2 - < q" E M t£1 and q' I M~ = q" r M~ 
+if qO q, El ~ E M t and 
+£0 
+then we can find r as above. 
+[Why? We define, by induction on i < k(*), <q~,i : t < i> such that 
+(q~,i : £ < i} satisfies (i),(ii),(iii),(iv) above with the natural 
+restrictions. For i = 0 , q~,O = qo ' For i = j+1 apply the assertion above 
+(before I. - 6.) so with ht£,to(q~'J ) here standing for q there; get there 
+r and let q~,i = htoUtl,tjUti(r t Mtl) 
+q~,i = htoUtl,tjUti(r ~ Mto) , 
+and for £ < j, q~'i = q~,j . 
+In the end let q~ = q~,k(*)-i . 
+Let {(~E,7£) : £ < (k~*)) = m} 
+by induction on E < (k~*)) 
+{q~ : ~ < k(*)) , 
+El £2 1. q~ ~q~ for £1~£2 
+z. q~ e st~ 
+3. q£ = q£ r 
+£+1 
+4. E r "HE 
+s. r~,7 r M t < £ 
+s. r~,~ F ~(~,%) = ¢0 
+list the increasing pairs. 
+r~£,7 E such that: 
+Now we define 
+Sh:289
+
+===PAGE 25===
+191 
+7. If e~.l is an edge of r~.,75" not in 
+1 1 
+(MtgE. x MtgE. ) U (M t x M t ) U {(W~ ,WT~.)} for i E 0,I and 6 0 ~ £I 
+7[. 7[. i I 
+I I I I 
+then eN,e I have no vertex in common. 
+. E+I 8. If 7 g {~,~} then edges(q~+l) = edges(q~) U edges(qot [ ~ M~) . 
+There is no problem in this - qo is tailor-made for this. 
+Now we define q : 
+dom q = U dom q~U U dom 
+edges of q = union of the set of edges of q~ , r ,~ . 
+(Note that any node in dom r~ ,7 \(Mt U My ) is connected.) 
+i i Hi 7i 
+(Note that the q~ . ~.~ are pai~ise compatible.) 
+The least trivial is to show Kk(,)+l is not embeddable into q . 
+Let ~ be a set of k(*) +I vertices. 
+Assume that ~ is a complete graph fin q) and we shall derive a 
+contradiction. 
+~i(1)(1)) 
+from M~ . 
+If we omit the edges {(~i,~j): i < j < k(*)} from q , the resulting 
+graph is obtained by successive edgeless amalgamation (look at the restriction 
+i to $<iU Dom qo~ Uj<iDom rm,Tj~j for i < k(*)). Hence it has no subgraph 
+isomorphic to Kk(,)+l . So necessarily for some i(1) , ~i(1) E ~ • Now by 
+the definition of "potential edge" and as (m ~ 2 and) the interval (~i(1)(0), 
+is disjoint to M~ , we have: ~i(1) is not connected to any vertex 
+So ~ N M~ = ~ . Now consider the sequence 
+Do,, u j<iv oom r o, j\ : i 
+and the restrictions of the graph q to them. Easily the first is in P , and 
+in each step we use edgeless amalgamation (we could have started with this 
+Sh:289
+
+===PAGE 26===
+argument) so we finish. 
+192 
+Concluding Remarks: 
+5.2 Easy variants: 
+subgraphs of G is 
+9 
+We can have G ~ (H)~ such that the family of finite 
+S (up to isomorphism) where for some n : 
+i. s~¢ 
+2. S closed under edgeless 8~nalgamation 
+3. If L I .... ,LIH I eS ; i~ j~ L inLJ = L ; 
+×i E L i and the distance of x i from L in L i is > n then 
+n 
+L* E S where: vertices (L*) = U vertices (Li) 
+i=l 
+n 
+edges(L*) = U edges(L i) U edges(L* ~ {x i : i = 1 ..... [HI}) 
+i=l 
+L* r {Xl,. 'x'H')l I ~H 
+5.3 Easy Remark: Instead of graphs we can have a model where relations are a 
+partition of the singleton and of the pairs. 
+5.4 Note that the proof of 5.I tells us that in 4.2 for n = 3 (i.e. coloring 
+of singletons and pairs) we do not need 1.4 but can directly prove hence 
+lowering the required cardinal. 
+5.5 On generalizing 5.2 to relation and colorings with more places see later 
+works. 
+Sh:289
+
+===PAGE 27===
+193 
+References 
+[I] A. Hajnal and P. Komjath, Embedding graphs and colored graphs. 
+[2] S. Shelah, Notes on combinatorial set theory. Isr=el J. K61~. 14 (1973) 
+[3] 
+[4] 
+IS] 
+262-277. 
+S. Shelah, Was Sierpinski right ? I. 
+S. Shelah, Was Sierpinski right ? II. 
+Isr=el ]. 14tk. 62 (1988) 355-380. 
+Preprint. 
+J. Nesestril and V. Rodl, Partition (Ramsey) theory, a survey. Colloq. 
+Math. Soc. Janos Bolyais Vol. 18, North Holland, Amsterdam, (1978), 
+75-192. 
+[Sh95] S. Shelah, Canonization theorems and applications, J. of Symb. Logic 
+40 (1981) 345-353. 
+[EI~tR] P. Erdos, A. Hajnal, A. Mate and R. Rado, Combinatorial Set Theory: 
+Partition relations for cardinals. Disquisitiones Mathematicae 
+Hungaricae 13, Akademiai Kiado Budapest, 1984, North Holland. 
+[Sc Sh20] J. Schmerl and S. Shelah, On power-like models of hyperinaccessible 
+cardinals, J. of Symb. Logic 37 (1972) 531-537. 
+Sh:289

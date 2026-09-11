@@ -1,0 +1,7 @@
+{
+ "graph": "Paley(17)",
+ "edges": 68,
+ "tc": 2,
+ "tau_lower_bound_from_400_greedy_restarts": 4,
+ "witness_subgraph_edges": 40
+}

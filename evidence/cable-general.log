@@ -1,0 +1,10 @@
+LEAN_RESULT erdos595-ordering-bound-general
+  FORMAL_STATUS KERNEL_CHECKED
+  FILE oracle/frontier_formalizer/cable/theorems/msl_erdos595-ordering-bound-general.lean
+  THEOREMS msl_erdos595_ordering_bound_general
+  BACKEND wsl
+  AXIOMS Classical.choice, Quot.sound, propext
+  TACTIC (supplied proof)
+  BUDGET 120s:KERNEL_CHECKED
+  FAILURE NONE
+receipt: C:\Users\jared\Local Sites\woocommerce-enterprise\oracle\frontier_formalizer\cable\receipts\erdos595-ordering-bound-general.cable.json

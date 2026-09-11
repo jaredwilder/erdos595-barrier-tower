@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-arrow-form",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsCUTF {V : Type} (G : SimpleGraph V) : Prop :=\n  ∃ H : ℕ → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V : Type}",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "¬ IsCUTF G ↔ ∀ f : Sym2 V → ℕ, ∃ a b c : V, G.Adj a b ∧ G.Adj a c ∧ G.Adj b c ∧ f s(a, b) = f s(a, c) ∧ f s(a, c) = f s(b, c)",
+ "proof": "by\n  classical\n  constructor\n  · intro hw f\n    by_contra hcon\n    push_neg at hcon\n    refine hw ⟨fun n => SimpleGraph.fromEdgeSet {e | e ∈ G.edgeSet ∧ f e = n}, ?_, ?_⟩\n    · intro n t ht\n      obtain ⟨hcl, hcard⟩ := ht\n      obtain ⟨a, b, c, hab, hac, hbc, hteq⟩ := Finset.card_eq_three.mp hcard\n      have ha : a ∈ t := by rw [hteq]; simp\n      have hb : b ∈ t := by rw [hteq]; simp\n      have hc : c ∈ t := by rw [hteq]; simp\n      have e1 := hcl ha hb hab\n      have e2 := hcl ha hc hac\n      have e3 := hcl hb hc hbc\n      rw [SimpleGraph.fromEdgeSet_adj] at e1 e2 e3\n      exact hcon a b c e1.1.1 e2.1.1 e3.1.1 (by rw [e1.1.2, e2.1.2]) (by rw [e2.1.2, e3.1.2])\n    · ext a b\n      rw [SimpleGraph.iSup_adj]\n      constructor\n      · intro hab\n        exact ⟨f s(a, b), by\n          rw [SimpleGraph.fromEdgeSet_adj]\n          exact ⟨⟨hab, rfl⟩, G.ne_of_adj hab⟩⟩\n      · rintro ⟨n, hn⟩\n        rw [SimpleGraph.fromEdgeSet_adj] at hn\n        exact hn.1.1\n  · rintro harr ⟨H, hfree, hEq⟩\n    have hex : ∀ e : Sym2 V, ∃ n : ℕ, e ∈ G.edgeSet → e ∈ (H n).edgeSet := by\n      intro e\n      by_cases he : e ∈ G.edgeSet\n      · revert he\n        refine Sym2.ind (fun a b he => ?_) e\n        rw [SimpleGraph.mem_edgeSet, hEq, SimpleGraph.iSup_adj] at he\n        obtain ⟨n, hn⟩ := he\n        exact ⟨n, fun _ => hn⟩\n      · exact ⟨0, fun hc => absurd hc he⟩\n    obtain ⟨a, b, c, hab, hac, hbc, h1, h2⟩ :=\n      harr (fun e => Nat.find (hex e))\n    have m1 : s(a, b) ∈ (H (Nat.find (hex s(a, b)))).edgeSet := Nat.find_spec (hex s(a, b)) hab\n    have m2 : s(a, c) ∈ (H (Nat.find (hex s(a, c)))).edgeSet := Nat.find_spec (hex s(a, c)) hac\n    have m3 : s(b, c) ∈ (H (Nat.find (hex s(b, c)))).edgeSet := Nat.find_spec (hex s(b, c)) hbc\n    rw [← h1] at m2\n    rw [← h2, ← h1] at m3\n    exact hfree (Nat.find (hex s(a, b))) {a, b, c}\n      (SimpleGraph.is3Clique_triple_iff.mpr ⟨m1, m2, m3⟩)"
+}

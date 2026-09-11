@@ -1,0 +1,26 @@
+{
+  "claim": "For every K4-free graph the triangle cover number (least number of triangle-free subgraphs covering the edges) is at most the triangle-free chromatic ceiling (the supremum of chromatic numbers of triangle-free subgraphs); and more generally, for any linear order on the vertices, the triangle cover number is at most the supremum over vertices of the chromatic number of the subgraph induced on the neighbours lying above that vertex, which yields that every graph on kappa-plus vertices is a union of kappa triangle-free subgraphs.",
+  "domain": "infinite graph theory / edge decompositions",
+  "facets": {
+    "entities": "K4-free graphs, their triangle-free edge decompositions, neighbourhood subgraphs, linear orders on the vertex set",
+    "mechanism": "colour each edge by the colour that the smaller endpoint's neighbourhood colouring assigns to the larger endpoint, so the two edges at the least vertex of any triangle differ",
+    "method": "well-ordering the vertex set, degeneracy and colouring number arguments, neighbourhood chromatic bounds",
+    "outcome": "an upper bound on the triangle cover number by a chromatic invariant, and the corollary that no graph on aleph-one vertices needs uncountably many triangle-free layers"
+  },
+  "constraints": {
+    "search_queries": [
+      "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+      "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+      "every graph on kappa plus vertices union of kappa triangle-free graphs",
+      "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+      "colouring number well-order triangle-free edge decomposition uncountable graph",
+      "Erdos Hajnal K4-free countable union triangle-free graphs partial results"
+    ],
+    "patent_queries": []
+  },
+  "candidate_differentiators": ["the neighbourhood-chromatic upper bound on the triangle cover number"],
+  "alternative_facets": {"mechanism": ["least-vertex edge colouring from per-vertex neighbourhood colourings"]},
+  "min_corpus": 20,
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_target": "paper"
+}

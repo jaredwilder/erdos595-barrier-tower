@@ -1,0 +1,64 @@
+{
+  "lane": "msl-595",
+  "campaign": "FLAGSHIP epoch 11",
+  "contract": "operator /msl: solve Erdos 595",
+  "status": "TERMINAL_NOT_CLOSED",
+  "target": "exists an infinite K4-free graph that is not a countable union of triangle-free graphs (Erdos 595, $250, OPEN)",
+  "verdict": "THE FLAGSHIP IS NOT CLOSED. No route to a witness and no route to a decomposition theorem was found. Banked instead: a kernel-sealed barrier and reformulation package.",
+  "sealed_files": [
+    "oracle/evidence/erdos595/lean/Erdos595Continuum.lean",
+    "oracle/evidence/erdos595/lean/Erdos595Countable.lean",
+    "oracle/evidence/erdos595/lean/Erdos595Dispersion.lean",
+    "oracle/evidence/erdos595/lean/Erdos595Hom.lean",
+    "oracle/evidence/erdos595/lean/Erdos595Stability.lean",
+    "oracle/evidence/erdos595/lean/Erdos595Transversal.lean"
+  ],
+  "receipts": [
+    "oracle/frontier_formalizer/cable/receipts/erdos595-continuum-2026-09-05.json",
+    "oracle/frontier_formalizer/cable/receipts/erdos595-countable-floor-2026-09-05.json",
+    "oracle/frontier_formalizer/cable/receipts/erdos595-dispersion-2026-09-05.json",
+    "oracle/frontier_formalizer/cable/receipts/erdos595-dispersion-crosscheck.cable.json",
+    "oracle/frontier_formalizer/cable/receipts/erdos595-hom-pullback.cable.json",
+    "oracle/frontier_formalizer/cable/receipts/erdos595-stability.cable.json",
+    "oracle/frontier_formalizer/cable/receipts/erdos595-transversal-duality.cable.json"
+  ],
+  "axiom_verdict": "CLEAN_TRIPLE on every declaration; 0 sorry; 0 native_decide",
+  "external_reads": [
+    "oracle/evidence/ask-gemini/20260905T163029-f0b18578.json"
+  ],
+  "final_bottleneck": "no K4-free graph is known whose triangle-free subgraphs are all C-colourable while the graph itself is not (N -> C)-colourable; equivalently none whose triangle transversals are countably centered",
+  "next_attacks": [
+    "a forcing or combinatorial-set-theory route to a countably centered triangle-transversal family on a K4-free graph",
+    "packet cards T23-T25 (cofinality of the minimal witness cardinal) and T26-T29 (compactness and the countable exact-omega core), none of which are formalized",
+    "an infinite analogue of the Folkman / Nesetril-Rodl finite arrowing construction"
+  ],
+  "detail": "oracle/ledger/findings/erdos595-barrier-package.md",
+  "epoch14": {
+    "status": "TERMINAL_NOT_CLOSED",
+    "new_theorems": [
+      "T26 de Bruijn-Erdos compactness for triangle covers",
+      "T27 finite obstruction extraction",
+      "T28 countable core",
+      "countable blindness barrier",
+      "level-down bipartite characterization",
+      "partition-arrow form"
+    ],
+    "receipts": [
+      "oracle/frontier_formalizer/cable/receipts/erdos595-compactness-T26.cable.json",
+      "oracle/frontier_formalizer/cable/receipts/erdos595-finite-obstruction-T27.cable.json",
+      "oracle/frontier_formalizer/cable/receipts/erdos595-countable-core-T28.cable.json",
+      "oracle/frontier_formalizer/cable/receipts/erdos595-countable-blindness.cable.json",
+      "oracle/frontier_formalizer/cable/receipts/erdos595-bipartite-level-down.cable.json",
+      "oracle/frontier_formalizer/cable/receipts/erdos595-arrow-form.cable.json"
+    ],
+    "backend": "WSL Mathlib via oracle/tools/msl_lean_cable.py (the rented box hit 100% disk and took no writes)",
+    "axiom_verdict": "CLEAN_TRIPLE on every declaration; 0 sorry",
+    "barrier_tightness": "with K4-freeness dropped the least witness cardinality is exactly (2^aleph0)^+ : sealed lower bound + Erdos-Rado upper bound (CITED)",
+    "final_bottleneck": "the only live route rests on an UNVERIFIED reported consistency construction of a graph with chromatic number aleph-2 whose triangle-free subgraphs have chromatic number at most aleph-1, and even if real it says nothing about K4-freeness",
+    "next_attacks": [
+      "fetch and verify Rodl 1977 PAMS 64(2) 370-371 and the Hajnal/Todorcevic-style consistency constructions",
+      "decide whether such a chromatic-gap graph can be taken K4-free",
+      "feed any such graph to the sealed dispersion criterion K14, which turns it into a witness mechanically"
+    ]
+  }
+}

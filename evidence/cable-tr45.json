@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-transversal-ceiling",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsProperC {V : Type} (G : SimpleGraph V) {C : Type} (f : V → C) : Prop :=\n  ∀ a b : V, G.Adj a b → f a ≠ f b\n\nopen SimpleGraph in\ndef IsTransversal {V : Type} (G : SimpleGraph V) (D : Set (Sym2 V)) : Prop :=\n  ∀ a b c : V, G.Adj a b → G.Adj a c → G.Adj b c →\n    s(a, b) ∈ D ∨ s(a, c) ∈ D ∨ s(b, c) ∈ D",
+ "hypotheses": [
+  "{V C : Type}",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "(∀ D : Set (Sym2 V), IsTransversal G D → ∃ f : V → C, IsProperC (G.deleteEdges D) f) ↔ (∀ H : SimpleGraph V, H ≤ G → H.CliqueFree 3 → ∃ f : V → C, IsProperC H f)",
+ "proof": "by\n  classical\n  constructor\n  · intro hD H hHle hHfree\n    obtain ⟨f, hf⟩ := hD {e | e ∈ G.edgeSet ∧ e ∉ H.edgeSet} (by\n      intro a b c hab hac hbc\n      by_contra hcon\n      push_neg at hcon\n      obtain ⟨h1, h2, h3⟩ := hcon\n      have m1 : H.Adj a b := by\n        by_contra hx\n        exact h1 ⟨hab, fun hy => hx hy⟩\n      have m2 : H.Adj a c := by\n        by_contra hx\n        exact h2 ⟨hac, fun hy => hx hy⟩\n      have m3 : H.Adj b c := by\n        by_contra hx\n        exact h3 ⟨hbc, fun hy => hx hy⟩\n      exact hHfree {a, b, c} (SimpleGraph.is3Clique_triple_iff.mpr ⟨m1, m2, m3⟩))\n    refine ⟨f, fun a b hab => hf a b ?_⟩\n    rw [SimpleGraph.deleteEdges_adj]\n    exact ⟨hHle hab, fun hmem => hmem.2 hab⟩\n  · intro hH D hDtr\n    refine hH (G.deleteEdges D) (SimpleGraph.deleteEdges_le D) ?_\n    intro t ht\n    obtain ⟨hcl, hcard⟩ := ht\n    obtain ⟨a, b, c, hab, hac, hbc, hteq⟩ := Finset.card_eq_three.mp hcard\n    have ha : a ∈ t := by rw [hteq]; simp\n    have hb : b ∈ t := by rw [hteq]; simp\n    have hc : c ∈ t := by rw [hteq]; simp\n    have e1 := hcl ha hb hab\n    have e2 := hcl ha hc hac\n    have e3 := hcl hb hc hbc\n    rw [SimpleGraph.deleteEdges_adj] at e1 e2 e3\n    rcases hDtr a b c e1.1 e2.1 e3.1 with h | h | h\n    · exact e1.2 h\n    · exact e2.2 h\n    · exact e3.2 h"
+}

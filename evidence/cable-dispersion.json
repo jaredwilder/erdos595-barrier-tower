@@ -1,0 +1,14 @@
+{
+ "id": "erdos595-dispersion-crosscheck",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsCUTF {V : Type} (G : SimpleGraph V) : Prop :=\n  ∃ H : ℕ → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i\n\ndef IsProp' {V : Type} (G : SimpleGraph V) {C : Type} (f : V → C) : Prop :=\n  ∀ a b : V, G.Adj a b → f a ≠ f b",
+ "hypotheses": [
+  "{V : Type}",
+  "{C : Type}",
+  "(G : SimpleGraph V)",
+  "(htau : ∀ H : SimpleGraph V, H ≤ G → H.CliqueFree 3 → ∃ f : V → C, IsProp' H f)",
+  "(hchi : ∀ f : V → (ℕ → C), ¬ IsProp' G f)"
+ ],
+ "conclusion": "¬ IsCUTF G",
+ "proof": "by\n  classical\n  rintro ⟨H, hfree, hEq⟩\n  have hle : ∀ i, H i ≤ G := by\n    intro i; rw [hEq]; exact le_iSup H i\n  choose f hf using fun i => htau (H i) (hle i) (hfree i)\n  refine hchi (fun v => fun i => f i v) ?_\n  rw [hEq]\n  intro a b hab hcon\n  rw [SimpleGraph.iSup_adj] at hab\n  obtain ⟨i, hi⟩ := hab\n  exact hf i a b hi (congrFun hcon i)"
+}

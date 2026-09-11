@@ -1,0 +1,4 @@
+{"n": 4, "labelled_graphs_with_tau_le_2": 64, "block_shapes": {"BIPARTITE": 99, "BOOK": 22, "K4": 1}, "unclassified_blocks": [], "unclassified_count": 0, "seconds": 0.0}
+{"n": 5, "labelled_graphs_with_tau_le_2": 806, "block_shapes": {"BIPARTITE": 1585, "BOOK": 420, "K4": 25}, "unclassified_blocks": [], "unclassified_count": 0, "seconds": 0.0}
+{"n": 6, "labelled_graphs_with_tau_le_2": 13922, "block_shapes": {"BIPARTITE": 33445, "BOOK": 9235, "K4": 570}, "unclassified_blocks": [], "unclassified_count": 0, "seconds": 0.2}
+{"n": 7, "labelled_graphs_with_tau_le_2": 312313, "block_shapes": {"BIPARTITE": 875259, "BOOK": 243866, "K4": 15260}, "unclassified_blocks": [], "unclassified_count": 0, "seconds": 14.1}

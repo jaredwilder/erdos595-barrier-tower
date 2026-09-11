@@ -1,0 +1,4 @@
+/tmp/oracle_lean_f8saVGiX.lean:6:2: error: `exact?` could not close the goal. Try `apply?` to see partial suggestions.
+Try this:
+  [apply] exact ConnectedComponent.exact h
+

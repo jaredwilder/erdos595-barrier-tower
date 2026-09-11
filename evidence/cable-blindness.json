@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-countable-blindness",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph Set in\ndef IsCUTF {V : Type} (G : SimpleGraph V) : Prop :=\n  ∃ H : ℕ → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i\n\ntheorem cliqueFreeSubsingleton {V : Type} (H : SimpleGraph V)\n    (h : ∀ e₁ ∈ H.edgeSet, ∀ e₂ ∈ H.edgeSet, e₁ = e₂) : H.CliqueFree 3 := by\n  classical\n  intro t ht\n  obtain ⟨hcl, hcard⟩ := ht\n  obtain ⟨a, b, c, hab, hac, hbc, hteq⟩ := Finset.card_eq_three.mp hcard\n  have ha : a ∈ t := by rw [hteq]; simp\n  have hb : b ∈ t := by rw [hteq]; simp\n  have hc : c ∈ t := by rw [hteq]; simp\n  have e1 : s(a, b) ∈ H.edgeSet := hcl ha hb hab\n  have e2 : s(a, c) ∈ H.edgeSet := hcl ha hc hac\n  have hEq := h _ e1 _ e2\n  rw [Sym2.eq_iff] at hEq\n  rcases hEq with ⟨-, hbc'⟩ | ⟨h1, -⟩\n  · exact hbc hbc'\n  · exact hac h1\n\ntheorem countableEdgesCUTF {V : Type} (G : SimpleGraph V) (hG : Countable G.edgeSet) :\n    IsCUTF G := by\n  classical\n  obtain ⟨cc, hcc⟩ := Countable.exists_injective_nat G.edgeSet\n  refine ⟨fun n => SimpleGraph.fromEdgeSet {e | ∃ h : e ∈ G.edgeSet, cc ⟨e, h⟩ = n}, ?_, ?_⟩\n  · intro n\n    refine cliqueFreeSubsingleton _ ?_\n    intro e₁ h₁ e₂ h₂\n    revert h₁ h₂\n    refine Sym2.ind (fun a b => ?_) e₁\n    refine Sym2.ind (fun x y => ?_) e₂\n    intro h₁ h₂\n    rw [SimpleGraph.mem_edgeSet, SimpleGraph.fromEdgeSet_adj] at h₁ h₂\n    obtain ⟨⟨hm₁, hv₁⟩, -⟩ := h₁\n    obtain ⟨⟨hm₂, hv₂⟩, -⟩ := h₂\n    exact congrArg Subtype.val (hcc (hv₁.trans hv₂.symm))\n  · ext a b\n    rw [SimpleGraph.iSup_adj]\n    constructor\n    · intro hab\n      have hm : s(a, b) ∈ G.edgeSet := hab\n      exact ⟨cc ⟨s(a, b), hm⟩, by\n        rw [SimpleGraph.fromEdgeSet_adj]\n        exact ⟨⟨hm, rfl⟩, G.ne_of_adj hab⟩⟩\n    · rintro ⟨n, hn⟩\n      rw [SimpleGraph.fromEdgeSet_adj] at hn\n      exact hn.1.1",
+ "hypotheses": [
+  "{V : Type}",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "∀ W : Set V, W.Countable → IsCUTF (G.induce W)",
+ "proof": "by\n  classical\n  intro W hW\n  have hsub : Countable ((G.induce W).edgeSet) := by\n    haveI : Countable W := hW.to_subtype\n    haveI : Countable (Sym2 W) := inferInstance\n    exact Subtype.countable\n  exact countableEdgesCUTF _ hsub"
+}

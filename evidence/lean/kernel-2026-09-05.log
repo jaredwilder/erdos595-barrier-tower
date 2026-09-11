@@ -1,0 +1,26 @@
+/root/peer/msl-595/Erdos595Continuum.lean:88:20: warning: Variable name `e` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+/root/peer/msl-595/Erdos595Continuum.lean:111:10: warning: This simp argument is unused:
+  Cardinal.mk_arrow
+
+Hint: Omit it from the simp argument list.
+  simp [Cardinal.mk_a̵r̵r̵o̵w̵,̵ ̵C̵a̵r̵d̵i̵n̵a̵l̵.̵m̵k̵_̵bool, Cardinal.mk_out]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/root/peer/msl-595/Erdos595Continuum.lean:111:29: warning: This simp argument is unused:
+  Cardinal.mk_bool
+
+Hint: Omit it from the simp argument list.
+  simp [Cardinal.mk_arrow, C̵a̵r̵d̵i̵n̵a̵l̵.̵m̵k̵_̵b̵o̵o̵l̵,̵ ̵Cardinal.mk_out]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'Erdos595.cover_of_binaryColouring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595.no_binaryColouring_of_no_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595.erdos595_witness_above_continuum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595.erdos595_vertices_above_continuum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595.cover_of_chromatic_le_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595.chromatic_gt_two_pow_of_no_cover' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595.erdos595_edges_above_continuum' depends on axioms: [propext, Classical.choice, Quot.sound]

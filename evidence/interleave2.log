@@ -1,0 +1,15 @@
+m 2 k 4 N 8 clique_ok True
+m 2 k 5 N 10 clique_ok True
+m 2 k 6 N 12 clique_ok True
+m 3 k 4 N 12 clique_ok True
+m 3 k 5 N 15 clique_ok True
+m 3 k 6 N 18 clique_ok True
+m 4 k 4 N 16 clique_ok True
+m 4 k 5 N 20 clique_ok True
+m 4 k 6 N 24 clique_ok True
+m 5 k 4 N 20 clique_ok True
+m 5 k 5 N 25 clique_ok True
+m 5 k 6 N 30 clique_ok True
+m 6 k 4 N 24 clique_ok True
+m 6 k 5 N 30 clique_ok True
+m 6 k 6 N 36 clique_ok True

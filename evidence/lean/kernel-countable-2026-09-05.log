@@ -1,0 +1,4 @@
+'Erdos595C.cliqueFree_three_of_subsingleton_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595C.countable_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595C.closed_countable_iSup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos595C.witness_edges_uncountable' depends on axioms: [propext, Classical.choice, Quot.sound]

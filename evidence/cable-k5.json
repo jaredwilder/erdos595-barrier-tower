@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-k5-two-cover",
+ "imports": "Mathlib",
+ "definitions": "/-- The Paley-type split of the complete graph on five vertices: layer TRUE is the\ndifference class {1,4}, layer FALSE is {2,3}. Both layers are five-cycles. -/\ndef colK5 (a b : Fin 5) : Bool := (a - b = 1) || (a - b = 4)",
+ "hypotheses": [],
+ "conclusion": "∀ a b c : Fin 5, a ≠ b → a ≠ c → b ≠ c → ((colK5 a b == colK5 a c) && (colK5 a c == colK5 b c)) = false",
+ "proof": "by decide",
+ "set_options": [
+  "set_option maxRecDepth 100000"
+ ]
+}

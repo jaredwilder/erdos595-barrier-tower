@@ -1,0 +1,27 @@
+{
+  "claim": "Every K4-free graph is the union of countably many triangle-free graphs; equivalently no K4-free graph has triangle cover number above aleph-null, which would answer Erdos problem 595 negatively.",
+  "domain": "infinite graph theory / partition calculus",
+  "facets": {
+    "entities": "K4-free graphs, finite and infinite, and their triangle-free edge decompositions",
+    "mechanism": "countable decomposition of a clique-free graph into subgraphs omitting a smaller clique, the Erdos-Hajnal countable escape phenomenon",
+    "method": "Folkman and Nesetril-Rodl finite arrowing constructions, compactness, chromatic dispersion, uncountable chromatic number structure theorems",
+    "outcome": "existence or nonexistence of an infinite K4-free graph that is not a countable union of triangle-free graphs"
+  },
+  "constraints": {
+    "search_queries": [
+      "K4-free graph not union of countably many triangle-free graphs Erdos Hajnal",
+      "Erdos Hajnal countable union triangle-free graphs problem 595",
+      "every C4-free graph is a countable union of trees Erdos Hajnal",
+      "Folkman graph K4-free monochromatic triangle edge colouring countable",
+      "Nesetril Rodl partition problems graphs forbidden complete subgraphs countable colouring",
+      "uncountable chromatic number triangle-free subgraph Rodl",
+      "graphs with uncountable chromatic number contain triangle-free subgraph uncountable chromatic"
+    ],
+    "patent_queries": []
+  },
+  "candidate_differentiators": ["the countable escape for the pair (K4, K3)"],
+  "alternative_facets": {"mechanism": ["decomposition of clique-free graphs into countably many smaller-clique-free parts"]},
+  "min_corpus": 20,
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_target": "paper"
+}

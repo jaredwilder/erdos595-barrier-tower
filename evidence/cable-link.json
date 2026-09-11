@@ -1,0 +1,11 @@
+{
+ "id": "erdos595-link-independence",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\n/-- The link of an edge: the apexes completing it to a triangle. -/\ndef Link {V : Type} (G : SimpleGraph V) (a b : V) : Set V := {v | G.Adj a v ∧ G.Adj b v}",
+ "hypotheses": [
+  "{V : Type}",
+  "(G : SimpleGraph V)"
+ ],
+ "conclusion": "G.CliqueFree 4 ↔ ∀ a b : V, G.Adj a b → ∀ x ∈ Link G a b, ∀ y ∈ Link G a b, x ≠ y → ¬ G.Adj x y",
+ "proof": "by\n  classical\n  constructor\n  · intro hK4 a b hab x hx y hy hxy hxyadj\n    obtain ⟨hax, hbx⟩ := hx\n    obtain ⟨hay, hby⟩ := hy\n    have h3 : G.IsNClique 3 {a, x, y} :=\n      SimpleGraph.is3Clique_triple_iff.mpr ⟨hax, hay, hxyadj⟩\n    refine hK4 (insert b {a, x, y}) (h3.insert ?_)\n    intro w hw\n    simp only [Finset.mem_insert, Finset.mem_singleton] at hw\n    rcases hw with rfl | rfl | rfl\n    · exact hab.symm\n    · exact hbx\n    · exact hby\n  · intro hlink t ht\n    obtain ⟨hcl, hcard⟩ := ht\n    obtain ⟨a, b, x, y, hab, hax, hay, hbx, hby, hxy, hteq⟩ := Finset.card_eq_four.mp hcard\n    have ha : a ∈ t := by rw [hteq]; simp\n    have hb : b ∈ t := by rw [hteq]; simp\n    have hx : x ∈ t := by rw [hteq]; simp\n    have hy : y ∈ t := by rw [hteq]; simp\n    exact hlink a b (hcl ha hb hab) x ⟨hcl ha hx hax, hcl hb hx hbx⟩\n      y ⟨hcl ha hy hay, hcl hb hy hby⟩ hxy (hcl hx hy hxy)"
+}

@@ -1,0 +1,19 @@
+{
+ "tool": "k16_cover.py",
+ "field": "GF(16) = F_2[x]/(x^4+x+1), generator x",
+ "coset_sizes": [
+  5,
+  5,
+  5
+ ],
+ "edges_total": 120,
+ "class_sizes": [
+  40,
+  40,
+  40
+ ],
+ "triples_checked": 560,
+ "monochromatic_triangles": 0,
+ "K16_3_coverable": true,
+ "consequence": "tc(G) <= 3 for every graph on at most 16 vertices"
+}

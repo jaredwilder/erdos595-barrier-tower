@@ -1,0 +1,14 @@
+{
+ "id": "erdos595-subadditivity",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsUTF {V : Type} (I : Type) (G : SimpleGraph V) : Prop :=\n  ∃ H : I → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V : Type}",
+  "{I J : Type}",
+  "(G : SimpleGraph V)",
+  "(F : I → SimpleGraph V)",
+  "(hG : G = ⨆ i, F i)"
+ ],
+ "conclusion": "(∀ i, IsUTF J (F i)) → IsUTF (I × J) G",
+ "proof": "by\n  classical\n  intro hsub\n  choose H hfree hEq using hsub\n  refine ⟨fun p => H p.1 p.2, fun p => hfree p.1 p.2, ?_⟩\n  ext a b\n  rw [SimpleGraph.iSup_adj]\n  constructor\n  · intro hab\n    rw [hG, SimpleGraph.iSup_adj] at hab\n    obtain ⟨i, hi⟩ := hab\n    rw [hEq i, SimpleGraph.iSup_adj] at hi\n    obtain ⟨j, hj⟩ := hi\n    exact ⟨(i, j), hj⟩\n  · rintro ⟨p, hp⟩\n    rw [hG, SimpleGraph.iSup_adj]\n    refine ⟨p.1, ?_⟩\n    rw [hEq p.1, SimpleGraph.iSup_adj]\n    exact ⟨p.2, hp⟩"
+}

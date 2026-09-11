@@ -1,0 +1,3715 @@
+{
+  "admissibility": {
+    "admissible": true,
+    "patent_axis": {
+      "live": true,
+      "reason": "not_a_novel_band"
+    },
+    "reasons": [
+      "band_does_not_assert_discovery"
+    ],
+    "verdict": "INCREMENTAL"
+  },
+  "adversarial_flags": [],
+  "adversarial_review": {
+    "flags": [],
+    "review_hash": "d8c43e11e95a715da714ec8be14bbbbf1fb8202e0d1ac4e226d91ae59c1f788b",
+    "reviewer_summary": "Novelty verdict is corpus-grounded, facet-localized, and (where crowded) shipped with a measured pivot.",
+    "verdict": "NOVELTYFORGE_V1_ADVERSARIAL_REVIEW_GREEN"
+  },
+  "anticipation": {
+    "clear_core_facets": [
+      "mechanism"
+    ],
+    "crowded_core_facets": [
+      "method",
+      "outcome"
+    ],
+    "mosaic_obviousness": {
+      "core_facets_anticipated": [
+        "method",
+        "outcome"
+      ],
+      "distinct_references_needed": [
+        "10.1007/s00493-002-0009-5",
+        "10.1109/lcomm.2004.832765"
+      ],
+      "is_risk": false
+    },
+    "per_facet": [
+      {
+        "anticipated": false,
+        "facet": "mechanism",
+        "is_core": true,
+        "max_collision": 0.182382,
+        "nearest_prior_art": "10.1017/s0963548399004022",
+        "novelty": 0.817618
+      },
+      {
+        "anticipated": true,
+        "facet": "method",
+        "is_core": true,
+        "max_collision": 0.55,
+        "nearest_prior_art": "10.1007/s00493-002-0009-5",
+        "novelty": 0.45
+      },
+      {
+        "anticipated": true,
+        "facet": "outcome",
+        "is_core": true,
+        "max_collision": 0.55,
+        "nearest_prior_art": "10.1109/lcomm.2004.832765",
+        "novelty": 0.45
+      },
+      {
+        "anticipated": true,
+        "facet": "problem",
+        "is_core": false,
+        "max_collision": 0.652991,
+        "nearest_prior_art": "https://openalex.org/W609014849",
+        "novelty": 0.347009
+      },
+      {
+        "anticipated": true,
+        "facet": "entities",
+        "is_core": false,
+        "max_collision": 0.55,
+        "nearest_prior_art": "https://openalex.org/W609014849",
+        "novelty": 0.45
+      }
+    ],
+    "shape": "partial_facet_collision",
+    "single_reference_anticipation": null,
+    "summary": "Core facet(s) ['method', 'outcome'] are crowded; the rest are clear -- differentiate the crowded facet(s)."
+  },
+  "claim": "For every graph G and cardinal kappa, if the edge set of G is not the union of kappa triangle-free subgraphs then the chromatic number of G exceeds 2^kappa; in particular any graph that is not a union of countably many triangle-free subgraphs has chromatic number and vertex cardinality strictly above the continuum.",
+  "claim_chart": {
+    "claim_grounded": true,
+    "core_elements_disclosed": 2,
+    "core_elements_total": 3,
+    "evidence_note": "non_patent_reference",
+    "reference": {
+      "identifier": "10.1109/lcomm.2004.832765",
+      "overall_collision": 0.254737,
+      "record_id": "10.1109/lcomm.2004.832765",
+      "source": "paper",
+      "title": "The Most Congested Cutset: Deriving a Tight Lower Bound for the Chromatic Number in the RWA Problem",
+      "year": 2004
+    },
+    "rows": [
+      {
+        "claim_facet": "mechanism",
+        "claim_grounded": true,
+        "claim_text": "binary coding of a proper vertex colouring by 2^kappa colours into kappa Boolean coordinates, one bipartite hence triangle-free layer per coordinate",
+        "element_disclosed": false,
+        "is_core": true,
+        "prior_art_collision": 0.0,
+        "shared_distinctive_terms": [],
+        "text_overlap": false
+      },
+      {
+        "claim_facet": "method",
+        "claim_grounded": true,
+        "claim_text": "cardinal exponentiation bound relating triangle-free cover number to chromatic number",
+        "element_disclosed": true,
+        "is_core": true,
+        "prior_art_collision": 0.55,
+        "shared_distinctive_terms": [
+          "bound",
+          "chromatic",
+          "number"
+        ],
+        "text_overlap": true
+      },
+      {
+        "claim_facet": "outcome",
+        "claim_grounded": true,
+        "claim_text": "chromatic, vertex and edge cardinality lower bound above the continuum for any Erdos problem 595 witness",
+        "element_disclosed": true,
+        "is_core": true,
+        "prior_art_collision": 0.55,
+        "shared_distinctive_terms": [
+          "problem",
+          "bound",
+          "lower",
+          "chromatic"
+        ],
+        "text_overlap": true
+      },
+      {
+        "claim_facet": "problem",
+        "claim_grounded": true,
+        "claim_text": "graph theory / infinite combinatorics",
+        "element_disclosed": false,
+        "is_core": false,
+        "prior_art_collision": 0.0,
+        "shared_distinctive_terms": [],
+        "text_overlap": false
+      },
+      {
+        "claim_facet": "entities",
+        "claim_grounded": true,
+        "claim_text": "infinite simple graphs and their edge sets",
+        "element_disclosed": false,
+        "is_core": false,
+        "prior_art_collision": 0.0,
+        "shared_distinctive_terms": [],
+        "text_overlap": false
+      }
+    ],
+    "single_reference_anticipation": false,
+    "verdict": "reference_discloses_some_elements"
+  },
+  "claim_power": {
+    "band_envelope": {
+      "claim_favouring": "INCREMENTAL",
+      "prior_art_favouring": "INCREMENTAL"
+    },
+    "band_is_stable": true,
+    "core_novelty_envelope": {
+      "claim_favouring": 0.599034,
+      "prior_art_favouring": 0.599034,
+      "spread": 0.0
+    },
+    "reason": "band_invariant_under_both_extreme_tiebreaks",
+    "schema": "oracle.noveltyforge.claim-power.v1",
+    "thin_facets": [],
+    "unmatchable_facet_terms": {
+      "mechanism": [
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "boolean"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "coordinate"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "coordinates"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "kappa"
+        }
+      ],
+      "method": [
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "cover"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "relating"
+        }
+      ],
+      "outcome": [
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "595"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "continuum"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "witness"
+        }
+      ]
+    },
+    "unstable_facets": []
+  },
+  "core_novelty": 0.599034,
+  "corpus_provenance": {
+    "acquired_utc": "2026-09-05T14:21:52Z",
+    "acquisition_output_file_sha256": "7ff377346753518f43d2a752d77beaf627479992cb3e220f855fd0ec05195b98",
+    "acquisition_snapshot_sha256": "1d355daf3f461358ebb5b8db595b69ff1ac292aa6cae6bb258c700298712ee61",
+    "binding_receipt_sha256": "68394e764f4c124c9c06d627f0b4c8242bb0d161b68031ec06d82413a4be7073",
+    "corpus_path": "C:\\Users\\jared\\AppData\\Local\\Temp\\noveltyforge-acquire\\corpus_65aa0ae31ade7bac3f4e3594772df7c3.json",
+    "corpus_sha256": "64aa44659ad7e02f4b09ed1b25787d388a0b2834e4190ed24296bf60d6b46f68",
+    "family_summary": {
+      "double_count_prevented": 0,
+      "family_count": 79,
+      "patent_records": 79,
+      "receipt_sha256": "2ddbd84e9703d29c66d13447bcef982729f798004ae08c586b03ac2fd3dbd064",
+      "unique_structure_count": 0
+    },
+    "independent_quotas": {
+      "paper_quota_met": true,
+      "patent_quota_met": true,
+      "required_papers": 4,
+      "required_patents": 5,
+      "status": "COMPLETE"
+    },
+    "paper_count": 30,
+    "paper_queries": [
+      "\"Erdos problem 595\" continuum chromatic number lower bound",
+      "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+      "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+      "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+      "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+      "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+      "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+      "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+      "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+      "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+      "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+      "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+      "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets",
+      "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+      "graph theory infinite combinatorics",
+      "union of countably many triangle-free graphs uncountable chromatic number"
+    ],
+    "paper_retrieval": {
+      "all_provider_attempts_succeeded": true,
+      "attempts": [
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 34056,
+            "body_sha256": "ed504591cf0a0997e6c52824c23f8cbdf960b05de2acf10b5e6f4b2f68a8d513",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 872.69,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "a03daf2a2fabfe4d21ebd1245b641383a6ada238810730ab21cfcca3d744d9ea",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=%22Erdos+problem+595%22+continuum+chromatic+number+lower+bound&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 657,
+            "body_sha256": "8517f9878531af269bf9fcd1a46fb00e1a2da933cb6299cd934695e9b24349d1",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1829.399,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "c37f283d7ad12e8f949b90d68bb3a604a973b6261f173d462392d50b371c2a0d",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=%22Erdos+problem+595%22+continuum+chromatic+number+lower+bound&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 223,
+            "body_sha256": "b8ed19ae49caa367322659dc425483149eaa04db275e3c82b2e0367a837f4fe5",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 580.294,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "ef955bf1f1155c4aaefbbae0f77528f9f1f574831e91a3e746ccaf67131cd77b",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22Erdos+problem+595%22+continuum+chromatic+number+lower+bound&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 9431,
+            "body_sha256": "bb8163aab7f3262617706a601b02243fe10b9dfc438994a7cb860bf5bec811e7",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1145.839,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 0,
+            "parsed_count": 0,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "89366481b0b203dfe57013a6c72dee9befc6ce46588919f4606c71f1381f8a84",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29768,
+            "body_sha256": "175efb4ef9f5b7be2a21ee8555accd3386e4eb3442f88542b1c0d7a756ac505b",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 816.874,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "5730ec1e6ea29e2a409882d32e2c1347ab94b83ce1e9b67b25ea2ba5114ae040",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=%22bipartite+subgraph+cover%22+chromatic+number+logarithm+cardinal&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 669,
+            "body_sha256": "dcf1cdb4d53d1da6919209dabd7e187b7c002fb2e22e6d29fd473b0c1cc78eeb",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1626.145,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "c1d339f82cf452090390647f64ed35fb6d0109f40effd56d6dafc01dfccd6afd",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=%22bipartite+subgraph+cover%22+chromatic+number+logarithm+cardinal&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 227,
+            "body_sha256": "b79ffc659bfe1fa51a770f0c1999270c758f374f68a8eebe0723a8a4c1a02051",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 579.126,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "3c1b27ff02283cd94372a4328ccc745d4695c0d77d1d39e147818edf6d29cccf",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22bipartite+subgraph+cover%22+chromatic+number+logarithm+cardinal&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "duckduckgo_web",
+          "query": "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11481,
+            "body_sha256": "49930a54679ce951195739e0da77ba6fae130ba8973817b473837586bf2acfca",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1197.037,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 1,
+            "parsed_count": 1,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "59530994dce49b6a69ba744cb2a703e4aa797b376fac6b6e76821d7042d04257",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29865,
+            "body_sha256": "6ce7d18c18a4d6c17b6e3b7b4afe43b18abde2b277fd0a022b01d64eb0cccf5f",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 838.842,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "e3ae8ab98f64c6e9ff0d13f45aa220a1dc10ec1d124ea7db488a199347fd98c4",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=%22chromatic+number%22+%22countable+union+of+triangle-free+graphs%22+continuum&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 799,
+            "body_sha256": "4af1a58b4466518fffe1146d910d2f0fd7ff8bce8a1c3bb3be8e2ca962f0a2eb",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1305.951,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "177a605255ef049285256035f82d5c78bce62d23c9e8a160f165502a0f93612c",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=%22chromatic+number%22+%22countable+union+of+triangle-free+graphs%22+continuum&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 237,
+            "body_sha256": "aeb9121ce9b1393bc736ba0f379a0da5f660cf410d9d8f00bd05614bf54284f5",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 220.509,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "2aab27f17a4b282405392b8993690e96733ae83c0cad995a3a43bdd4431fbe54",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22chromatic+number%22+%22countable+union+of+triangle-free+graphs%22+continuum&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 32348,
+            "body_sha256": "e71eaa88740264748375aa09505c31a43ed8ed733b424bac68415ca4f8ee8e66",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 422.995,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "014f8bebd3f610f9818b2ca065cce4e6c327fb29cdd3d3952e05c4c9ec577876",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=%22triangle-free+decomposition+number%22+chromatic+number+cardinal+lower+bound&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 705,
+            "body_sha256": "f1ab4d417974a593de4e632a10c68b50d08c7a18544c0b497eeccafc777a6cde",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 987.093,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "b6cff0fb4017af356d159a634e33156ecfe8ebd86575abadf00a53437840433d",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=%22triangle-free+decomposition+number%22+chromatic+number+cardinal+lower+bound&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 239,
+            "body_sha256": "d0c0cb6629db2d481cbe6bd4ace1396b2bf344a9e382d138e45ca52f1e041e50",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 236.434,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "28896bcccd2748a32d26565b11ce82a675102637b6d804d195f385704580b44f",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22triangle-free+decomposition+number%22+chromatic+number+cardinal+lower+bound&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29264,
+            "body_sha256": "2358ce119650019bbe75a8ffd6b863a14ac19ff3e321515d3545f897d42dfb01",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 683.235,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "a078cf365c48df5a4d1ad3fe5813ec8ec0c9833a3982ade14f241bc47233a186",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 715,
+            "body_sha256": "a29e5bf3fbf81082627a24ac191d4dc5b912d0f644938acbebce65fd3bbbd303",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 802.707,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "704bc52e670cb04a70351bf4f8c9278c2ed63ef33c2fd79b2d70e48ac9fdd8a1",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 279,
+            "body_sha256": "caf56899572e03952a8890cb7b50f5c36bf356f809c858c7efb4f1808c281958",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 235.199,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "9e07e8320749b6738853358b374fcdf7fbde9988e671526cebc429b89f1aa06f",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29627,
+            "body_sha256": "838b7deaeca301e0f3a663fe0190044f3dbcf42fd19af1fe05f432edd308aafd",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 940.744,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "24f22a07829af2db06ee6e45ec053b591284821535e1e48b435a2cf079a9ca07",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29264,
+            "body_sha256": "d1a6c90b1a38e576883f55314f7f80999e274ec4fb5729f9ae6b257c2b453e44",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 577.634,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "6f83c8b69c67ac8cce0cb9d786b98971497f44edfe76f8d5883932c638631d9c",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+cardinal+exponentiation&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 787,
+            "body_sha256": "efc8ae8adb213a63d2097cfe8c7bca6e6aa5c8c8a7570f15edb4c0dd7eb095e1",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 621.683,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4f3c927d37161e2b0caa45ad863d59fb9444d77aa8378e19afd50acbba3bbe83",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+cardinal+exponentiation&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 303,
+            "body_sha256": "ca1becb421ed66664987def92c94c090359d2fff81518d59cefce87e8b0ef455",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 230.252,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "318fa6b7dcb45362ece2b1afd51693240bb3be287e5b6e6e941846878f67ecf3",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+cardinal+exponentiation&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29592,
+            "body_sha256": "a4e43a8d2c47ab59ea9b50f505c47e6b515a38498da85c9832504b17f85b9e36",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 951.755,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "295c02f1eb71ad2202fceff24959eb2466e135a7028a1f6d2aa29ab1f8b60a60",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 28140,
+            "body_sha256": "3a99ddd719fac6a68adf46501002de88d02f478eb2d176b6cd9e14332b78420e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 720.691,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "6cc3a82c91b05d538f70aae071334a15112a8f9c2df102abce1d5d0063e2277a",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+chromatic+edge&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 760,
+            "body_sha256": "03a294705a09f97e521b0c974abe86a264d04c108c8833c04db99a90d951c27d",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 719.376,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "f82a96b18c381f063e1d30ea9f6c3acec6a6f06a9949f4fd10ea52985242ac95",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+chromatic+edge&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 294,
+            "body_sha256": "c1387967a8cb4e51aaceca2f521e34d7c9a68f426f431ccfa4fb14a8c5817d53",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 239.11,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "cfa299f48bb70d7b7cea3bc4db4613ffe9b48274599cfda1bfff342acba8101f",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+chromatic+edge&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 24383,
+            "body_sha256": "2d9274ffd249805726ac7e133c7ddae1e4e6443de1e1ccb4bc71ef1c9bd55b2a",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 724.661,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "f0c97aa8b5cff53ce6f8a1ccbb779c8864560d3076b2f39480fe1c3578fb683b",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+infinite+simple&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 763,
+            "body_sha256": "0d435c3263fbd924cb741c7998470e8b4b0b7c19fd16fa2c9ff2a910ca163c4d",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 624.907,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "19c1a567de862e9e3f24065f448e126f1b791a8b7a42101f176d8c343b284dc0",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+infinite+simple&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 295,
+            "body_sha256": "92015662f5265021fbd0b97e782ddc6affa08ef5d1cb933019de66ec076f735c",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 670.043,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "248156fd6c18c1505e4224d10fa1770ea490a55e86ae99ce27a2bc886c937947",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate+infinite+simple&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 31296,
+            "body_sha256": "6107cf3719da91e99fb441af381ccb1cd11adcb263fa87379ae9f319723f1a9e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 508.488,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "0a3df6e4f9a778627fe00e00d257dfb631ef0c1e120d39e4e33c09d13039b0dd",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+graph+theory+infinite+combinatorics&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 3,
+          "provider": "openalex",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 42602,
+            "body_sha256": "2e131951d6ff8f7ed45bb01321fff5f5a730bb1448e430c2cb7e9a8bfcbd3ec0",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 549.395,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "f8c072ce9dac48d241606779bf143f84251d32903761512847b1d50acbd4d16b",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+graph+theory+infinite+combinatorics&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 274,
+            "body_sha256": "ef2e3784855c33792c3e74b9a15cf2e7e3c3949685b26e063103919344506bb7",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 415.698,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "df806f9ab35dc8e04bcc74ae5f8d8d0cde3cd5328b3b9b0150e867a3b412ae68",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+graph+theory+infinite+combinatorics&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30771,
+            "body_sha256": "32994c2efa7681c70b1fb8b209e9db800de5ec2b100c962a5608a98ac8024ba8",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 991.755,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "6e1d985ef15e75f0fa93d175b46dbf42f857a5a12be1035bccf419bedf0a3081",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29784,
+            "body_sha256": "6a0da878ba7f02f166b75c1d5c9503fb86e216dec32bd088c75d21e5336fcbbd",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 683.776,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "00e7d0e7cd268ea22cb1eadcf34bf67cfd3ebf4b7276b43fa4795614d2018ff2",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+infinite+simple+graphs+edge+sets&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 2,
+          "provider": "openalex",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 28050,
+            "body_sha256": "685f222ba18a18306a40fd2c912f58965a2d7d7485f86828be7e2db30f524e63",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 670.879,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "23f2569025ccf4d484cfe095fe2d7d4087502f353c41ab5d2182aa525e5a9029",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+infinite+simple+graphs+edge+sets&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 271,
+            "body_sha256": "6aaeaa3680cbd9e2b92b805cad0eadb4df0c3d7098d458465464b51420db41f8",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 269.09,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "52469e13d893f0e80c490ccf2765bebc60fe0efffa80c88cf4a9798bca472772",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+infinite+simple+graphs+edge+sets&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30127,
+            "body_sha256": "a0a002ef6f229ad2077e596dcf06a7b357518f4eac6db40e1388547eeb7ee3b4",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1053.859,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "acb6c058ca2b6becf35da37755b116acab1c5c0a6542446147a85dd725442a8d",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29686,
+            "body_sha256": "c65c089349b42f0193fb3c94f8458d9e8c91972996ee2373e5ce0026b835a7ce",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 441.996,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "ac6ac90cd0ba309563b57a8b74d0122f83bb3965c8a6dd5a3b5f82a352f79f33",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+vertex+edge+cardinality+lower+continuum+erdos+problem+595&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 766,
+            "body_sha256": "6b5f608c69c083779764d1dfd96ae0eae43b23827a4e4db8f1b2a0186c5fb7ad",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 745.442,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "ec99e0cfe092b66df79751527d535831f24a89751b88be26902a4efaaa2770af",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+vertex+edge+cardinality+lower+continuum+erdos+problem+595&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 296,
+            "body_sha256": "367c9f3906cf81085e860e262955559b7035c46a3a630d8ee5c013149467b50c",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 223.205,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "5b3843561b57b0e99abf08eab576c4378fae5f5f105f1bbc9b109649ef843415",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+vertex+edge+cardinality+lower+continuum+erdos+problem+595&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 24702,
+            "body_sha256": "483d9b6a31a5ff2da30f5ad06011ed35c74f46a4fbe1714797a7e2147727984c",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 504.004,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "44e93b6ef61df7af62c88d747e097fb8fb89e0d8f2eac5e0929df4064113dc6d",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+graph+theory+infinite&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "openalex",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11216,
+            "body_sha256": "d4f26b52a906a95bc7f023e56e47e4e4cf6c3e984dfaa1da734020da19cbe885",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 791.959,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "d4bcc0926c2495b00e7dc6829db35b16ae6dc77eed9ceacde2b00a7797a43a20",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+graph+theory+infinite&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 266,
+            "body_sha256": "8098a722b50a71c242f6328f70e9136d596a72e61446840ef5b0b0b3da4d81e3",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 212.112,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "4553e8703cdd71ac9b3f51fa1bbc656750651f4aed43b637b5f36aa331fbcb63",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+graph+theory+infinite&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 23043,
+            "body_sha256": "d5cad40f939a3422916a7ba19213c8cfd6f133c903a9d7c42dd44d5c167dd2fd",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 369.702,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "64d5f48e627f0f2c563fdc0a167594d27da4d954769374682efcea17b0820ee5",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+infinite+simple+graphs+sets&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "openalex",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11235,
+            "body_sha256": "66ae72ce24a263256b05ddbb315caed25164e0b85e6d60804ef9ebd0e198efe0",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 671.933,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "5f1001b114e636af622ed634448ca861acad3dd91088dff5a15863aa050d883f",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+infinite+simple+graphs+sets&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 272,
+            "body_sha256": "e17e723baae1a7a50631a6844712143c97d9fb77eab7665713585ddb8a9858ab",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 269.073,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "93e4f3529bd994057b5f144434d385ea4db70ff137757d0206bc6111c2dfa17b",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+infinite+simple+graphs+sets&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 42106,
+            "body_sha256": "5e141da325ba5a39a316649e61059ecb856927ecbe89ef0d6733b4ab7db18c4e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 979.082,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "d611f668bc6b7ef40ea728c9d74aedf3bc939255c70f8d4bd91311c2d99c6299",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=every+graph+cardinal+kappa+if+edge+set+union+triangle-free+subgraphs+chromatic+number+exceeds+particular+countably+has+vertex+cardinality&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 778,
+            "body_sha256": "a4cc8f21f10b135bb219b7023ca833533bf93a62503473e2d37ebeb850648e9c",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 539.149,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "72ae0e27926d46802a09261a251f33e801e979e60dcd38ab14768cfdbe5030bd",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=every+graph+cardinal+kappa+if+edge+set+union+triangle-free+subgraphs+chromatic+number+exceeds+particular+countably+has+vertex+cardinality&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 300,
+            "body_sha256": "0339c61e157db3adb2141a545827592a285dcda18483614596f9d9d14c51538e",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 246.8,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "4a5d8f901008f576076ecd66ba6db66dee8fd98643162f9af6fc492fc21ebea0",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=every+graph+cardinal+kappa+if+edge+set+union+triangle-free+subgraphs+chromatic+number+exceeds+particular+countably+has+vertex+cardinality&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 15449,
+            "body_sha256": "c72637798c9542acdd3f60786fe9a9abdb49e590a6332533db94674c08bb30e6",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 510.263,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "5141a84e8362b8c7715d2d22b1af2b9130c66627181120ad874292c0a1a19a3a",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=graph+theory+infinite+combinatorics&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 381827,
+            "body_sha256": "8ad76d08d84e09196691d3cdb55e37547345ef57762e16062af9b87a6d324934",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1200.102,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "0dfaad913b5a127022b8c0f924c634bdc8786527fa331d0002c86c6fced3c12e",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=graph+theory+infinite+combinatorics&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "europe_pmc",
+          "query": "graph theory infinite combinatorics",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 110480,
+            "body_sha256": "84d40c3dec34c0d2b153176b1bd4107bdb263bcc8969bf9b1a131d4d938560f1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 501.91,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "4de848d87ac25b32d33b0590d14ead5525c0a044419d33cc0005d36fb091b6bc",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=graph+theory+infinite+combinatorics&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "graph theory infinite combinatorics",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "graph theory infinite combinatorics",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 24,
+          "provider": "crossref",
+          "query": "union of countably many triangle-free graphs uncountable chromatic number",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30019,
+            "body_sha256": "9c124cf9f4ee6f9e8a262d6e71756a7a2f33354cfa01c80d5bb7a2b8e93e7adb",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 529.356,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "e53bc923e675623e6676f2156dd9fe1058efc36784825e76f149da4d4321017c",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=union+of+countably+many+triangle-free+graphs+uncountable+chromatic+number&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "union of countably many triangle-free graphs uncountable chromatic number",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 417047,
+            "body_sha256": "f18212be05b1d54d739909eea3478ac1427b6b66e3f12b270a4b43c7cd646b0b",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1227.14,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "2520adca482ed5d8be0f564aa249e120672e4fab1207d662bf7d900c6ea70ce6",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=union+of+countably+many+triangle-free+graphs+uncountable+chromatic+number&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "europe_pmc",
+          "query": "union of countably many triangle-free graphs uncountable chromatic number",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 4061,
+            "body_sha256": "fd90afba496337602b1e3465577bb4244fc0cff741f9c44227aeff7c3e7dbead",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 238.986,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "ddbd9795a95645360862b548423a0483143716902624128aa36bd47fb37298f2",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=union+of+countably+many+triangle-free+graphs+uncountable+chromatic+number&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "union of countably many triangle-free graphs uncountable chromatic number",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "union of countably many triangle-free graphs uncountable chromatic number",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        }
+      ],
+      "math_domain_detected": false,
+      "math_scholarly_providers": {
+        "status": "not_applicable"
+      },
+      "paper_count": 30,
+      "provider_error_count": 0,
+      "provider_success_count": 80,
+      "providers_attempted": [
+        "crossref",
+        "openalex",
+        "europe_pmc",
+        "semantic_scholar",
+        "duckduckgo_web"
+      ],
+      "providers_with_hits": [
+        "crossref",
+        "duckduckgo_web",
+        "europe_pmc",
+        "openalex"
+      ],
+      "query_count": 16,
+      "relevance_floor": {
+        "admitted": 345,
+        "all_candidates_excluded": false,
+        "candidates": 358,
+        "excluded": 13,
+        "excluded_rows": [
+          {
+            "cited_by_count": 679,
+            "doi": "10.1016/s0024-3795(03)00483-x",
+            "retrieval_citation_prior": 1.108756,
+            "title": "Which graphs are determined by their spectrum?"
+          },
+          {
+            "cited_by_count": 547,
+            "doi": "10.1016/0166-218x(82)90033-6",
+            "retrieval_citation_prior": 1.072067,
+            "title": "Signed graphs"
+          },
+          {
+            "cited_by_count": 334,
+            "doi": "10.1016/0095-8956(89)90029-4",
+            "retrieval_citation_prior": 0.988402,
+            "title": "Isoperimetric numbers of graphs"
+          },
+          {
+            "cited_by_count": 323,
+            "doi": "10.1007/bfb0066788",
+            "retrieval_citation_prior": 0.982726,
+            "title": "On chromatic number of graphs and set systems"
+          },
+          {
+            "cited_by_count": 1,
+            "doi": "10.3390/e27040418",
+            "retrieval_citation_prior": 0.117835,
+            "title": "Finite-Size Corrections from the Subleading Magnetic Scaling Field for the Ising and Potts Models in Two Dimensions."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.3390/nano15100723",
+            "retrieval_citation_prior": 0.0,
+            "title": "A Complete Energy Model for Graphene Flake Growth with the Fewest Possible Dangling Bonds."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s11083-023-09634-w",
+            "retrieval_citation_prior": 0.0,
+            "title": "Algebras, Graphs and Ordered Sets - ALGOS 2020 & the Mathematical Contributions of Maurice Pouzet."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s00220-026-05566-9",
+            "retrieval_citation_prior": 0.0,
+            "title": "Any Topological Recursion on a Rational Spectral Curve is KP Integrable."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s10801-026-01502-1",
+            "retrieval_citation_prior": 0.0,
+            "title": "Controlling LEF growth in some group extensions."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1371/journal.pone.0337916",
+            "retrieval_citation_prior": 0.0,
+            "title": "Norm-based measures of inequality: A property-focused evaluation."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1371/journal.pone.0328707",
+            "retrieval_citation_prior": 0.0,
+            "title": "Optimal experimental design for partially observable pure birth processes."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.3389/fncom.2026.1778902",
+            "retrieval_citation_prior": 0.0,
+            "title": "The two dragons of cognition: recursive condensation for predictive processing."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s00229-025-01640-z",
+            "retrieval_citation_prior": 0.0,
+            "title": "Theta functions, broken lines and 2-marked log Gromov-Witten invariants."
+          }
+        ],
+        "rule": "retrieval_relevance > 0.0 (shares >=1 non-stopword token with >=1 grounding query)"
+      },
+      "retrieval_receipt_sha256": "b40f8a6129ee53202b59e25cd51674efc0100721ef0f23815f4b0be9fbe1253b",
+      "retrieval_state": "hits",
+      "saturation": {
+        "curve": [
+          {
+            "cumulative_unique": 25,
+            "new_records": 25,
+            "query": "\"Erdos problem 595\" continuum chromatic number lower bound"
+          },
+          {
+            "cumulative_unique": 51,
+            "new_records": 26,
+            "query": "\"bipartite subgraph cover\" chromatic number logarithm cardinal"
+          },
+          {
+            "cumulative_unique": 76,
+            "new_records": 25,
+            "query": "\"chromatic number\" \"countable union of triangle-free graphs\" continuum"
+          },
+          {
+            "cumulative_unique": 82,
+            "new_records": 6,
+            "query": "\"triangle-free decomposition number\" chromatic number cardinal lower bound"
+          },
+          {
+            "cumulative_unique": 116,
+            "new_records": 34,
+            "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate"
+          },
+          {
+            "cumulative_unique": 120,
+            "new_records": 4,
+            "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation"
+          },
+          {
+            "cumulative_unique": 139,
+            "new_records": 19,
+            "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge"
+          },
+          {
+            "cumulative_unique": 146,
+            "new_records": 7,
+            "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple"
+          },
+          {
+            "cumulative_unique": 172,
+            "new_records": 26,
+            "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics"
+          },
+          {
+            "cumulative_unique": 188,
+            "new_records": 16,
+            "query": "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets"
+          },
+          {
+            "cumulative_unique": 200,
+            "new_records": 12,
+            "query": "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595"
+          },
+          {
+            "cumulative_unique": 221,
+            "new_records": 21,
+            "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite"
+          },
+          {
+            "cumulative_unique": 239,
+            "new_records": 18,
+            "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets"
+          },
+          {
+            "cumulative_unique": 254,
+            "new_records": 15,
+            "query": "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality"
+          },
+          {
+            "cumulative_unique": 328,
+            "new_records": 74,
+            "query": "graph theory infinite combinatorics"
+          },
+          {
+            "cumulative_unique": 358,
+            "new_records": 30,
+            "query": "union of countably many triangle-free graphs uncountable chromatic number"
+          }
+        ],
+        "is_saturated": false,
+        "total_queries": 16,
+        "total_unique_works": 358
+      },
+      "status": "success",
+      "web_search_providers": {
+        "loaded": [
+          "semantic_scholar",
+          "duckduckgo_web"
+        ],
+        "status": "success"
+      },
+      "worker_count": 12
+    },
+    "patent_application_count": 4,
+    "patent_claim_grounded_count": 12,
+    "patent_count": 79,
+    "patent_granted_count": 75,
+    "patent_official_claim_grounded_count": 1,
+    "patent_official_provider_record_count": 62,
+    "patent_official_search_complete": true,
+    "patent_provider": "google_patents_search+uspto_odp_keyed",
+    "patent_queries": [
+      "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+      "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+      "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+      "infinite simple graphs edge sets triangle-free chromatic vertex",
+      "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours",
+      "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+      "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem"
+    ],
+    "patent_retrieval": {
+      "attempts": [
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 821.316,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "035c009287d777a8d7c3936ed7e2cbe6f80ecae6520a051e758866d87ee80a57",
+            "receipt_sha256": "035c009287d777a8d7c3936ed7e2cbe6f80ecae6520a051e758866d87ee80a57",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22binary+coding+proper+vertex+colouring+kappa+colours+boolean+coordinates+one+bipartite+triangle-free+layer+coordinate%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+            "receipt_sha256": "7def43507b916ab2660db06bcb68a0aa3c8a1c0c1dfa910f4e51824a4ca9a72e",
+            "records_sha256": "79cf6965fee8a4195272693b6306ae92f0c7450a1ff4504d87d0494876cc2e12"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "google_patents_search",
+          "query": "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 140,
+            "body_sha256": "8b6166ef7f70655388023e8eb7cb78e80d2b4be591bf8542eb6a7a7e2efe7d99",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 953.797,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "b2797bd8fa73ef258db9019475e37fc6bc9bee7ba07d6c1f2695e6559f7a72dd",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dbinary%2Bcoding%2Bproper%2Bvertex%2Bcolouring%2Bkappa%2Bcolours%2Bboolean%2Bcoordinates%2Bone%2Bbipartite%2Btriangle-free%2Blayer%2Bcoordinate%26num%3D15"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 944.583,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "c2094f1e966186f40de725b0be9bb4e078cf745d12684876b8f2dfbfaca2358a",
+            "receipt_sha256": "c2094f1e966186f40de725b0be9bb4e078cf745d12684876b8f2dfbfaca2358a",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22cardinal+exponentiation+bound+relating+triangle-free+cover+number+chromatic+graph+theory+infinite+combinatorics+composition%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "receipt": {
+            "hits": 93,
+            "provider": "uspto_odp_keyed",
+            "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+            "receipt_sha256": "bc6e6bcb85df94d74bf0d0785c769c7bf6e47fa941928962a84a7669b3a4ce21",
+            "records_sha256": "cb4d2a0347fc41f860eed38a1835cd3d3f509c6ce32829e7cf59dafaf157afa8"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "google_patents_search",
+          "query": "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 140,
+            "body_sha256": "8b6166ef7f70655388023e8eb7cb78e80d2b4be591bf8542eb6a7a7e2efe7d99",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 681.322,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "239ae19883a09465929400ccc0962434694cb0dac6b66a4390ac7de07a31b0a5",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dcardinal%2Bexponentiation%2Bbound%2Brelating%2Btriangle-free%2Bcover%2Bnumber%2Bchromatic%2Bgraph%2Btheory%2Binfinite%2Bcombinatorics%2Bcomposition%26num%3D15"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 812.422,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "22a1bc1552e869f4fd927fa2d80466aa986e59d72b79edabfd213575a98d8023",
+            "receipt_sha256": "22a1bc1552e869f4fd927fa2d80466aa986e59d72b79edabfd213575a98d8023",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22chromatic+vertex+edge+cardinality+lower+bound+continuum+erdos+problem+595+witness+infinite+simple+graphs%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "receipt": {
+            "hits": 104,
+            "provider": "uspto_odp_keyed",
+            "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+            "receipt_sha256": "f52fbb7493155422e4f1a28cfccf02e6b38cc41efb286597bfb4ee8c4c18e0c5",
+            "records_sha256": "55782bd48119c9f721a4aba77bcf4c2b2a20c437a91b55e478ec358d717e3dce"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "google_patents_search",
+          "query": "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 140,
+            "body_sha256": "8b6166ef7f70655388023e8eb7cb78e80d2b4be591bf8542eb6a7a7e2efe7d99",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 810.408,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "1d1a7002cf44933052aee2fe03a35c1a4402674eb8f83329bd44e8c7e9bf015a",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dchromatic%2Bvertex%2Bedge%2Bcardinality%2Blower%2Bbound%2Bcontinuum%2Berdos%2Bproblem%2B595%2Bwitness%2Binfinite%2Bsimple%2Bgraphs%26num%3D15"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 310.92,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "895039f87643e2e92b769ec3c7affd6ef254edaafeef0ab10a62c050dfa2bfa9",
+            "receipt_sha256": "895039f87643e2e92b769ec3c7affd6ef254edaafeef0ab10a62c050dfa2bfa9",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22infinite+simple+graphs+edge+sets+triangle-free+chromatic+vertex%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "infinite simple graphs edge sets triangle-free chromatic vertex",
+            "receipt_sha256": "fc42e4c90fbbbbcb0a64bc8e4d65f72f74b9d4831bb1d329cc8b3c8aa6ab5b83",
+            "records_sha256": "ff230ecaec1434b67705b4236a769770274107b6b95177658f9705e576c969e3"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "google_patents_search",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 190082,
+            "body_sha256": "67bbd67054ce09ee35e3d11c732171ea692b4bba1133eb7dda02ab9e3153f588",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 906.644,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "22f164beb826d0dbc809ebd97ad8670ca5552e4f432e79b95f6cc6d4a72b790e",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dinfinite%2Bsimple%2Bgraphs%2Bedge%2Bsets%2Btriangle-free%2Bchromatic%2Bvertex%26num%3D15"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 352.042,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "3bac403274a0b6142d30a48f93d85d3e5997e110d2891cdad32422df05ed42d9",
+            "receipt_sha256": "3bac403274a0b6142d30a48f93d85d3e5997e110d2891cdad32422df05ed42d9",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22infinite+simple+graphs+edge+sets+triangle-free+chromatic+vertex+binary+coding+proper+colouring+kappa+colours%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours",
+            "receipt_sha256": "6b59ac3935f0fdcac217fff44fed12bf650c9fee4ed3d761a60d2f47a2c248ca",
+            "records_sha256": "072069d1ccd8e320a29f4545faa6b9595e660fb26c2455f518b8b0d0b3c03a78"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "google_patents_search",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 4492,
+            "body_sha256": "3aebf980c9ef0003a15caa8aa4320339dda48e750706c22662094e7a241ce1a4",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 602.283,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "0b66fe841021104bc291c19dfd19f65fa5e0da983394a77d64f34faf868b0882",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dinfinite%2Bsimple%2Bgraphs%2Bedge%2Bsets%2Btriangle-free%2Bchromatic%2Bvertex%2Bbinary%2Bcoding%2Bproper%2Bcolouring%2Bkappa%2Bcolours%26num%3D15"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 473.409,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "9f6f49f9f38e20bd66d8057f59597a233efe50f459d860db2be092c78d297f96",
+            "receipt_sha256": "9f6f49f9f38e20bd66d8057f59597a233efe50f459d860db2be092c78d297f96",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22infinite+simple+graphs+edge+sets+triangle-free+chromatic+vertex+cardinal+exponentiation+bound+relating+cover+number%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+            "receipt_sha256": "1bbd13fbc6c7310a9cfcaa9124478eceba0e4a7baf1167db01506f6ff78aef29",
+            "records_sha256": "37767a4a8ee1a089e33b8bba6e6bb4195a2444a91ee92db53409d15a9267a3d1"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 2,
+          "provider": "google_patents_search",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 9101,
+            "body_sha256": "13d976c19618ff77a3650b4088baa98adb581cfedfe14358773689f1985ce3b4",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 960.447,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4b4a224b251ba26cc8d2bc7ff5f8605ae2046a0618cfb1f43c2eff7e8393e8d7",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dinfinite%2Bsimple%2Bgraphs%2Bedge%2Bsets%2Btriangle-free%2Bchromatic%2Bvertex%2Bcardinal%2Bexponentiation%2Bbound%2Brelating%2Bcover%2Bnumber%26num%3D15"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 568.093,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "c5d6ccdf1196946aae770ee220d3587e9335811338bda94d24b576d9cfd68744",
+            "receipt_sha256": "c5d6ccdf1196946aae770ee220d3587e9335811338bda94d24b576d9cfd68744",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22infinite+simple+graphs+edge+sets+triangle-free+chromatic+vertex+cardinality+lower+bound+continuum+erdos+problem%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+            "receipt_sha256": "0facbf310ae30fd32c143db1999c8092273afc07db9814b99ac4d6d4a37b5736",
+            "records_sha256": "183b1c29dbef9fed8275d8f1f77bfe1e8fe6443f42482425f0d553d53902f20c"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "google_patents_search",
+          "query": "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 140,
+            "body_sha256": "8b6166ef7f70655388023e8eb7cb78e80d2b4be591bf8542eb6a7a7e2efe7d99",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 536.655,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "bcc32e6ddf8dec0f903873c26ae4a499c17836468b1a924968d7d1e12483838e",
+            "status": 200,
+            "url": "https://patents.google.com/xhr/query?url=q%3Dinfinite%2Bsimple%2Bgraphs%2Bedge%2Bsets%2Btriangle-free%2Bchromatic%2Bvertex%2Bcardinality%2Blower%2Bbound%2Bcontinuum%2Berdos%2Bproblem%26num%3D15"
+          },
+          "status": "success"
+        }
+      ],
+      "candidate_budget": 80,
+      "claim_grounded_count": 12,
+      "configured_official_providers": [
+        "epo_ops",
+        "uspto_odp_keyed"
+      ],
+      "coverage_status": "COMPLETE",
+      "family_diversity_reserve": 0,
+      "granted_count": 75,
+      "hydration_config": {
+        "allow_network": true,
+        "hydration_jobs": 12,
+        "hydration_workers": 4,
+        "patent_hydrate_limit": 12,
+        "structure_hydrate_limit": 4
+      },
+      "hydration_workers": 4,
+      "official_claim_grounded_count": 1,
+      "official_coverage_scope": "complete",
+      "official_coverage_status": "COMPLETE",
+      "official_provider_record_count": 62,
+      "official_search_complete": true,
+      "optional_provider_errors": [],
+      "patent_count": 79,
+      "provider": "google_patents_search+uspto_odp_keyed",
+      "provider_health": [
+        {
+          "attempt_count": 7,
+          "availability_reason": null,
+          "error_count": 0,
+          "hit_count": 0,
+          "official": true,
+          "provider": "epo_ops",
+          "required_for_clear_novelty": true,
+          "status": "EMPTY"
+        },
+        {
+          "attempt_count": 7,
+          "availability_reason": null,
+          "error_count": 0,
+          "hit_count": 105,
+          "official": true,
+          "provider": "uspto_odp_keyed",
+          "required_for_clear_novelty": true,
+          "status": "HIT"
+        },
+        {
+          "attempt_count": 7,
+          "availability_reason": null,
+          "error_count": 0,
+          "hit_count": 18,
+          "official": false,
+          "provider": "google_patents_search",
+          "required_for_clear_novelty": false,
+          "status": "HIT"
+        }
+      ],
+      "provider_request_limit": 15,
+      "providers_attempted": [
+        "epo_ops",
+        "uspto_odp_keyed",
+        "google_patents_search"
+      ],
+      "providers_with_hits": [
+        "google_patents_search",
+        "uspto_odp_keyed"
+      ],
+      "query_count": 7,
+      "requested_retrieval_floor": 105,
+      "required_provider_errors": [],
+      "retrieval_receipt_sha256": "93a74f480117b00a2c7312c4619196cedf28e6821082e943738043e8873d943c",
+      "search_complete": true,
+      "selected_family_count": 79,
+      "status": "success",
+      "structure_grounded_count": 0,
+      "unavailable_official_providers": []
+    },
+    "patent_search_complete": true,
+    "provider_lineage_sha256": "ea06a14261145ec942c07c77d22d3b375663e3093c94ff849665b482db2fea69",
+    "query_coverage": {
+      "paper": {
+        "mechanism": [
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "union of countably many triangle-free graphs uncountable chromatic number",
+          "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets"
+        ],
+        "method": [
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "union of countably many triangle-free graphs uncountable chromatic number",
+          "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets"
+        ],
+        "outcome": [
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "\"Erdos problem 595\" continuum chromatic number lower bound",
+          "\"triangle-free decomposition number\" chromatic number cardinal lower bound",
+          "\"chromatic number\" \"countable union of triangle-free graphs\" continuum",
+          "\"bipartite subgraph cover\" chromatic number logarithm cardinal",
+          "union of countably many triangle-free graphs uncountable chromatic number",
+          "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate cardinal exponentiation",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate chromatic edge",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic vertex edge cardinality lower continuum erdos problem 595",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets"
+        ],
+        "problem": [
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness graph theory infinite",
+          "graph theory infinite combinatorics",
+          "every graph cardinal kappa if edge set union triangle-free subgraphs chromatic number exceeds particular countably has vertex cardinality",
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate infinite simple",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic infinite simple graphs edge sets",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs sets"
+        ]
+      },
+      "patent": {
+        "mechanism": [
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours"
+        ],
+        "method": [
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours"
+        ],
+        "outcome": [
+          "binary coding proper vertex colouring kappa colours boolean coordinates one bipartite triangle-free layer coordinate",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours"
+        ],
+        "problem": [
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinal exponentiation bound relating cover number",
+          "chromatic vertex edge cardinality lower bound continuum erdos problem 595 witness infinite simple graphs",
+          "cardinal exponentiation bound relating triangle-free cover number chromatic graph theory infinite combinatorics composition",
+          "infinite simple graphs edge sets triangle-free chromatic vertex",
+          "infinite simple graphs edge sets triangle-free chromatic vertex cardinality lower bound continuum erdos problem",
+          "infinite simple graphs edge sets triangle-free chromatic vertex binary coding proper colouring kappa colours"
+        ]
+      },
+      "uncovered_paper_facets": [],
+      "uncovered_patent_facets": []
+    },
+    "query_plan_sha256": "4070f71e43b812fe1f423805857c8f171c92298b1c87524ef5050b4a97cf3585",
+    "spec_path": "C:\\Users\\jared\\AppData\\Local\\Temp\\noveltyforge-acquire\\spec_65aa0ae31ade7bac3f4e3594772df7c3.json"
+  },
+  "corpus_size": 109,
+  "corpus_source": "auto_acquired_litacq_patents",
+  "design_around": {
+    "boundary": "Research design-space constraints only; not a legal design-around or FTO opinion.",
+    "generator_rules": [
+      "reject exact, connectivity-equivalent, salt-parent, and tautomer-equivalent structures",
+      "reject high-similarity fingerprint analogs above the configured hard threshold",
+      "treat scaffold matches as design pressure even when not independently dispositive",
+      "screen every generated survivor against Markush envelopes and family-normalized evidence",
+      "do not treat stereochemistry, salt form, or tautomer changes as novelty restoration by themselves"
+    ],
+    "hard_parent_hashes": [],
+    "hard_structure_hashes": [],
+    "hard_tautomer_hashes": [],
+    "markush_envelopes": [],
+    "markush_family_counts": {},
+    "receipt_sha256": "1441b384f4f27848dfa9bc4fb0e0872dc8bbf9b09a585398ab7be8d851cff8ac",
+    "scaffold_pressure": [],
+    "schema": "oracle.noveltyforge.design_around.v1",
+    "status": "COMPLETE"
+  },
+  "differentiation": {
+    "baseline_core_novelty": 0.599034,
+    "differentiation_guard": "each pivot is re-scored against the same corpus; a change that does not lower measured collision is cosmetic and dropped.",
+    "novel_core_floor": 0.62,
+    "novelty_restorable": true,
+    "recommended_pivot": {
+      "baseline_novelty": 0.599034,
+      "description": "Claim the method only in combination with the novel mechanism ('binary coding of a proper vertex colouring by 2^kappa colour').",
+      "facet": "method",
+      "feasibility": 0.72,
+      "injected_terms": [
+        "binary",
+        "coding",
+        "proper",
+        "vertex",
+        "colouring",
+        "kappa",
+        "colours",
+        "kappa"
+      ],
+      "novelty_gain": 0.119552,
+      "projected_novelty": 0.718586,
+      "rationale": "Ties the crowded facet to an orthogonal novel facet, moving the claim into unclaimed combination space.",
+      "restores_novelty": true,
+      "strategy": "combine_orthogonal"
+    },
+    "strategy_summary": "8 measured differentiation vector(s); best restores core novelty to 0.718586.",
+    "target_facets": [
+      "method",
+      "outcome"
+    ],
+    "vectors": [
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Claim the method only in combination with the novel mechanism ('binary coding of a proper vertex colouring by 2^kappa colour').",
+        "facet": "method",
+        "feasibility": 0.72,
+        "injected_terms": [
+          "binary",
+          "coding",
+          "proper",
+          "vertex",
+          "colouring",
+          "kappa",
+          "colours",
+          "kappa"
+        ],
+        "novelty_gain": 0.119552,
+        "projected_novelty": 0.718586,
+        "rationale": "Ties the crowded facet to an orthogonal novel facet, moving the claim into unclaimed combination space.",
+        "restores_novelty": true,
+        "strategy": "combine_orthogonal"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Claim the outcome only in combination with the novel mechanism ('binary coding of a proper vertex colouring by 2^kappa colour').",
+        "facet": "outcome",
+        "feasibility": 0.72,
+        "injected_terms": [
+          "binary",
+          "coding",
+          "proper",
+          "vertex",
+          "colouring",
+          "kappa",
+          "colours",
+          "kappa"
+        ],
+        "novelty_gain": 0.109195,
+        "projected_novelty": 0.708229,
+        "rationale": "Ties the crowded facet to an orthogonal novel facet, moving the claim into unclaimed combination space.",
+        "restores_novelty": true,
+        "strategy": "combine_orthogonal"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Narrow the outcome to the 'the cardinal-general form tc(G) > kappa implies chi(G) > 2^kappa' regime, a condition absent from the nearest prior art.",
+        "facet": "outcome",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "cardinal-general",
+          "form",
+          "tc",
+          "kappa",
+          "implies",
+          "chi",
+          "kappa"
+        ],
+        "novelty_gain": 0.09158,
+        "projected_novelty": 0.690614,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Narrow the method to the 'the kernel-checked Lean statement of the continuum barrier' regime, a condition absent from the nearest prior art.",
+        "facet": "method",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "kernel-checked",
+          "lean",
+          "statement",
+          "continuum",
+          "barrier"
+        ],
+        "novelty_gain": 0.084144,
+        "projected_novelty": 0.683178,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Narrow the outcome to the 'real-time online closed-loop setting' regime, a condition absent from the nearest prior art.",
+        "facet": "outcome",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "real-time",
+          "online",
+          "closed-loop",
+          "setting"
+        ],
+        "novelty_gain": 0.083924,
+        "projected_novelty": 0.682958,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Narrow the outcome to the 'the kernel-checked Lean statement of the continuum barrier' regime, a condition absent from the nearest prior art.",
+        "facet": "outcome",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "kernel-checked",
+          "lean",
+          "statement",
+          "continuum",
+          "barrier"
+        ],
+        "novelty_gain": 0.079479,
+        "projected_novelty": 0.678513,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Narrow the outcome to the 'low-dose sustained regime' regime, a condition absent from the nearest prior art.",
+        "facet": "outcome",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "low-dose",
+          "sustained",
+          "regime"
+        ],
+        "novelty_gain": 0.07648,
+        "projected_novelty": 0.675514,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.599034,
+        "description": "Narrow the outcome to the 'pediatric population stratum' regime, a condition absent from the nearest prior art.",
+        "facet": "outcome",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "pediatric",
+          "population",
+          "stratum"
+        ],
+        "novelty_gain": 0.07648,
+        "projected_novelty": 0.675514,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      }
+    ]
+  },
+  "discovery_verdict": "INCREMENTAL",
+  "domain": "graph theory / infinite combinatorics",
+  "domain_completeness": {
+    "audit_depth": 6,
+    "audited_hits": [
+      {
+        "false_friend": false,
+        "identifier": "10.1109/lcomm.2004.832765",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.1109/lcomm.2004.832765",
+        "title": "The Most Congested Cutset: Deriving a Tight Lower Bound for the Chromatic Number in the RWA Problem"
+      },
+      {
+        "false_friend": false,
+        "identifier": "https://openalex.org/W609014849",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "https://openalex.org/W609014849",
+        "title": "Directions in infinite graph theory and combinatorics"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.1002/rsa.70081",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.1002/rsa.70081",
+        "title": "On the Chromatic Number of Random Triangle‐Free Graphs"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.37236/13257",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.37236/13257",
+        "title": "A Lower Bound on the Saturation Number and a Strengthening for Triangle-Free Graphs"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.1017/s0963548399004022",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.1017/s0963548399004022",
+        "title": "Properties of Descartes' Construction of Triangle-Free Graphs with High Chromatic Number"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.37236/14443",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.37236/14443",
+        "title": "Suns in Triangle-Free Graphs of Large Chromatic Number"
+      }
+    ],
+    "boundary": "Retrieval-quality gate. A clean status means the DECLARED families were found and the audited top hits are on-domain. It does NOT prove the corpus is exhaustive, and a large corpus or a high novelty score is never evidence for it.",
+    "claim_domain": "graph theory / infinite combinatorics",
+    "claim_domain_family": "unclassified",
+    "corpus_size": 109,
+    "coverage_ledger": [],
+    "domain_completeness_sha256": "b239d08f9c3c8fe607934443f7bba30b1bb9534f3755d48e1defe65aa31b7f16",
+    "false_friend_ceiling": 0.1,
+    "false_friend_count": 0,
+    "false_friend_rate": 0.0,
+    "reasons": [
+      "no_known_neighbor_families_declared:neighbourhood_coverage_unproven"
+    ],
+    "required_neighbor_families": [],
+    "schema": "oracle.noveltyforge.domain-completeness.v1",
+    "status": "SEARCH_INCOMPLETE",
+    "uncovered_families": []
+  },
+  "facet_novelty": {
+    "entities": 0.45,
+    "mechanism": 0.817618,
+    "method": 0.45,
+    "outcome": 0.45,
+    "problem": 0.347009
+  },
+  "facet_views": [
+    {
+      "is_core": true,
+      "name": "mechanism",
+      "text": "binary coding of a proper vertex colouring by 2^kappa colours into kappa Boolean coordinates, one bipartite hence triangle-free layer per coordinate",
+      "weight": 0.3
+    },
+    {
+      "is_core": true,
+      "name": "method",
+      "text": "cardinal exponentiation bound relating triangle-free cover number to chromatic number",
+      "weight": 0.24
+    },
+    {
+      "is_core": true,
+      "name": "outcome",
+      "text": "chromatic, vertex and edge cardinality lower bound above the continuum for any Erdos problem 595 witness",
+      "weight": 0.2
+    },
+    {
+      "is_core": false,
+      "name": "problem",
+      "text": "graph theory / infinite combinatorics",
+      "weight": 0.08
+    },
+    {
+      "is_core": false,
+      "name": "entities",
+      "text": "infinite simple graphs and their edge sets",
+      "weight": 0.13
+    }
+  ],
+  "family_normalization": {
+    "double_count_prevented": 0,
+    "family_count": 79,
+    "patent_records": 79,
+    "receipt_sha256": "2ddbd84e9703d29c66d13447bcef982729f798004ae08c586b03ac2fd3dbd064",
+    "unique_structure_count": 0
+  },
+  "independent_quotas": {
+    "paper_quota_met": true,
+    "patent_quota_met": true,
+    "required_papers": 4,
+    "required_patents": 5,
+    "status": "COMPLETE"
+  },
+  "input_corpus_size": 109,
+  "ip_assessment": {
+    "boundary": "research-prioritization novelty screen; not legal advice or a patentability opinion.",
+    "freedom_to_operate_screen": {
+      "boundary": "keyword read-on screen against claim-grounded granted patent records; not a legal FTO opinion.",
+      "coverage": {
+        "official_claim_grounded_count": 1,
+        "official_provider_record_count": 62,
+        "official_search_complete": true,
+        "provider": "google_patents_search+uspto_odp_keyed",
+        "query_coverage_complete": true,
+        "status": "official_coverage_verified",
+        "uncovered_patent_facets": [],
+        "warning": null
+      },
+      "exclusion_counts": {
+        "claim_similarity_below_threshold": 12,
+        "claims_unavailable": 97
+      },
+      "manual_review_queue": [
+        {
+          "context_collision": 0.254737,
+          "identifier": "10.1109/lcomm.2004.832765",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1109/lcomm.2004.832765"
+        },
+        {
+          "context_collision": 0.235589,
+          "identifier": "https://openalex.org/W609014849",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "https://openalex.org/W609014849"
+        },
+        {
+          "context_collision": 0.232575,
+          "identifier": "10.1002/rsa.70081",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1002/rsa.70081"
+        },
+        {
+          "context_collision": 0.230451,
+          "identifier": "10.37236/13257",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.37236/13257"
+        },
+        {
+          "context_collision": 0.227112,
+          "identifier": "10.1017/s0963548399004022",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1017/s0963548399004022"
+        },
+        {
+          "context_collision": 0.224657,
+          "identifier": "10.37236/14443",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.37236/14443"
+        },
+        {
+          "context_collision": 0.222774,
+          "identifier": "10.7868/s3034504925020073",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.7868/s3034504925020073"
+        },
+        {
+          "context_collision": 0.209918,
+          "identifier": "10.1002/jgt.22906",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1002/jgt.22906"
+        },
+        {
+          "context_collision": 0.206834,
+          "identifier": "10.1016/s0012-365x(96)00057-x",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1016/s0012-365x(96)00057-x"
+        },
+        {
+          "context_collision": 0.20003,
+          "identifier": "10.1137/120900678",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1137/120900678"
+        },
+        {
+          "context_collision": 0.20003,
+          "identifier": "10.1007/s10878-015-9929-z",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1007/s10878-015-9929-z"
+        },
+        {
+          "context_collision": 0.197033,
+          "identifier": "10.1134/s106456242460249x",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1134/s106456242460249x"
+        }
+      ],
+      "patent_read_ons": [],
+      "pending_application_watchlist": [],
+      "risk": false,
+      "screen_certifiable": true
+    },
+    "non_obviousness_103": {
+      "mosaic_risk": false,
+      "non_obvious": true,
+      "references_in_mosaic": []
+    },
+    "novelty_target": "both",
+    "patent_novelty_102": {
+      "anticipating_reference": null,
+      "novel": true
+    },
+    "scientific_novelty": {
+      "band": "INCREMENTAL",
+      "core_novelty": 0.599034,
+      "paper_worthy": true
+    },
+    "verdict": "PAPER_AND_PATENT_PATH_OPEN"
+  },
+  "ledger_status": {
+    "checked": false,
+    "key": "c084eeb69186dd4ce670c301a74f84390af06fb77f729d861f8534ae91ae4dfd",
+    "prior_verdict": null,
+    "reused": false
+  },
+  "legal_boundary": "Research prior-art screening only. This module does not determine claim construction, enablement, legal status, jurisdiction-specific prior-art effect, infringement, or freedom to operate.",
+  "mandatory_neighbor_queries": [],
+  "measured_effect": null,
+  "measured_reality": false,
+  "min_corpus_required": 20,
+  "mode_isolation": {
+    "checked_fields": [
+      "terminal_mode",
+      "mode_verdict",
+      "discovery_verdict",
+      "inadmissible_reasons",
+      "mode_reasons"
+    ],
+    "isolated": true,
+    "leaks": [],
+    "mode": "DISCOVERY_CLAIM",
+    "schema": "oracle.noveltyforge.mode-isolation.v1"
+  },
+  "mode_question": "Is this a novel AND measured discovery against a live keyed patent corpus?",
+  "mode_reasons": [
+    "band_does_not_assert_discovery"
+  ],
+  "mode_verdict": "INCREMENTAL",
+  "next_action": "Do not present the current result as a new mechanism. Narrow or pivot entities, method, outcome, problem, prospectively measure the pivot, and rerun candidate-bound prior-art analysis.",
+  "novelty_band": "INCREMENTAL",
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_scores_valid": true,
+  "novelty_target": "both",
+  "overall_novelty": 0.557417,
+  "promotion_eligibility": {
+    "claim_sha256": "edb6cbc40799deeb0b74c1b22b7edb2930de558a57b9fdc3ef8c437b6d3eb864",
+    "decision": "PROMOTION_BLOCKED",
+    "eligible": false,
+    "evidence_bindings": {
+      "acquired_utc": "2026-09-05T14:21:52Z",
+      "acquisition_output_file_sha256": "7ff377346753518f43d2a752d77beaf627479992cb3e220f855fd0ec05195b98",
+      "acquisition_snapshot_sha256": "1d355daf3f461358ebb5b8db595b69ff1ac292aa6cae6bb258c700298712ee61",
+      "adversarial_review_hash": "d8c43e11e95a715da714ec8be14bbbbf1fb8202e0d1ac4e226d91ae59c1f788b",
+      "binding_receipt_sha256": "68394e764f4c124c9c06d627f0b4c8242bb0d161b68031ec06d82413a4be7073",
+      "corpus_sha256": "64aa44659ad7e02f4b09ed1b25787d388a0b2834e4190ed24296bf60d6b46f68",
+      "corpus_size": 109,
+      "corpus_source": "auto_acquired_litacq_patents",
+      "deployment_evidence": {
+        "decision": "NOT_REQUIRED",
+        "ok": true,
+        "required": false
+      },
+      "provider_lineage_sha256": "ea06a14261145ec942c07c77d22d3b375663e3093c94ff849665b482db2fea69",
+      "report_payload_sha256": "948af3c477eaf8ccaddc40ee8bd8ce6efa91d08a7d561587bffcdc2b39553f6c",
+      "scientific_disposition_sha256": "099d9dcccd83c63d0859e6d6a1945fefd2d9851bda3bc3deb92c2c5b4854ee88",
+      "structured_prior_art_receipt_sha256": "f6aef08eb38491e76a33536305d1c19840eebf2195e031b01dac793370769a3a"
+    },
+    "gate_sha256": "f6919c24f952a1f785e3200ada478bbbf5a40375023cdd56f00b76cd6a601007",
+    "reasons": [
+      "critical_date_missing",
+      "critical_date_temporal_gate_not_enabled",
+      "discovery_verdict_not_novel:INCREMENTAL",
+      "measured_reality_not_verified",
+      "novelty_band_not_novel:INCREMENTAL",
+      "scientific_disposition_not_new_mechanism_candidate"
+    ],
+    "schema": "oracle.noveltyforge.promotion-gate.v1"
+  },
+  "receipt_hash": "948af3c477eaf8ccaddc40ee8bd8ce6efa91d08a7d561587bffcdc2b39553f6c",
+  "scientific_disposition": {
+    "category": "DESCRIPTIVE_OR_INCREMENTAL_SIGNAL",
+    "deep_remeasurement_required": true,
+    "disposition_sha256": "099d9dcccd83c63d0859e6d6a1945fefd2d9851bda3bc3deb92c2c5b4854ee88",
+    "next_action": "Do not present the current result as a new mechanism. Narrow or pivot entities, method, outcome, problem, prospectively measure the pivot, and rerun candidate-bound prior-art analysis.",
+    "prior_art_only_resume_allowed": false,
+    "reasons": [
+      "novelty_band:INCREMENTAL"
+    ],
+    "schema": "oracle.noveltyforge.scientific-disposition.v1",
+    "top_colliding_facets": [
+      "entities",
+      "method",
+      "outcome",
+      "problem"
+    ]
+  },
+  "search_status": {
+    "law": "A provider failure must never become high novelty via an empty corpus. 'We found nothing' and 'we could not look' are different facts.",
+    "novelty_scores_valid": true,
+    "provider_completeness_measured": true,
+    "queries_executed": 2,
+    "queries_failed": 0,
+    "queries_throttled": 0,
+    "reasons": [],
+    "records_retrieved": 62,
+    "retry_budget": null,
+    "schema": "oracle.noveltyforge.search-status.v1",
+    "search_status_sha256": "76a3e5756dd7e477ed6640bbcff06f39a3017a5c82551301460c080d5c4ddb24",
+    "status": "SEARCH_COMPLETE"
+  },
+  "structure_coverage": {
+    "applicable_patent_collision_count": 3,
+    "broad_external_provider_failure_count": 0,
+    "collision_scan_complete": true,
+    "configured_min_exclusions": 1,
+    "coverage_fraction": 0.0,
+    "external_live_structure_provider_count": 0,
+    "external_provider_attempt_count": 0,
+    "external_provider_failure_count": 0,
+    "min_exclusions": 1,
+    "patent_record_count": 3,
+    "patents_with_any_structure": 0,
+    "patents_with_trusted_structure": 0,
+    "provider_attempt_count": 0,
+    "provider_failure_count": 0,
+    "provider_outage_degraded": false,
+    "receipt_sha256": "fda6533582b91d876e349207a0cbaf51a42aabcb14cbcee359b51f401fc608db",
+    "required": false,
+    "schema": "oracle.noveltyforge.structure_coverage.v4",
+    "shortfall": 1,
+    "status": "PARTIAL",
+    "trusted_exclusion_count": 0,
+    "untrusted_evidence_count": 0
+  },
+  "structured_collision_set": [
+    {
+      "markush_envelopes": [],
+      "overall_collision": 0.180703,
+      "patent_id": "US10360263",
+      "record_id": "US10360263",
+      "structure_coverage": {
+        "status": "HOLD_PROVIDER_ERROR",
+        "trusted_structure_count": 0
+      },
+      "structure_evidence": [],
+      "title": "PARALLEL EDGE SCAN FOR SINGLE-SOURCE EARLIEST-ARRIVAL IN TEMPORAL GRAPHS",
+      "trusted_exclusions": []
+    },
+    {
+      "markush_envelopes": [],
+      "overall_collision": 0.135767,
+      "patent_id": "US10249070",
+      "record_id": "US10249070",
+      "structure_coverage": {
+        "status": "HOLD_PROVIDER_ERROR",
+        "trusted_structure_count": 0
+      },
+      "structure_evidence": [],
+      "title": "DYNAMIC INTERACTION GRAPHS WITH PROBABILISTIC EDGE DECAY",
+      "trusted_exclusions": []
+    },
+    {
+      "markush_envelopes": [],
+      "overall_collision": 0.135761,
+      "patent_id": "US10013782",
+      "record_id": "US10013782",
+      "structure_coverage": {
+        "status": "HOLD_PROVIDER_ERROR",
+        "trusted_structure_count": 0
+      },
+      "structure_evidence": [],
+      "title": "DYNAMIC INTERACTION GRAPHS WITH PROBABILISTIC EDGE DECAY",
+      "trusted_exclusions": []
+    }
+  ],
+  "structured_prior_art": {
+    "bounds": {
+      "collision_records": 12,
+      "per_collision": 64,
+      "total": 512,
+      "trusted_exclusions_prioritized": true
+    },
+    "collision_evidence": [],
+    "collision_set_sha256": "3090815bdb20ddea44cee86f483a4ec4ae223cc79bc62d58eb8ea610c061a70d",
+    "coverage": {
+      "applicable_patent_collision_count": 3,
+      "broad_external_provider_failure_count": 0,
+      "collision_scan_complete": true,
+      "configured_min_exclusions": 1,
+      "coverage_fraction": 0.0,
+      "external_live_structure_provider_count": 0,
+      "external_provider_attempt_count": 0,
+      "external_provider_failure_count": 0,
+      "min_exclusions": 1,
+      "patent_record_count": 3,
+      "patents_with_any_structure": 0,
+      "patents_with_trusted_structure": 0,
+      "provider_attempt_count": 0,
+      "provider_failure_count": 0,
+      "provider_outage_degraded": false,
+      "receipt_sha256": "fda6533582b91d876e349207a0cbaf51a42aabcb14cbcee359b51f401fc608db",
+      "required": false,
+      "schema": "oracle.noveltyforge.structure_coverage.v4",
+      "shortfall": 1,
+      "status": "PARTIAL",
+      "trusted_exclusion_count": 0,
+      "untrusted_evidence_count": 0
+    },
+    "evidence": [],
+    "evidence_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "exclusion_smiles": [],
+    "markush_envelope_count": 0,
+    "markush_envelopes": [],
+    "markush_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "provider_attempts": [],
+    "receipt_sha256": "f6aef08eb38491e76a33536305d1c19840eebf2195e031b01dac793370769a3a",
+    "required": false,
+    "retrieval_coverage": {
+      "coverage_fraction": 0.0,
+      "external_live_structure_provider_count": 0,
+      "external_provider_attempt_count": 0,
+      "external_provider_failure_count": 0,
+      "min_exclusions": 1,
+      "patent_record_count": 79,
+      "patents_with_any_structure": 0,
+      "patents_with_trusted_structure": 0,
+      "provider_attempt_count": 0,
+      "provider_failure_count": 0,
+      "provider_outage_degraded": false,
+      "receipt_sha256": "5a8e9000dfde87999e8bf6c1522fb36aab177d0a20e01abb5968047a54fcc648",
+      "required": false,
+      "schema": "oracle.noveltyforge.structure_coverage.v4",
+      "shortfall": 1,
+      "status": "PARTIAL",
+      "trusted_exclusion_count": 0,
+      "untrusted_evidence_count": 0
+    },
+    "retrieval_evidence_count": 0,
+    "retrieval_evidence_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "schema": "oracle.noveltyforge.structured_prior_art.v4",
+    "status": "PARTIAL",
+    "structured_collision_set": [
+      {
+        "markush_envelopes": [],
+        "overall_collision": 0.180703,
+        "patent_id": "US10360263",
+        "record_id": "US10360263",
+        "structure_coverage": {
+          "status": "HOLD_PROVIDER_ERROR",
+          "trusted_structure_count": 0
+        },
+        "structure_evidence": [],
+        "title": "PARALLEL EDGE SCAN FOR SINGLE-SOURCE EARLIEST-ARRIVAL IN TEMPORAL GRAPHS",
+        "trusted_exclusions": []
+      },
+      {
+        "markush_envelopes": [],
+        "overall_collision": 0.135767,
+        "patent_id": "US10249070",
+        "record_id": "US10249070",
+        "structure_coverage": {
+          "status": "HOLD_PROVIDER_ERROR",
+          "trusted_structure_count": 0
+        },
+        "structure_evidence": [],
+        "title": "DYNAMIC INTERACTION GRAPHS WITH PROBABILISTIC EDGE DECAY",
+        "trusted_exclusions": []
+      },
+      {
+        "markush_envelopes": [],
+        "overall_collision": 0.135761,
+        "patent_id": "US10013782",
+        "record_id": "US10013782",
+        "structure_coverage": {
+          "status": "HOLD_PROVIDER_ERROR",
+          "trusted_structure_count": 0
+        },
+        "structure_evidence": [],
+        "title": "DYNAMIC INTERACTION GRAPHS WITH PROBABILISTIC EDGE DECAY",
+        "trusted_exclusions": []
+      }
+    ]
+  },
+  "temporal_eligibility": {
+    "boundary": "No critical date supplied; temporal prior-art eligibility was not asserted.",
+    "critical_date": null,
+    "eligible_count": 109,
+    "enabled": false,
+    "excluded_post_critical_count": 0,
+    "policy": "public_availability",
+    "receipt_sha256": "04c6a2f2f3a5ee457373fb77e10b92d1b57bc8a07bacb5270ebff84540f2b842",
+    "rows": [],
+    "schema": "oracle.noveltyforge.temporal_gate.v1",
+    "uncertain_count": 0
+  },
+  "terminal_mode": "NOVEL_WITH_INCREMENTAL_RISK",
+  "top_collisions": [
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "method",
+        "outcome"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.0,
+        "mechanism": 0.0,
+        "method": 0.55,
+        "outcome": 0.55,
+        "problem": 0.0
+      },
+      "identifier": "10.1109/lcomm.2004.832765",
+      "overall_collision": 0.254737,
+      "raw_facet_collisions": {
+        "entities": 0.0,
+        "mechanism": 0.0,
+        "method": 0.55,
+        "outcome": 0.55,
+        "problem": 0.0
+      },
+      "record_id": "10.1109/lcomm.2004.832765",
+      "shared_terms": {
+        "method": [
+          [
+            "bound",
+            4.3142
+          ],
+          [
+            "chromatic",
+            2.5224
+          ],
+          [
+            "number",
+            2.3332
+          ]
+        ],
+        "outcome": [
+          [
+            "problem",
+            5.0073
+          ],
+          [
+            "bound",
+            4.3142
+          ],
+          [
+            "lower",
+            4.3142
+          ],
+          [
+            "chromatic",
+            2.5224
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "The Most Congested Cutset: Deriving a Tight Lower Bound for the Chromatic Number in the RWA Problem",
+      "year": 2004
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "problem",
+        "entities"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.081513,
+        "method": 0.139849,
+        "outcome": 0.210265,
+        "problem": 0.652991
+      },
+      "identifier": "https://openalex.org/W609014849",
+      "overall_collision": 0.235589,
+      "raw_facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.081513,
+        "method": 0.139849,
+        "outcome": 0.210265,
+        "problem": 0.652991
+      },
+      "record_id": "https://openalex.org/W609014849",
+      "shared_terms": {
+        "entities": [
+          [
+            "infinite",
+            4.6019
+          ],
+          [
+            "sets",
+            3.9087
+          ],
+          [
+            "graphs",
+            2.1451
+          ]
+        ],
+        "problem": [
+          [
+            "infinite",
+            4.6019
+          ],
+          [
+            "combinatorics",
+            3.621
+          ],
+          [
+            "theory",
+            3.3979
+          ],
+          [
+            "graph",
+            2.6094
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "Directions in infinite graph theory and combinatorics",
+      "year": 1992
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "method"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.178732,
+        "mechanism": 0.127257,
+        "method": 0.55,
+        "outcome": 0.089993,
+        "problem": 0.119192
+      },
+      "identifier": "10.1002/rsa.70081",
+      "overall_collision": 0.232575,
+      "raw_facet_collisions": {
+        "entities": 0.178732,
+        "mechanism": 0.127257,
+        "method": 0.55,
+        "outcome": 0.089993,
+        "problem": 0.119192
+      },
+      "record_id": "10.1002/rsa.70081",
+      "shared_terms": {
+        "method": [
+          [
+            "chromatic",
+            2.5224
+          ],
+          [
+            "number",
+            2.3332
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "On the Chromatic Number of Random Triangle‐Free Graphs",
+      "year": 2026
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "method"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.178732,
+        "mechanism": 0.045745,
+        "method": 0.55,
+        "outcome": 0.202171,
+        "problem": 0.119192
+      },
+      "identifier": "10.37236/13257",
+      "overall_collision": 0.230451,
+      "raw_facet_collisions": {
+        "entities": 0.178732,
+        "mechanism": 0.045745,
+        "method": 0.55,
+        "outcome": 0.202171,
+        "problem": 0.119192
+      },
+      "record_id": "10.37236/13257",
+      "shared_terms": {
+        "method": [
+          [
+            "bound",
+            4.3142
+          ],
+          [
+            "triangle-free",
+            2.8101
+          ],
+          [
+            "number",
+            2.3332
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "A Lower Bound on the Saturation Number and a Strengthening for Triangle-Free Graphs",
+      "year": 2025
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "method"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.0814,
+        "mechanism": 0.182382,
+        "method": 0.55,
+        "outcome": 0.04462,
+        "problem": 0.119192
+      },
+      "identifier": "10.1017/s0963548399004022",
+      "overall_collision": 0.227112,
+      "raw_facet_collisions": {
+        "entities": 0.0814,
+        "mechanism": 0.182382,
+        "method": 0.55,
+        "outcome": 0.04462,
+        "problem": 0.119192
+      },
+      "record_id": "10.1017/s0963548399004022",
+      "shared_terms": {
+        "method": [
+          [
+            "triangle-free",
+            2.8101
+          ],
+          [
+            "chromatic",
+            2.5224
+          ],
+          [
+            "number",
+            2.3332
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "Properties of Descartes' Construction of Triangle-Free Graphs with High Chromatic Number",
+      "year": 1999
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "method"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.0814,
+        "mechanism": 0.140082,
+        "method": 0.55,
+        "outcome": 0.096413,
+        "problem": 0.119192
+      },
+      "identifier": "10.37236/14443",
+      "overall_collision": 0.224657,
+      "raw_facet_collisions": {
+        "entities": 0.0814,
+        "mechanism": 0.140082,
+        "method": 0.55,
+        "outcome": 0.096413,
+        "problem": 0.119192
+      },
+      "record_id": "10.37236/14443",
+      "shared_terms": {
+        "method": [
+          [
+            "triangle-free",
+            2.8101
+          ],
+          [
+            "chromatic",
+            2.5224
+          ],
+          [
+            "number",
+            2.3332
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "Suns in Triangle-Free Graphs of Large Chromatic Number",
+      "year": 2026
+    }
+  ],
+  "version": "4.0.0",
+  "whitespace": {
+    "crowded_cells": [
+      {
+        "axis": "pediatric population",
+        "facet": "method",
+        "max_collision": 0.352823,
+        "novelty": 0.647177
+      },
+      {
+        "axis": "federated multi-site",
+        "facet": "method",
+        "max_collision": 0.352823,
+        "novelty": 0.647177
+      },
+      {
+        "axis": "out-of-distribution shift",
+        "facet": "method",
+        "max_collision": 0.352823,
+        "novelty": 0.647177
+      },
+      {
+        "axis": "single-cell resolution",
+        "facet": "method",
+        "max_collision": 0.352823,
+        "novelty": 0.647177
+      },
+      {
+        "axis": "prospective deployment",
+        "facet": "method",
+        "max_collision": 0.352823,
+        "novelty": 0.647177
+      },
+      {
+        "axis": "cold-start data-sparse",
+        "facet": "method",
+        "max_collision": 0.352823,
+        "novelty": 0.647177
+      }
+    ],
+    "note": "coarse facet x regime map for prioritization; not an exhaustive freedom-to-operate search.",
+    "steer_toward": {
+      "axis": "real-time online closed-loop",
+      "facet": "mechanism",
+      "max_collision": 0.150702,
+      "novelty": 0.849298
+    },
+    "whitespace_cells": [
+      {
+        "axis": "real-time online closed-loop",
+        "facet": "mechanism",
+        "max_collision": 0.150702,
+        "novelty": 0.849298
+      },
+      {
+        "axis": "low-dose sustained regime",
+        "facet": "mechanism",
+        "max_collision": 0.161799,
+        "novelty": 0.838201
+      },
+      {
+        "axis": "geriatric frail population",
+        "facet": "mechanism",
+        "max_collision": 0.161799,
+        "novelty": 0.838201
+      },
+      {
+        "axis": "pediatric population",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      },
+      {
+        "axis": "federated multi-site",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      },
+      {
+        "axis": "out-of-distribution shift",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      },
+      {
+        "axis": "single-cell resolution",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      },
+      {
+        "axis": "prospective deployment",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      },
+      {
+        "axis": "cold-start data-sparse",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      },
+      {
+        "axis": "in-vivo validation",
+        "facet": "mechanism",
+        "max_collision": 0.168124,
+        "novelty": 0.831876
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "id": "erdos595-vertex-partition-bound",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsUTF {V : Type} (I : Type) (G : SimpleGraph V) : Prop :=\n  ∃ H : I → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V I : Type}",
+  "(G : SimpleGraph V)",
+  "(rho : V → I)"
+ ],
+ "conclusion": "(∀ a b d : V, rho a = rho b → rho b = rho d → G.Adj a b → G.Adj a d → G.Adj b d → False) → IsUTF (Sym2 I) G",
+ "proof": "by\n  classical\n  intro h\n  have key : ∀ x y z : I, s(x, y) = s(x, z) → s(x, z) = s(y, z) → x = y ∧ y = z := by\n    intro x y z h1 h2\n    rcases Sym2.eq_iff.mp h1 with ⟨-, hyz⟩ | ⟨hxz, hyx⟩\n    · rcases Sym2.eq_iff.mp h2 with ⟨hxy, -⟩ | ⟨hxz', hzy⟩\n      · exact ⟨hxy, hyz⟩\n      · exact ⟨hxz'.trans hzy, hyz⟩\n    · exact ⟨hyx.symm, hyx.trans hxz⟩\n  refine ⟨fun p => SimpleGraph.fromEdgeSet {e | e ∈ G.edgeSet ∧ Sym2.map rho e = p}, ?_, ?_⟩\n  · intro p t ht\n    obtain ⟨hcl, hcard⟩ := ht\n    obtain ⟨a, b, d, hab, had, hbd, hteq⟩ := Finset.card_eq_three.mp hcard\n    have ha : a ∈ t := by rw [hteq]; simp\n    have hb : b ∈ t := by rw [hteq]; simp\n    have hd : d ∈ t := by rw [hteq]; simp\n    have e1 := hcl ha hb hab\n    have e2 := hcl ha hd had\n    have e3 := hcl hb hd hbd\n    rw [SimpleGraph.fromEdgeSet_adj] at e1 e2 e3\n    have q1 : s(rho a, rho b) = s(rho a, rho d) := by\n      have t1 : Sym2.map rho s(a, b) = p := e1.1.2\n      have t2 : Sym2.map rho s(a, d) = p := e2.1.2\n      simpa [Sym2.map_pair_eq] using t1.trans t2.symm\n    have q2 : s(rho a, rho d) = s(rho b, rho d) := by\n      have t2 : Sym2.map rho s(a, d) = p := e2.1.2\n      have t3 : Sym2.map rho s(b, d) = p := e3.1.2\n      simpa [Sym2.map_pair_eq] using t2.trans t3.symm\n    obtain ⟨hx, hy⟩ := key (rho a) (rho b) (rho d) q1 q2\n    exact h a b d hx hy e1.1.1 e2.1.1 e3.1.1\n  · ext a b\n    rw [SimpleGraph.iSup_adj]\n    constructor\n    · intro hab\n      exact ⟨Sym2.map rho s(a, b), by\n        rw [SimpleGraph.fromEdgeSet_adj]\n        exact ⟨⟨hab, rfl⟩, G.ne_of_adj hab⟩⟩\n    · rintro ⟨p, hp⟩\n      rw [SimpleGraph.fromEdgeSet_adj] at hp\n      exact hp.1.1"
+}

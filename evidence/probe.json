@@ -1,0 +1,6 @@
+{
+ "returncode": 0,
+ "out": "@Walk.reverse : {V : Type u_1} \u2192 {G : SimpleGraph V} \u2192 {u v : V} \u2192 G.Walk u v \u2192 G.Walk v u\nTry this:\n  [apply] exact (reachable_iff_reflTransGen u v).mp h\n",
+ "seconds": 79.4,
+ "timedOut": false
+}

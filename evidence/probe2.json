@@ -1,0 +1,6 @@
+{
+ "returncode": 1,
+ "out": "/tmp/oracle_lean_f8saVGiX.lean:6:2: error: `exact?` could not close the goal. Try `apply?` to see partial suggestions.\nTry this:\n  [apply] exact ConnectedComponent.exact h\n",
+ "seconds": 25.5,
+ "timedOut": false
+}

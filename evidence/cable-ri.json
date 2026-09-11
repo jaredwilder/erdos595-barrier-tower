@@ -1,0 +1,12 @@
+{
+ "id": "erdos595-reindex",
+ "imports": "Mathlib",
+ "definitions": "open SimpleGraph in\ndef IsUTF {V : Type} (I : Type) (G : SimpleGraph V) : Prop :=\n  ∃ H : I → SimpleGraph V, (∀ i, (H i).CliqueFree 3) ∧ G = ⨆ i, H i",
+ "hypotheses": [
+  "{V I J : Type}",
+  "(G : SimpleGraph V)",
+  "(s : J → I)"
+ ],
+ "conclusion": "Function.Surjective s → IsUTF I G → IsUTF J G",
+ "proof": "by\n  rintro hs ⟨L, hfree, hEq⟩\n  refine ⟨fun j => L (s j), fun j => hfree _, ?_⟩\n  ext a b\n  rw [hEq, SimpleGraph.iSup_adj, SimpleGraph.iSup_adj]\n  constructor\n  · rintro ⟨i, hi⟩\n    obtain ⟨j, rfl⟩ := hs i\n    exact ⟨j, hi⟩\n  · rintro ⟨j, hj⟩\n    exact ⟨s j, hj⟩"
+}

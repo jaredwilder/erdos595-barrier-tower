@@ -1,0 +1,27 @@
+{
+  "claim": "There is a mechanism for forcing a monochromatic triangle under a colouring of the edges of a clique-free graph by infinitely many colours, other than induction on the number of colours, diagonalization over colourings, or a partition-calculus pigeonhole producing a large monochromatic clique.",
+  "domain": "partition calculus / infinite Ramsey theory / clique-free arrowing",
+  "facets": {
+    "entities": "K4-free and clique-free graphs at uncountable cardinals, edge colourings by infinitely many colours, monochromatic triangles",
+    "mechanism": "arrowing of a clique-free host for infinitely many colours; forcing a monochromatic triangle without producing a large monochromatic clique",
+    "method": "partition relations for graphs, Nesetril-Rodl amalgamation at infinite cardinals, elementary submodel arguments, forcing and iterated forcing for Ramsey properties, stepping-up lemmas",
+    "outcome": "an infinite-colour arrowing theorem for a clique-free host, or a proof that none exists"
+  },
+  "constraints": {
+    "search_queries": [
+      "partition relation clique-free graph monochromatic triangle infinitely many colours",
+      "Nesetril Rodl Ramsey property infinite cardinals amalgamation clique free",
+      "arrowing K4-free graph omega colours monochromatic triangle uncountable",
+      "stepping up lemma partition calculus graphs Erdos Hajnal Rado",
+      "Ramsey classes of clique-free graphs infinite exponent colours",
+      "structural Ramsey theory forbidden clique infinite colourings",
+      "Erdos Hajnal problem countable union triangle-free graphs partial progress"
+    ],
+    "patent_queries": []
+  },
+  "candidate_differentiators": ["an infinite-colour arrowing mechanism inside a clique-free host"],
+  "alternative_facets": {"mechanism": ["forcing a monochromatic triangle without a large monochromatic clique"]},
+  "min_corpus": 20,
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_target": "paper"
+}

@@ -1,0 +1,4078 @@
+{
+  "admissibility": {
+    "admissible": true,
+    "patent_axis": {
+      "live": true,
+      "reason": "not_a_novel_band"
+    },
+    "reasons": [
+      "band_does_not_assert_discovery"
+    ],
+    "verdict": "INCREMENTAL"
+  },
+  "adversarial_flags": [],
+  "adversarial_review": {
+    "flags": [],
+    "review_hash": "e5a8e6a8b225312a4051a0df5c4b9555eb56a8ffbe8f1090fa341d3cbe4da3c9",
+    "reviewer_summary": "Novelty verdict is corpus-grounded, facet-localized, and (where crowded) shipped with a measured pivot.",
+    "verdict": "NOVELTYFORGE_V1_ADVERSARIAL_REVIEW_GREEN"
+  },
+  "anticipation": {
+    "clear_core_facets": [
+      "method"
+    ],
+    "crowded_core_facets": [
+      "mechanism",
+      "outcome"
+    ],
+    "mosaic_obviousness": {
+      "core_facets_anticipated": [
+        "mechanism",
+        "outcome"
+      ],
+      "distinct_references_needed": [
+        "10.1137/120900678",
+        "https://openalex.org/W1974685141"
+      ],
+      "is_risk": false
+    },
+    "per_facet": [
+      {
+        "anticipated": true,
+        "facet": "mechanism",
+        "is_core": true,
+        "max_collision": 0.55,
+        "nearest_prior_art": "https://openalex.org/W1974685141",
+        "novelty": 0.45
+      },
+      {
+        "anticipated": false,
+        "facet": "method",
+        "is_core": true,
+        "max_collision": 0.283362,
+        "nearest_prior_art": "10.1137/120900678",
+        "novelty": 0.716638
+      },
+      {
+        "anticipated": true,
+        "facet": "outcome",
+        "is_core": true,
+        "max_collision": 0.55,
+        "nearest_prior_art": "10.1137/120900678",
+        "novelty": 0.45
+      },
+      {
+        "anticipated": true,
+        "facet": "problem",
+        "is_core": false,
+        "max_collision": 0.653241,
+        "nearest_prior_art": "https://openalex.org/W1974685141",
+        "novelty": 0.346759
+      },
+      {
+        "anticipated": true,
+        "facet": "entities",
+        "is_core": false,
+        "max_collision": 0.55,
+        "nearest_prior_art": "https://openalex.org/W1974685141",
+        "novelty": 0.45
+      }
+    ],
+    "shape": "partial_facet_collision",
+    "single_reference_anticipation": null,
+    "summary": "Core facet(s) ['mechanism', 'outcome'] are crowded; the rest are clear -- differentiate the crowded facet(s)."
+  },
+  "claim": "For every K4-free graph the triangle cover number (least number of triangle-free subgraphs covering the edges) is at most the triangle-free chromatic ceiling (the supremum of chromatic numbers of triangle-free subgraphs); and more generally, for any linear order on the vertices, the triangle cover number is at most the supremum over vertices of the chromatic number of the subgraph induced on the neighbours lying above that vertex, which yields that every graph on kappa-plus vertices is a union of kappa triangle-free subgraphs.",
+  "claim_chart": {
+    "claim_grounded": true,
+    "core_elements_disclosed": 1,
+    "core_elements_total": 3,
+    "evidence_note": "non_patent_reference",
+    "reference": {
+      "identifier": "10.2307/2324291",
+      "overall_collision": 0.381663,
+      "record_id": "https://openalex.org/W1974685141",
+      "source": "paper",
+      "title": "Pearls in Graph Theory, a Comprehensive Introduction.",
+      "year": 1991
+    },
+    "rows": [
+      {
+        "claim_facet": "mechanism",
+        "claim_grounded": true,
+        "claim_text": "colour each edge by the colour that the smaller endpoint's neighbourhood colouring assigns to the larger endpoint, so the two edges at the least vertex of any triangle differ",
+        "element_disclosed": true,
+        "is_core": true,
+        "prior_art_collision": 0.55,
+        "shared_distinctive_terms": [
+          "colour",
+          "vertex",
+          "edge"
+        ],
+        "text_overlap": true
+      },
+      {
+        "claim_facet": "method",
+        "claim_grounded": true,
+        "claim_text": "well-ordering the vertex set, degeneracy and colouring number arguments, neighbourhood chromatic bounds",
+        "element_disclosed": false,
+        "is_core": true,
+        "prior_art_collision": 0.215318,
+        "shared_distinctive_terms": [],
+        "text_overlap": false
+      },
+      {
+        "claim_facet": "outcome",
+        "claim_grounded": true,
+        "claim_text": "an upper bound on the triangle cover number by a chromatic invariant, and the corollary that no graph on aleph-one vertices needs uncountably many triangle-free layers",
+        "element_disclosed": false,
+        "is_core": true,
+        "prior_art_collision": 0.110719,
+        "shared_distinctive_terms": [],
+        "text_overlap": false
+      },
+      {
+        "claim_facet": "problem",
+        "claim_grounded": true,
+        "claim_text": "infinite graph theory / edge decompositions",
+        "element_disclosed": true,
+        "is_core": false,
+        "prior_art_collision": 0.653241,
+        "shared_distinctive_terms": [
+          "decompositions",
+          "theory",
+          "infinite",
+          "edge",
+          "graph"
+        ],
+        "text_overlap": true
+      },
+      {
+        "claim_facet": "entities",
+        "claim_grounded": true,
+        "claim_text": "K4-free graphs, their triangle-free edge decompositions, neighbourhood subgraphs, linear orders on the vertex set",
+        "element_disclosed": true,
+        "is_core": false,
+        "prior_art_collision": 0.55,
+        "shared_distinctive_terms": [
+          "decompositions",
+          "vertex",
+          "edge",
+          "subgraphs",
+          "graphs"
+        ],
+        "text_overlap": true
+      }
+    ],
+    "single_reference_anticipation": false,
+    "verdict": "reference_discloses_some_elements"
+  },
+  "claim_power": {
+    "band_envelope": {
+      "claim_favouring": "INCREMENTAL",
+      "prior_art_favouring": "INCREMENTAL"
+    },
+    "band_is_stable": true,
+    "core_novelty_envelope": {
+      "claim_favouring": 0.536477,
+      "prior_art_favouring": 0.536477,
+      "spread": 0.0
+    },
+    "reason": "band_invariant_under_both_extreme_tiebreaks",
+    "schema": "oracle.noveltyforge.claim-power.v1",
+    "thin_facets": [],
+    "unmatchable_facet_terms": {
+      "mechanism": [
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "assigns"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "neighbourhood"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "smaller"
+        }
+      ],
+      "method": [
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "arguments"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "degeneracy"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "neighbourhood"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "well-ordering"
+        }
+      ],
+      "outcome": [
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "aleph-one"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "corollary"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "invariant"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "layers"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "needs"
+        },
+        {
+          "corpus_documents_containing_it": 0,
+          "idf": 1.6931,
+          "token": "uncountably"
+        }
+      ]
+    },
+    "unstable_facets": []
+  },
+  "core_novelty": 0.536477,
+  "corpus_provenance": {
+    "acquired_utc": "2026-09-06T10:45:24Z",
+    "acquisition_output_file_sha256": "866999ef2999f403e9df73425caf6d5dd174fa9e4a40b1d7a5d2688552419874",
+    "acquisition_snapshot_sha256": "578bdc82497fbb892e7b6286efa0141502d9e7023a0f2c821ed5fbb421470d4e",
+    "binding_receipt_sha256": "e693b055f5a04cb6d2af23d80896f4dd47ca1ab7578474a787926aa0eb78f335",
+    "corpus_path": "C:\\Users\\jared\\AppData\\Local\\Temp\\noveltyforge-acquire\\corpus_ce1ada687b7344c549261c0d58608178.json",
+    "corpus_sha256": "cdfcbfa2672c219798e965cf2355555f41cf5e259a5105e627eb030eab24a91b",
+    "family_summary": {
+      "double_count_prevented": 0,
+      "family_count": 0,
+      "patent_records": 0,
+      "receipt_sha256": "a188e80379a313059c8802beadec87d1f92b9eb9b141ca4d9c5a2cee3bbedb16",
+      "unique_structure_count": 0
+    },
+    "independent_quotas": {
+      "paper_quota_met": true,
+      "patent_quota_met": true,
+      "required_papers": 4,
+      "required_patents": 0,
+      "status": "COMPLETE"
+    },
+    "paper_count": 30,
+    "paper_queries": [
+      "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+      "colouring number well-order triangle-free edge decomposition uncountable graph",
+      "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+      "every graph on kappa plus vertices union of kappa triangle-free graphs",
+      "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+      "infinite graph theory edge decompositions",
+      "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+      "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+      "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+      "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+      "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+      "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs",
+      "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary"
+    ],
+    "paper_retrieval": {
+      "all_provider_attempts_succeeded": true,
+      "attempts": [
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 36320,
+            "body_sha256": "60f2fc17d0a109085caee50b484d713c3597465c85f6a82fd712340821e2b86a",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1405.15,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "1b1371caa5f15fdadbbf84db111db861e981ddd9396ba196f52b7eb2185a81a5",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=Erdos+Hajnal+K4-free+countable+union+triangle-free+graphs+partial+results&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 586,
+            "body_sha256": "777ec303b194c1d025b3a7ae91b31f3fd39a7589dcd96941f60d7a8519a909a3",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1199.421,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "422a73bf452bbc405fac418ef049f57ef4b4b48cb8d0395249355a221c50655d",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=Erdos+Hajnal+K4-free+countable+union+triangle-free+graphs+partial+results&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 236,
+            "body_sha256": "cdbbe766ca49bbb71eee96615a2ada115d1809802ba0105e787894c3300ee4ac",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 557.884,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "978b3ebe2b39ba2d89f20a15dd26c83192bb8271968d46fe545df88438c45df7",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Erdos+Hajnal+K4-free+countable+union+triangle-free+graphs+partial+results&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29717,
+            "body_sha256": "f7c0098f9f235f29ba09a87c6fe50faf5a342f163697ae4d050518b573eb5a1a",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1206.914,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "6ebaca6cddf7dc982001c73989aa1fdce9e573d7cb738fcb9908dd2683e9e2ca",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 24656,
+            "body_sha256": "c9e2859f25a4bb2733b0058b3bb3ea1a21e1a093a23defa779d059f24f24dee6",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1015.858,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "2a2ee53b350e0a4d0e0d2ed77d471d33e5c6032b2d33617c95baab5c6cb6aae8",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+infinite&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 442464,
+            "body_sha256": "30acb51d3c133a4b3b801d21768a930e93d4ba67f6202b20c69fd2641e9b8c32",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1740.767,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "71f01ebfad0241f309040fa7838186c6db477ab011399c02993de49eb152fa2d",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+infinite&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 272,
+            "body_sha256": "97434728ce9065dcda337f3710a0bc3429d452d176c4d7cb721a3fac220c3659",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 562.56,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "b0eaf8ab043b298c936a9c0f40dfe2972bc2cff8b0f1f87c5bd01568c5a9eaf9",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+infinite&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30112,
+            "body_sha256": "dd8025646ad84c79b323ab45b9481bc9151944407bf43f8cfb2be192098e7bdf",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1404.33,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "ff2b350a8eab965fa90b68da6e928fcb32f9f512e9dffd4478f9c0bbec9c599e",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 31334,
+            "body_sha256": "b0e52aa8417c45b33775b489d026b58d6a275cd5db5fa4f9815c40c66117a881",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1423.58,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "bc24adb4165328611a097bd7eac1477294e493fddb8309e5b2954550a5e7c5a1",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+k4-free+graphs+triangle-free&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 3,
+          "provider": "openalex",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 46936,
+            "body_sha256": "8cb2d13d612098354abbdcce1eecae8fa4ff30c3f253e05663a89094680bf921",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1389.317,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4417e6d46cdbaf5a4a145ba532a5ab2c0ad4b6943c3ef90edff122a49cbb277f",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+k4-free+graphs+triangle-free&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 292,
+            "body_sha256": "4797267dc2a04f02d92302165297afdae7dbfcaeb5297e067b1b7983369dff09",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 165.256,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "ed8703c6522dab65ef75f5d5b8bf9bb1aed5cc5ca4c148e80e0cc9a15f3dfad0",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+k4-free+graphs+triangle-free&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29481,
+            "body_sha256": "31becaf09fc3e586602deedb24f18a47a6f9cefc63948f832de34015f94b9cf7",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 914.753,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "ea8575b1ef765e7d1bc69a40900793f091e7034ee184b1ad17f699b83c210df6",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30441,
+            "body_sha256": "4a7635edd5a2d1c736651cb42dc35c051b762b115cf2ddcbdadf79e5a9efb46e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 911.413,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "02727ee4ba9111cbca79d16af268aa73f7a6c38e776d776aef2bd37ba753504c",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+upper+bound+cover&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 451172,
+            "body_sha256": "213c285f1cbd39d06cebbd9c7c79851a963ca695661ac889dbd11185dff6de49",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1177.46,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "b455949513dba812186671432782c5a8033dc57e74e428698b96be45e0df03ac",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+upper+bound+cover&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 281,
+            "body_sha256": "64bba6bca505af11582804cfd841b0f07d01ea3b59d48ed8c656359e10d8bd52",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 203.339,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "0933b5f0e233f501ff1255fa47b95ef266bb413ad36fb0406a01fcd65444a140",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+upper+bound+cover&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30155,
+            "body_sha256": "aa6d882342edec5cd347618971f5768d6f7b468924074517ff6b7cebc4f5b302",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1025.307,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "de5170b1cdbafe6c0798d4ec871c1fd8586ff9a58a007d16048b45520b082f85",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 25992,
+            "body_sha256": "6d8666073a95997dc17ee5d1bb747bb4535a3f18c2d5df4e68949a6a3f018d7e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1499.656,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "8942cb17ff1afb1185eb0d2dc50c1b222734fe0eda032180aa670ce5c2c636cf",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+well-ordering+set+degeneracy&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 413742,
+            "body_sha256": "0cb56c2607a2527005cfb8ba6b036f4d760f20c664ee77b864761788bb7bc7fc",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 833.964,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "a83bcfc7a1877fc6c71c01fbeb3f0de8690013dc99c4363a8affaee2411080ae",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+well-ordering+set+degeneracy&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 292,
+            "body_sha256": "1a3221b12c7cea500f4a93ac46cc6ee979a6d7f1549fce820f719d932f9aa0cf",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 238.734,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "ce9bdb35cdfea01ac85ed0abe663f167ffddcc655996170dfa1e603002a5b82a",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+well-ordering+set+degeneracy&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30585,
+            "body_sha256": "8c0b55668953bf331594fcbe2a3a8e832619dc77038ed2b8fd70f97e496a4d63",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 967.251,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "a08052144438f67277e6aabc5dcd204b56ad076efb4962abee93c0d5058a2019",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 27477,
+            "body_sha256": "3b30de26096c3efbcb6d1eb354cf83cd30e5747cd755d079cd058c6ed0a7b99f",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1124.156,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "79d18561d3968538972376bb275ec940c0744639483b3c5b007c93f49a82e4ff",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=colouring+number+well-order+triangle-free+edge+decomposition+uncountable+graph&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 408572,
+            "body_sha256": "fb67ab21f54fd5f3451876564dcac3d1281f98ab0e5f92f1ce9f978fdcd3f744",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1225.154,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "2520c724f223248b6c2b59e1140d8fc067ce62041ec63d574d113c6837e8f8c0",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=colouring+number+well-order+triangle-free+edge+decomposition+uncountable+graph&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "europe_pmc",
+          "query": "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 2315,
+            "body_sha256": "1736a52d50612dc2874f4acc9ecadefc55b922bd163b73bb1ef475ab20962f47",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 172.179,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "e06062ec90fb3a6d1cd95295c40524f01edb5881dfbb2481f96c25bf64fe8191",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=colouring+number+well-order+triangle-free+edge+decomposition+uncountable+graph&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 2,
+          "provider": "semantic_scholar",
+          "query": "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "receipt": {
+            "attempt": 2,
+            "body_bytes": 2027,
+            "body_sha256": "370682fbb45806d6582f1cbb61c676e9ac95256ac6531dc36e6db8f40d5cdfa4",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 10178.35,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "hit_count": 2,
+            "provider": "semantic_scholar",
+            "receipt_sha256": "4d7a01a2781d84f67c8c455a0c7c4cc9d41e4c18d2cf5374ca208919d4feef3b",
+            "status": 200,
+            "total_results": 2,
+            "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=colouring+number+well-order+triangle-free+edge+decomposition+uncountable+graph&limit=25&fields=title%2Cabstract%2Curl%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2CpublicationDate%2Cauthors%2CisOpenAccess%2CopenAccessPdf%2CpublicationTypes"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29696,
+            "body_sha256": "914dd870b9890e930d3c3c0aa43e7afead76a51008b199880f01e63340fecf5b",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 892.094,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "ed4e072359e8c1b724a564010d165bd2d31633abdac6ccb38093a0d7a4926a46",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 35170,
+            "body_sha256": "26973a43d7b54b352c6194c2ff7ea67bb1997a79c7539f01ec10abc0974bfc0e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 730.386,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "fa1c8ebc0577199ce9458bed737642f3eb35242037e49319f0556081c016cee4",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=cover+edges+of+a+graph+by+triangle-free+subgraphs+colouring+number+degeneracy&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 477358,
+            "body_sha256": "1f4de858280703837551a2d366cdb2d7538f95c1167e12ecfdca6aab2830dc35",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1006.133,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "6bc0aac6094db3bb6ff117abcbf07fe3a89ae9468699bd0d6f6e8fe6ccf17470",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=cover+edges+of+a+graph+by+triangle-free+subgraphs+colouring+number+degeneracy&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "europe_pmc",
+          "query": "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 2652,
+            "body_sha256": "9fcf19afb3587048bb83903a1682860d8c038a31169bc791a4d5fe24e2cd8962",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 171.302,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "514a0bea0a8ebd1776e1837df610bc9374dd69fa0cdee3a649311c76808793bd",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=cover+edges+of+a+graph+by+triangle-free+subgraphs+colouring+number+degeneracy&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 10,
+          "provider": "duckduckgo_web",
+          "query": "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 30268,
+            "body_sha256": "5fbfff54b89678ff541efe2c1b2fa33a0123f6d9a746ebf949e69ab3680b8f06",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 970.012,
+            "headers": {
+              "Content-Type": "text/html; charset=UTF-8"
+            },
+            "hit_count": 10,
+            "parsed_count": 10,
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "dc2e5791d0fd2df5159bd360f7c2b0aa3fe5f6fad8aee6ab9107848c45b50e86",
+            "status": 200,
+            "url": "https://html.duckduckgo.com/html/"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 31898,
+            "body_sha256": "5be17ee36ab476c199e760f5521377eddd78fa745d93eb5faa251b139ba529f6",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 676.349,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4b98d0486c4e46c087fa03805a7d0ff7e915437fd57b86f6571800bb6aa41806",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=every+graph+on+kappa+plus+vertices+union+of+kappa+triangle-free+graphs&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 402032,
+            "body_sha256": "559d2809936ad00c220e32538dad33bc69c713ae958d7cb97ffc031046e08b4c",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 592.577,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "415b2bc12ab4dabf236e4d5ddbdfe2c196e2dec78ae3bcfa9c88e8ad83987e0f",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=every+graph+on+kappa+plus+vertices+union+of+kappa+triangle-free+graphs&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 6,
+          "provider": "europe_pmc",
+          "query": "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 15098,
+            "body_sha256": "f0258455892c5ffc49ae0c4c1d1c4609c74f3d095ead82f29bc9e7433d6f791f",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 268.29,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "433be8f14992ddd21aa0e2fbb7f5bd11e36f071bf96c616d2c50bafdd523430a",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=every+graph+on+kappa+plus+vertices+union+of+kappa+triangle-free+graphs&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 36547,
+            "body_sha256": "9286a5c36c69d625839898fe27d6a01a81bf50e33327035b6a9682f3ef6f0e42",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 656.727,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "8c997411b861957525c826b76f0d5918dc4a1d6cbed43b42359526f41e201fe3",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=every+k4-free+graph+triangle+cover+number+triangle-free+subgraphs+covering+edges+chromatic+ceiling+supremum+numbers+generally+linear+order+vertices&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 808,
+            "body_sha256": "72b93b1c469ef5923a9d4870f5ba15fc665953095cc8177a72d881c881f8f0f4",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 680.931,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4e514d6e70673ddc6ec4bc532e9d69db08cdab4e03efa439da659fa261bdb30e",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=every+k4-free+graph+triangle+cover+number+triangle-free+subgraphs+covering+edges+chromatic+ceiling+supremum+numbers+generally+linear+order+vertices&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 310,
+            "body_sha256": "35437bf4c5720ed6c744b3946ef376ef15ed36b731d5fc30a699beb426508123",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 158.641,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "e61398b4efa85887acbeb5e56978cf6f4bda2c9eba00b2dcfd9af189e3e36a07",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=every+k4-free+graph+triangle+cover+number+triangle-free+subgraphs+covering+edges+chromatic+ceiling+supremum+numbers+generally+linear+order+vertices&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 26,
+            "body_sha256": "02aecf9c00620f43e73fdbb763151f71abbf50ab63f7daee41b35b4c29f8350f",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 9815.945,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "hit_count": 0,
+            "provider": "semantic_scholar",
+            "receipt_sha256": "6d283a1a81b052c408ceae2ba396a1d2a5892f8ffedf55d3649591568521f1cb",
+            "status": 200,
+            "total_results": 0,
+            "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=every+k4-free+graph+triangle+cover+number+triangle-free+subgraphs+covering+edges+chromatic+ceiling+supremum+numbers+generally+linear+order+vertices&limit=25&fields=title%2Cabstract%2Curl%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2CpublicationDate%2Cauthors%2CisOpenAccess%2CopenAccessPdf%2CpublicationTypes"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "infinite graph theory edge decompositions",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 33618,
+            "body_sha256": "8d8b599a7ee1bdd465eec574082e698291a1bdc24d4a259115861e4ea623ae0a",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 494.572,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "6696c7af0fd3c58cc9e10d7b5b405c786f8caa9be0d395a28a6e973357971699",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=infinite+graph+theory+edge+decompositions&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "infinite graph theory edge decompositions",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 449925,
+            "body_sha256": "9fec16aaa2bc708b5e0b48ea348705624d8c86c0928389faf956f9ee18779181",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 914.364,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "70a7870c8536beee0b9a58ded68433c3dcfe7727a4ed2d39aeabb140be5959d0",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=infinite+graph+theory+edge+decompositions&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "europe_pmc",
+          "query": "infinite graph theory edge decompositions",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 120484,
+            "body_sha256": "372a039496e2591c525744b57fc978a110c9c041dc2035f90b680faa74d436dc",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 448.955,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "4c27ce773953ea58767fd7af560155cb2d9fb12fb32caabaa7b8c1a9aeee738d",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=infinite+graph+theory+edge+decompositions&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "infinite graph theory edge decompositions",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "infinite graph theory edge decompositions",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 23763,
+            "body_sha256": "6a3b6205842769478f926f43c0007f2be4cff7a1dea67b73ea8b615cef5a61f8",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 656.994,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "c3fb739bf3e529e8295ab0d724858f857ec59e1f41b47ae8f2d39b6082ebbc3e",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=local+chromatic+number+bound+edge+decomposition+monochromatic+triangle+infinite+graph&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 467968,
+            "body_sha256": "08bd4b7135b1bd7315b54ffbabeac28da4fdee9bf29d387492bcabef0dd50fb3",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 791.213,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "105b23d37b9036741437b1166311639f4920e942d486629f31ce4a4ad82b8b28",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=local+chromatic+number+bound+edge+decomposition+monochromatic+triangle+infinite+graph&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "europe_pmc",
+          "query": "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 4126,
+            "body_sha256": "0afbdb31cc1bf5354ad7e98d840bc146b1f818342a71e3ea517ac742fde3598f",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 210.938,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "85730307ef871309ff4b1e2ee0faa643ba8c723b3e6628a5ce33b92bb26c5246",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=local+chromatic+number+bound+edge+decomposition+monochromatic+triangle+infinite+graph&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 29793,
+            "body_sha256": "201a3bb03c9180d473b20139f6906e6a832f052128fda2fbb66a31744fb7f241",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1256.3,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "6e29d5bb1878b92021a0a5030a2542a1519d5c13a4a69094c9d263c2fe4d5d5a",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=triangle+cover+number+upper+bound+neighbourhood+chromatic+number+K4-free+graph&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 16,
+          "provider": "openalex",
+          "query": "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 255621,
+            "body_sha256": "b1631cc97d06942f44a96bc41d73d59dd3c19d7e22b246a46506adb61570ed65",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1004.82,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "bbaaf0bef46c77913d2bb72be798d744609575177c0595f863fe0d004b9e1229",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=triangle+cover+number+upper+bound+neighbourhood+chromatic+number+K4-free+graph&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 1,
+          "provider": "europe_pmc",
+          "query": "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 5604,
+            "body_sha256": "124f0dfb43b49557451fa77db613177868f7941b81c444602e2f964c6a8d8b0e",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 207.364,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "7072189237ae595dd142af22f30a3c17f356c681da6c1d415e22978e7060ec3a",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=triangle+cover+number+upper+bound+neighbourhood+chromatic+number+K4-free+graph&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 31256,
+            "body_sha256": "0eb8344601899487f1f38da83b6ec87278f1b65ad15a724d446b33941b7f12b9",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1392.981,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "7c5a8bb59b07e8af54c91b82b1d71f378ef5465a4b184a0fcfe0c8170acb22aa",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 727,
+            "body_sha256": "58837d727c0c17d1db84b548e957ae21c31c623049c451e1b5362e99f3d4d29a",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 439.633,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "52133a7a25f8102c95fa96aabc1903020d3c439b98d654220bd2e122b26c9dfb",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 283,
+            "body_sha256": "f1f493d7a6052803fa98f396e757338545fcd7e0fadb9350f3e0625683064fb9",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 369.759,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "71695e5312deda5f36d53ebfdd692df9c75d8719b30e70b18a51ab9c1e05b4d1",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "attempt": 2,
+            "body_bytes": 26,
+            "body_sha256": "02aecf9c00620f43e73fdbb763151f71abbf50ab63f7daee41b35b4c29f8350f",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 5138.044,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "hit_count": 0,
+            "provider": "semantic_scholar",
+            "receipt_sha256": "f3412fd01d7eb0075be2b42365f784f0c2fe18c10503f31416dfab912bc0a68f",
+            "status": 200,
+            "total_results": 0,
+            "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free&limit=25&fields=title%2Cabstract%2Curl%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2CpublicationDate%2Cauthors%2CisOpenAccess%2CopenAccessPdf%2CpublicationTypes"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 35092,
+            "body_sha256": "8b79e55b45dafff8d84b6b608d04623525ca698757d9cb4a34102085fcfee5e8",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 524.53,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "a968049365d2a4012ec62b0a31e7575fbd689878cf7809e31bf6982f2e3718ae",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free+layers+k4-free&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "openalex",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 772,
+            "body_sha256": "b7f1db23be19e2bbfcc5262fa5c1a4e5aee12c26a2bf0a1496e21ae010846ae0",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 612.346,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "b32537ec11de8291f83b8b6d0a8a95c05c149f6e686cc1da33e9075a17036d54",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free+layers+k4-free&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 298,
+            "body_sha256": "8182e5770df86c98fbad5b883a0056c71a405b7d9eb8bd6254232ead0989b4c9",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 176.963,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "b7dc302d8f4ced777772e7734a8e500a66e489ea34817074c3facad98dc82a71",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free+layers+k4-free&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 26,
+            "body_sha256": "02aecf9c00620f43e73fdbb763151f71abbf50ab63f7daee41b35b4c29f8350f",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 2060.504,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "hit_count": 0,
+            "provider": "semantic_scholar",
+            "receipt_sha256": "ad453d2513b27ff521748cb04d7f667e8cc4bb6f7e31bf92edeaa0f9c3a5efa9",
+            "status": 200,
+            "total_results": 0,
+            "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free+layers+k4-free&limit=25&fields=title%2Cabstract%2Curl%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2CpublicationDate%2Cauthors%2CisOpenAccess%2CopenAccessPdf%2CpublicationTypes"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 25373,
+            "body_sha256": "b6fe82da3231f9d43da49b802e499c77f99022d9de3824b01886f62e1da4dd6e",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 1062.602,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "c3a1022da1d1ae2e441b26dcb31a95a03c66bfdd5d9fbcaad946f862b945c74b",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+infinite+graph+theory+edge&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "openalex",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 401482,
+            "body_sha256": "85abfd540690cba0f2dc9b2090c4e60cd87d0002595a5debe63e59e12cca9167",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 1166.854,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4bf17ef9342175ec940acf291e7387ecd12c8d856eb4a81e5542804e6e0422aa",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+infinite+graph+theory+edge&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 283,
+            "body_sha256": "b849e0a9b994589aecb8a29be3b6fc08b9ce4327613f48d4587c108a9ebc383a",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 166.864,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "84ce87630303fea2c548735bdb067e8c47f60f0f2de331bc4ec208ad1e435167",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+infinite+graph+theory+edge&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 33957,
+            "body_sha256": "0546a17edda287c444c2cb1e495cac140b5d04534fddf4a5fe66e8ed2163ffb1",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 755.393,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "4912bc5ae83d434a7683382eeceeba5d77567a8a87a0922df7d9c639b543bfa1",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+k4-free+graphs+triangle-free+edge+decompositions+subgraphs&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 3,
+          "provider": "openalex",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 61656,
+            "body_sha256": "5df55ff3e04fb50ff8c9d598e181b40829ec678815c2dc330de34e8a3c0a03aa",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 525.825,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "086334ece02df0ca293327a74a35a217a4e84c85c23cea8bf849844cd94c2e40",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+k4-free+graphs+triangle-free+edge+decompositions+subgraphs&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 315,
+            "body_sha256": "6b8563e6416fd116ab6b4b2f04b9404d2b3eef3c1abfd01773ca96ccf383d9da",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 153.171,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "26830ad93bf3bb49842cc38c42d60f88e758bc6c52e02232d741bda694896a91",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+k4-free+graphs+triangle-free+edge+decompositions+subgraphs&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs",
+          "receipt": {
+            "attempt": 2,
+            "body_bytes": 26,
+            "body_sha256": "02aecf9c00620f43e73fdbb763151f71abbf50ab63f7daee41b35b4c29f8350f",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 8527.615,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "hit_count": 0,
+            "provider": "semantic_scholar",
+            "receipt_sha256": "530b8054fa508490625d35345f28ce30eef3933fe2b5648ddf3d2cb640c54b25",
+            "status": 200,
+            "total_results": 0,
+            "url": "https://api.semanticscholar.org/graph/v1/paper/search?query=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+k4-free+graphs+triangle-free+edge+decompositions+subgraphs&limit=25&fields=title%2Cabstract%2Curl%2Cyear%2Cvenue%2CexternalIds%2CcitationCount%2CpublicationDate%2Cauthors%2CisOpenAccess%2CopenAccessPdf%2CpublicationTypes"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 25,
+          "provider": "crossref",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 28743,
+            "body_sha256": "489601249db33bba9b684a21099082fbdc168e49e293d0d41fedf03281b761ab",
+            "compression_header_mismatch": true,
+            "decompressed": true,
+            "elapsed_ms": 900.274,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "e155430e0c9a2cd22a6cea5dad2e6f26189bd3713b734091de9bab6810ff4860",
+            "status": 200,
+            "url": "https://api.crossref.org/works?query.bibliographic=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+upper+bound+triangle+cover+invariant+corollary&rows=25&select=DOI%2Ctitle%2Cabstract%2CURL%2Clink%2Cpublished%2Cissued%2Ccontainer-title%2Cauthor%2Ctype%2Cis-referenced-by-count&mailto=jared%40jaredwilder.com"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 11,
+          "provider": "openalex",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 167360,
+            "body_sha256": "c1fac2573a3397b1b14edd3ffd1b0ff601523a0b88fff123ea788dbfeee4623c",
+            "compression_header_mismatch": false,
+            "decompressed": true,
+            "elapsed_ms": 854.174,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "receipt_sha256": "092ab5aa9d663b0e60315b22589ab787f1b484bf4ff91a857a0a19f618b35473",
+            "status": 200,
+            "url": "https://api.openalex.org/works?search=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+upper+bound+triangle+cover+invariant+corollary&per-page=25&mailto=jared%40jaredwilder.com&api_key=fgfFMLc7yiZfXGxGjg6m9g"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "europe_pmc",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 303,
+            "body_sha256": "4774f76f8e73df0b2c609b5c14cb7370a9bede2da8ba540f05d42f83caed1225",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 153.492,
+            "headers": {
+              "Content-Type": "application/json;charset=UTF-8"
+            },
+            "receipt_sha256": "ee17081ff7b41791c5fccb8bbcd02447645b0b1dfde553c321fbac5d5aaec789",
+            "status": 200,
+            "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+upper+bound+triangle+cover+invariant+corollary&format=json&pageSize=25&resultType=core"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "semantic_scholar",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "receipt": {
+            "error": "HTTPError:http_429",
+            "provider": "semantic_scholar",
+            "receipt_sha256": "866516397331acd2547b52d7efdcc6c7926fcbf4a7ad92aad71f518db580a45a",
+            "status": "error"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 0,
+          "provider": "duckduckgo_web",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "receipt": {
+            "error": "HTTPError:unexpected_http_status:202",
+            "provider": "duckduckgo_web",
+            "receipt_sha256": "2ff4557495dc836c68c02173e61f09069e29e6dbe35a1157b25b19d2998853ef",
+            "status": "error"
+          },
+          "status": "success"
+        }
+      ],
+      "math_domain_detected": false,
+      "math_scholarly_providers": {
+        "status": "not_applicable"
+      },
+      "paper_count": 30,
+      "provider_error_count": 0,
+      "provider_success_count": 85,
+      "providers_attempted": [
+        "crossref",
+        "openalex",
+        "europe_pmc",
+        "semantic_scholar",
+        "duckduckgo_web"
+      ],
+      "providers_with_hits": [
+        "crossref",
+        "duckduckgo_web",
+        "europe_pmc",
+        "openalex",
+        "semantic_scholar"
+      ],
+      "query_count": 17,
+      "relevance_floor": {
+        "admitted": 506,
+        "all_candidates_excluded": false,
+        "candidates": 555,
+        "excluded": 49,
+        "excluded_rows": [
+          {
+            "cited_by_count": 1463,
+            "doi": "10.1016/0890-5401(90)90043-h",
+            "retrieval_citation_prior": 1.239118,
+            "title": "The monadic second-order logic of graphs. I. Recognizable sets of finite graphs"
+          },
+          {
+            "cited_by_count": 445,
+            "doi": "10.1016/0012-365x(73)90108-8",
+            "retrieval_citation_prior": 1.037054,
+            "title": "Acyclic orientations of graphs"
+          },
+          {
+            "cited_by_count": 288,
+            "doi": "10.1201/9781420046090-c13",
+            "retrieval_citation_prior": 0.963293,
+            "title": "Fundamentals of Image Processing"
+          },
+          {
+            "cited_by_count": 237,
+            "doi": "10.1038/nphys3374",
+            "retrieval_citation_prior": 0.930286,
+            "title": "Percolation in real interdependent networks"
+          },
+          {
+            "cited_by_count": 233,
+            "doi": "10.1016/0304-3975(93)90064-z",
+            "retrieval_citation_prior": 0.927405,
+            "title": "Monadic second-order evaluations on tree-decomposable graphs"
+          },
+          {
+            "cited_by_count": 163,
+            "doi": "10.1016/s0304-3975(01)00149-9",
+            "retrieval_citation_prior": 0.866977,
+            "title": "Statistical mechanics methods and phase transitions in optimization problems"
+          },
+          {
+            "cited_by_count": 57,
+            "doi": "10.1016/j.ejc.2015.02.031",
+            "retrieval_citation_prior": 0.690275,
+            "title": "On decomposing regular graphs into locally irregular subgraphs"
+          },
+          {
+            "cited_by_count": 46,
+            "doi": "10.1016/s0012-365x(02)00821-x",
+            "retrieval_citation_prior": 0.654525,
+            "title": "On the span in channel assignment problems: bounds, computing and counting"
+          },
+          {
+            "cited_by_count": 45,
+            "doi": "10.1017/s0962492924000011",
+            "retrieval_citation_prior": 0.650869,
+            "title": "Adaptive finite element methods"
+          },
+          {
+            "cited_by_count": 45,
+            "doi": "",
+            "retrieval_citation_prior": 0.650869,
+            "title": "MAPS ON SURFACES AND GALOIS GROUPS"
+          },
+          {
+            "cited_by_count": 33,
+            "doi": "10.1016/j.disc.2016.07.026",
+            "retrieval_citation_prior": 0.599481,
+            "title": "Facially-constrained colorings of plane graphs: A survey"
+          },
+          {
+            "cited_by_count": 29,
+            "doi": "10.1016/j.jalgebra.2007.04.013",
+            "retrieval_citation_prior": 0.578204,
+            "title": "Towers of recollement and bases for diagram algebras: Planar diagrams and a little beyond"
+          },
+          {
+            "cited_by_count": 26,
+            "doi": "10.1007/s00222-022-01141-w",
+            "retrieval_citation_prior": 0.560292,
+            "title": "Hyperbolic 5-manifolds that fiber over $$S^1$$"
+          },
+          {
+            "cited_by_count": 23,
+            "doi": "10.48550/arxiv.2303.10798",
+            "retrieval_citation_prior": 0.540269,
+            "title": "An aperiodic monotile"
+          },
+          {
+            "cited_by_count": 17,
+            "doi": "10.1016/j.tcs.2017.06.012",
+            "retrieval_citation_prior": 0.491363,
+            "title": "Boundary classes for graph problems involving non-local properties"
+          },
+          {
+            "cited_by_count": 16,
+            "doi": "10.1016/j.geomphys.2022.104520",
+            "retrieval_citation_prior": 0.481646,
+            "title": "Branches, quivers, and ideals for knot complements"
+          },
+          {
+            "cited_by_count": 14,
+            "doi": "10.4171/zlam/32",
+            "retrieval_citation_prior": 0.460369,
+            "title": "Statistical Mechanics of Mean-Field Disordered Systems"
+          },
+          {
+            "cited_by_count": 12,
+            "doi": "10.1016/j.jctb.2019.08.001",
+            "retrieval_citation_prior": 0.436041,
+            "title": "A local epsilon version of Reed's Conjecture"
+          },
+          {
+            "cited_by_count": 9,
+            "doi": "10.21468/scipostphyscore.5.3.038",
+            "retrieval_citation_prior": 0.391439,
+            "title": "A unified diagrammatic approach to topological fixed point models"
+          },
+          {
+            "cited_by_count": 8,
+            "doi": "10.14279/depositonce-852",
+            "retrieval_citation_prior": 0.373528,
+            "title": "Combinatorial Curvatures, Group Actions, and Colourings: Aspects of Topological Combinatorics"
+          },
+          {
+            "cited_by_count": 7,
+            "doi": "10.2140/agt.2013.13.1531",
+            "retrieval_citation_prior": 0.353505,
+            "title": "A geometric construction of panel-regular lattices for buildings of types Ã2and C2"
+          },
+          {
+            "cited_by_count": 6,
+            "doi": "",
+            "retrieval_citation_prior": 0.330805,
+            "title": "Semidefinite programming in combinatorial optimization with applications to coding theory and geometry"
+          },
+          {
+            "cited_by_count": 6,
+            "doi": "10.1007/s41468-017-0001-1",
+            "retrieval_citation_prior": 0.330805,
+            "title": "Structure theory of flip graphs with applications to Weak Symmetry Breaking"
+          },
+          {
+            "cited_by_count": 4,
+            "doi": "10.1007/s00259-017-3822-1",
+            "retrieval_citation_prior": 0.273604,
+            "title": "EANM'17."
+          },
+          {
+            "cited_by_count": 4,
+            "doi": "10.1016/j.disc.2019.01.018",
+            "retrieval_citation_prior": 0.273604,
+            "title": "Generalized arboricity of graphs with large girth"
+          },
+          {
+            "cited_by_count": 4,
+            "doi": "",
+            "retrieval_citation_prior": 0.273604,
+            "title": "Oriented 123-TQFTs via String-Nets and State-Sums"
+          },
+          {
+            "cited_by_count": 4,
+            "doi": "10.1090/tran/8954",
+            "retrieval_citation_prior": 0.273604,
+            "title": "Thresholds for latin squares and Steiner triple systems: Bounds within a logarithmic factor"
+          },
+          {
+            "cited_by_count": 3,
+            "doi": "10.1007/s00259-016-3484-4",
+            "retrieval_citation_prior": 0.23567,
+            "title": "EANM'16."
+          },
+          {
+            "cited_by_count": 3,
+            "doi": "10.48550/arxiv.2005.11899",
+            "retrieval_citation_prior": 0.23567,
+            "title": "Geometric triangulations and highly twisted links"
+          },
+          {
+            "cited_by_count": 2,
+            "doi": "10.1016/j.jcta.2011.06.009",
+            "retrieval_citation_prior": 0.186764,
+            "title": "Completing partial packings of bipartite graphs"
+          },
+          {
+            "cited_by_count": 2,
+            "doi": "10.1007/978-3-030-22996-2_4",
+            "retrieval_citation_prior": 0.186764,
+            "title": "Probabilistic Analysis of Facility Location on Random Shortest Path Metrics"
+          },
+          {
+            "cited_by_count": 1,
+            "doi": "10.1007/s00220-024-05111-6",
+            "retrieval_citation_prior": 0.117835,
+            "title": "CFT Correlators and Mapping Class Group Averages."
+          },
+          {
+            "cited_by_count": 1,
+            "doi": "10.11606/t.55.2018.tde-24072018-161113",
+            "retrieval_citation_prior": 0.117835,
+            "title": "Cooperative driver assistance system for the lane change"
+          },
+          {
+            "cited_by_count": 1,
+            "doi": "10.1007/978-3-031-06678-8_5",
+            "retrieval_citation_prior": 0.117835,
+            "title": "Graph Parameters, Implicit Representations and Factorial Properties"
+          },
+          {
+            "cited_by_count": 1,
+            "doi": "10.3389/fnins.2025.1750272",
+            "retrieval_citation_prior": 0.117835,
+            "title": "Structure-function relationships across scales: implications for atlases."
+          },
+          {
+            "cited_by_count": 1,
+            "doi": "10.4310/bpam.250908175047",
+            "retrieval_citation_prior": 0.117835,
+            "title": "Topology-preserving Hodge decomposition in the Eulerian representation."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.3390/nano15100723",
+            "retrieval_citation_prior": 0.0,
+            "title": "A Complete Energy Model for Graphene Flake Growth with the Fewest Possible Dangling Bonds."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "",
+            "retrieval_citation_prior": 0.0,
+            "title": "Abstracts for the Sixth Biennial SIRS Conference"
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "",
+            "retrieval_citation_prior": 0.0,
+            "title": "Abstracts from the 29th International Congress of the European Association for Endoscopic Surgery (EAES), Barcelona, Spain, 24–27 November 2021"
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.7554/elife.02863.014",
+            "retrieval_citation_prior": 0.0,
+            "title": "Figure 3—figure supplement 5. Incomplete feedback loop distribution in different networks."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s00023-025-01538-2",
+            "retrieval_citation_prior": 0.0,
+            "title": "From Quantum Curves to Topological String Partition Functions II."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1016/j.cosrev.2025.100858",
+            "retrieval_citation_prior": 0.0,
+            "title": "Graphs of large girth"
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s00220-026-05601-9",
+            "retrieval_citation_prior": 0.0,
+            "title": "High-Contrast Random Composites: Homogenisation Framework and Spectral Convergence."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s12346-024-01144-3",
+            "retrieval_citation_prior": 0.0,
+            "title": "Morse Predecomposition of an Invariant Set."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.1007/s00208-023-02785-6",
+            "retrieval_citation_prior": 0.0,
+            "title": "On the profinite rigidity of free and surface groups."
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "",
+            "retrieval_citation_prior": 0.0,
+            "title": "Problèmes de placement, de coloration et d’identification"
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "",
+            "retrieval_citation_prior": 0.0,
+            "title": "SIRS 2020 Abstracts"
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "",
+            "retrieval_citation_prior": 0.0,
+            "title": "Schedule for Contributed Talks"
+          },
+          {
+            "cited_by_count": 0,
+            "doi": "10.48550/arxiv.2406.17336",
+            "retrieval_citation_prior": 0.0,
+            "title": "Three-Dimensional Spin TFTs from Gauging Line Defects"
+          }
+        ],
+        "rule": "retrieval_relevance > 0.0 (shares >=1 non-stopword token with >=1 grounding query)"
+      },
+      "retrieval_receipt_sha256": "c7b5479ac1017ed47a83af83252ef43eea42486b3c901af370302f6a9c4b1599",
+      "retrieval_state": "hits",
+      "saturation": {
+        "curve": [
+          {
+            "cumulative_unique": 35,
+            "new_records": 35,
+            "query": "Erdos Hajnal K4-free countable union triangle-free graphs partial results"
+          },
+          {
+            "cumulative_unique": 95,
+            "new_records": 60,
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite"
+          },
+          {
+            "cumulative_unique": 123,
+            "new_records": 28,
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free"
+          },
+          {
+            "cumulative_unique": 150,
+            "new_records": 27,
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover"
+          },
+          {
+            "cumulative_unique": 175,
+            "new_records": 25,
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy"
+          },
+          {
+            "cumulative_unique": 231,
+            "new_records": 56,
+            "query": "colouring number well-order triangle-free edge decomposition uncountable graph"
+          },
+          {
+            "cumulative_unique": 278,
+            "new_records": 47,
+            "query": "cover edges of a graph by triangle-free subgraphs colouring number degeneracy"
+          },
+          {
+            "cumulative_unique": 331,
+            "new_records": 53,
+            "query": "every graph on kappa plus vertices union of kappa triangle-free graphs"
+          },
+          {
+            "cumulative_unique": 341,
+            "new_records": 10,
+            "query": "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices"
+          },
+          {
+            "cumulative_unique": 415,
+            "new_records": 74,
+            "query": "infinite graph theory edge decompositions"
+          },
+          {
+            "cumulative_unique": 456,
+            "new_records": 41,
+            "query": "local chromatic number bound edge decomposition monochromatic triangle infinite graph"
+          },
+          {
+            "cumulative_unique": 483,
+            "new_records": 27,
+            "query": "triangle cover number upper bound neighbourhood chromatic number K4-free graph"
+          },
+          {
+            "cumulative_unique": 492,
+            "new_records": 9,
+            "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free"
+          },
+          {
+            "cumulative_unique": 492,
+            "new_records": 0,
+            "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free"
+          },
+          {
+            "cumulative_unique": 524,
+            "new_records": 32,
+            "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge"
+          },
+          {
+            "cumulative_unique": 533,
+            "new_records": 9,
+            "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs"
+          },
+          {
+            "cumulative_unique": 555,
+            "new_records": 22,
+            "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary"
+          }
+        ],
+        "is_saturated": false,
+        "total_queries": 17,
+        "total_unique_works": 555
+      },
+      "status": "success",
+      "web_search_providers": {
+        "loaded": [
+          "semantic_scholar",
+          "duckduckgo_web"
+        ],
+        "status": "success"
+      },
+      "worker_count": 12
+    },
+    "patent_application_count": 0,
+    "patent_claim_grounded_count": 15,
+    "patent_count": 0,
+    "patent_granted_count": 69,
+    "patent_official_claim_grounded_count": 15,
+    "patent_official_provider_record_count": 69,
+    "patent_official_search_complete": true,
+    "patent_provider": "uspto_odp_keyed",
+    "patent_queries": [
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition",
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+      "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+      "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+      "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+      "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+      "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+      "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+      "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge"
+    ],
+    "patent_retrieval": {
+      "attempts": [
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 531.944,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "ce2d8143d801341e27cd461104bf2f230f5328475704c30def98522f2780fa65",
+            "receipt_sha256": "ce2d8143d801341e27cd461104bf2f230f5328475704c30def98522f2780fa65",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+composition%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition",
+          "receipt": {
+            "hits": 101,
+            "provider": "uspto_odp_keyed",
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition",
+            "receipt_sha256": "c467af19bf70fe34754af5b66a622775bf15825b78f7b08a00f384e88afc2ffb",
+            "records_sha256": "d5cd6d98580aed47fef94677131af3b4b06da3d0e856199bd1dfbe4dca624b98"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 10300.156,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "12f6dc52dfa3ed97ef223f74054debb28884f477aa98c4fbf04f26b41c1aebee",
+            "receipt_sha256": "12f6dc52dfa3ed97ef223f74054debb28884f477aa98c4fbf04f26b41c1aebee",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+k4-free%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "receipt": {
+            "hits": 114,
+            "provider": "uspto_odp_keyed",
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+            "receipt_sha256": "b853aeab7f54a2a38ba163c20dede2ae0fa730999f6f05bbd33ac68c1489d8e0",
+            "records_sha256": "ffc0a7a189148319b0ad5f8d9070be8dd0e5e11a09808102f1b5a8a315ad881b"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 606.393,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "566bd67011ebccf931d5a03a6a7861e40105aa7eaf281130141400fcd810bcbe",
+            "receipt_sha256": "566bd67011ebccf931d5a03a6a7861e40105aa7eaf281130141400fcd810bcbe",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22colour+edge+smaller+endpoint+neighbourhood+colouring+assigns+larger+two+edges+vertex+triangle+differ+upper%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "receipt": {
+            "hits": 99,
+            "provider": "uspto_odp_keyed",
+            "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+            "receipt_sha256": "cb3f09b0f5f00d72fa679b94c7eb5673c46dd8870f175bb74fdc378ad67d7056",
+            "records_sha256": "90645200eaed297639ae4194a35fbb71a237db3b7f64896749945e20b5e53d42"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 265.768,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "782088511c9795b97009a88d3cc95c303a8e83c3b8712cfa33c7dcf6614e25d3",
+            "receipt_sha256": "782088511c9795b97009a88d3cc95c303a8e83c3b8712cfa33c7dcf6614e25d3",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22k4-free+graphs+triangle-free+edge+decompositions+neighbourhood+vertex+chromatic%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+            "receipt_sha256": "cfb2beeda2e537fd2da5e40d73a51fc8913bc0ee3e4e46ab479a28956385c672",
+            "records_sha256": "37ec742e2bfac2101ddeda9fe8b01f541dee8e73dff873faeceafa1d22529ac5"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 275.675,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "ec2d8119a5d6cb66ab9d21259184c57fa3184653c821f686451f7ab8b571727b",
+            "receipt_sha256": "ec2d8119a5d6cb66ab9d21259184c57fa3184653c821f686451f7ab8b571727b",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22k4-free+graphs+triangle-free+edge+decompositions+neighbourhood+vertex+chromatic+colour+smaller+endpoint+colouring+assigns+larger%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+            "receipt_sha256": "0e8d7b4177aa9aaf4ae4f807049191705923131f3423f78d309a2bf19e2f7ecc",
+            "records_sha256": "b8cca1c6ceeddbc114b9e0e8359dcfde02b6466e259b31c974ac88c0dd300ee5"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 419.143,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "d20e623a33d3af6a820a5a1185fdb6fc1d2d31a25c440c81587ce66529d184c3",
+            "receipt_sha256": "d20e623a33d3af6a820a5a1185fdb6fc1d2d31a25c440c81587ce66529d184c3",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22k4-free+graphs+triangle-free+edge+decompositions+neighbourhood+vertex+chromatic+upper+bound+triangle+cover+number+invariant%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+            "receipt_sha256": "e783b05bb927c99c0f316d6bb1b37399a6c3e7fd102400c9fd1501e8163246cc",
+            "records_sha256": "a146be8e4e41ddcc1010e954b7b09d77c447c656e2efbf053c0a4f07f1db4187"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 285.989,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "31687e0af1a111af6b66772c331b3da2fb80e0e2305b249ed7f3e99ed5e235bb",
+            "receipt_sha256": "31687e0af1a111af6b66772c331b3da2fb80e0e2305b249ed7f3e99ed5e235bb",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22k4-free+graphs+triangle-free+edge+decompositions+neighbourhood+vertex+chromatic+well-ordering+set+degeneracy+colouring+number+arguments%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+            "receipt_sha256": "35b40438456564178fa7ccb8ccf4574ccf2adb12f37e9db612b4b3db126bd5ee",
+            "records_sha256": "b8ab0c703306fb0d1cfcb7d15dc1d68680ef5e225f76baea3c8496f554ca0bfa"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 271.273,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "6eeac6643ec87f867d7e9037546fb1143a90049c01503e0e8e8250ff85e6af58",
+            "receipt_sha256": "6eeac6643ec87f867d7e9037546fb1143a90049c01503e0e8e8250ff85e6af58",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22upper+bound+triangle+cover+number+chromatic+invariant+corollary+graph+aleph-one+vertices+needs+uncountably+triangle-free%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+            "receipt_sha256": "81d5e3449ed0032d82db97637a05dc4b474544ca32078723950ecf5b8809fb55",
+            "records_sha256": "0681af1e166255bde075a8187af8825b001d093d3a0afd5abf3963622d7fc3e2"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "status": "error"
+        },
+        {
+          "hit_count": 0,
+          "provider": "epo_ops",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "attempt": 1,
+            "body_bytes": 11604,
+            "body_sha256": "f5ce2436f1e25260cb62103942ebc52fa10b6a891db9aed2ac0f2cab7fd62fb1",
+            "compression_header_mismatch": false,
+            "decompressed": false,
+            "elapsed_ms": 200.732,
+            "epo_zero_results": true,
+            "headers": {
+              "content-type": "application/exchange+xml;charset=utf-8",
+              "etag": "\"0dad15e6438f95e8d8c54e44d7b309375\""
+            },
+            "liveness_probe_hits": 1,
+            "liveness_probe_phrase": "peptide",
+            "liveness_probe_receipt_sha256": "5b54727543f6044c90beba66bcbece791eda7a6ea4d37a4e98b409d689292994",
+            "receipt_sha256": "5b54727543f6044c90beba66bcbece791eda7a6ea4d37a4e98b409d689292994",
+            "status": 404,
+            "url": "https://ops.epo.org/3.2/rest-services/published-data/search/biblio?q=%28ta+all+%22well-ordering+vertex+set+degeneracy+colouring+number+arguments+neighbourhood+chromatic+bounds+infinite+graph+theory+edge%22%29",
+            "zero_results_semantics": "EPO OPS returns HTTP 404 for a search with no matches"
+          },
+          "status": "success"
+        },
+        {
+          "hit_count": 15,
+          "provider": "uspto_odp_keyed",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "receipt": {
+            "hits": 120,
+            "provider": "uspto_odp_keyed",
+            "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+            "receipt_sha256": "01aa3727b0c3d2573e86061b6d6e8be57fc2cba9ecebe2ba242d0f04c103bf5b",
+            "records_sha256": "6cbb4d1581787d8ea332ead503c72dfe0d678370c24178b0fb1ffc71cc2e046c"
+          },
+          "status": "success"
+        },
+        {
+          "error": "HTTPError:http_503",
+          "provider": "google_patents_search",
+          "query": "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "status": "error"
+        }
+      ],
+      "candidate_budget": 80,
+      "claim_grounded_count": 15,
+      "configured_official_providers": [
+        "epo_ops",
+        "uspto_odp_keyed"
+      ],
+      "coverage_status": "INCOMPLETE_PROVIDER_COVERAGE",
+      "family_diversity_reserve": 0,
+      "granted_count": 69,
+      "hydration_config": {
+        "allow_network": true,
+        "hydration_jobs": 12,
+        "hydration_workers": 4,
+        "patent_hydrate_limit": 12,
+        "structure_hydrate_limit": 4
+      },
+      "hydration_workers": 4,
+      "official_claim_grounded_count": 15,
+      "official_coverage_scope": "complete",
+      "official_coverage_status": "COMPLETE",
+      "official_provider_record_count": 69,
+      "official_search_complete": true,
+      "optional_provider_errors": [
+        "google_patents_search"
+      ],
+      "patent_count": 69,
+      "provider": "uspto_odp_keyed",
+      "provider_health": [
+        {
+          "attempt_count": 9,
+          "availability_reason": null,
+          "error_count": 0,
+          "hit_count": 0,
+          "official": true,
+          "provider": "epo_ops",
+          "required_for_clear_novelty": true,
+          "status": "EMPTY"
+        },
+        {
+          "attempt_count": 9,
+          "availability_reason": null,
+          "error_count": 0,
+          "hit_count": 135,
+          "official": true,
+          "provider": "uspto_odp_keyed",
+          "required_for_clear_novelty": true,
+          "status": "HIT"
+        },
+        {
+          "attempt_count": 9,
+          "availability_reason": null,
+          "error_count": 9,
+          "failure_diagnosis": {
+            "failure_class": "provider_down",
+            "probe_error": "HTTPError:http_503",
+            "probe_hits": 0,
+            "probe_ran": true,
+            "reason": "control phrase also failed — the provider is unavailable, not empty"
+          },
+          "hit_count": 0,
+          "official": false,
+          "provider": "google_patents_search",
+          "required_for_clear_novelty": false,
+          "status": "ERROR"
+        }
+      ],
+      "provider_request_limit": 15,
+      "providers_attempted": [
+        "epo_ops",
+        "uspto_odp_keyed",
+        "google_patents_search"
+      ],
+      "providers_with_hits": [
+        "uspto_odp_keyed"
+      ],
+      "query_count": 9,
+      "requested_retrieval_floor": 135,
+      "required_provider_errors": [],
+      "retrieval_receipt_sha256": "0a2175bf6d3e50dea35edb32258885d108d00334addb14162c86c5ee41abbfbd",
+      "search_complete": false,
+      "selected_family_count": 69,
+      "status": "success",
+      "structure_grounded_count": 0,
+      "unavailable_official_providers": []
+    },
+    "patent_search_complete": false,
+    "provider_lineage_sha256": "c98277f94238d728cff6507fd448e4b8032414fa00f2e1a14f73f9ea2906f7df",
+    "query_coverage": {
+      "paper": {
+        "mechanism": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "infinite graph theory edge decompositions",
+          "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs"
+        ],
+        "method": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs"
+        ],
+        "outcome": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "infinite graph theory edge decompositions",
+          "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "Erdos Hajnal K4-free countable union triangle-free graphs partial results",
+          "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds upper bound triangle cover invariant corollary",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs"
+        ],
+        "problem": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ infinite",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free layers k4-free",
+          "infinite graph theory edge decompositions",
+          "triangle cover number upper bound neighbourhood chromatic number K4-free graph",
+          "cover edges of a graph by triangle-free subgraphs colouring number degeneracy",
+          "every graph on kappa plus vertices union of kappa triangle-free graphs",
+          "local chromatic number bound edge decomposition monochromatic triangle infinite graph",
+          "colouring number well-order triangle-free edge decomposition uncountable graph",
+          "every k4-free graph triangle cover number triangle-free subgraphs covering edges chromatic ceiling supremum numbers generally linear order vertices",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ well-ordering set degeneracy",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper bound cover",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free graphs triangle-free",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds k4-free graphs triangle-free edge decompositions subgraphs"
+        ]
+      },
+      "patent": {
+        "mechanism": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition"
+        ],
+        "method": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition"
+        ],
+        "outcome": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition"
+        ],
+        "problem": [
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ upper",
+          "well-ordering vertex set degeneracy colouring number arguments neighbourhood chromatic bounds infinite graph theory edge",
+          "upper bound triangle cover number chromatic invariant corollary graph aleph-one vertices needs uncountably triangle-free",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic upper bound triangle cover number invariant",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic well-ordering set degeneracy colouring number arguments",
+          "k4-free graphs triangle-free edge decompositions neighbourhood vertex chromatic colour smaller endpoint colouring assigns larger",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ k4-free",
+          "colour edge smaller endpoint neighbourhood colouring assigns larger two edges vertex triangle differ composition"
+        ]
+      },
+      "uncovered_paper_facets": [],
+      "uncovered_patent_facets": []
+    },
+    "query_plan_sha256": "7cc63a8bd5e64347b11b59a7fe2cf8585357b794f83b4e352e22acdaaac7758d",
+    "spec_path": "C:\\Users\\jared\\AppData\\Local\\Temp\\noveltyforge-acquire\\spec_ce1ada687b7344c549261c0d58608178.json"
+  },
+  "corpus_size": 30,
+  "corpus_source": "auto_acquired_litacq_patents",
+  "design_around": {
+    "boundary": "Research design-space constraints only; not a legal design-around or FTO opinion.",
+    "generator_rules": [
+      "reject exact, connectivity-equivalent, salt-parent, and tautomer-equivalent structures",
+      "reject high-similarity fingerprint analogs above the configured hard threshold",
+      "treat scaffold matches as design pressure even when not independently dispositive",
+      "screen every generated survivor against Markush envelopes and family-normalized evidence",
+      "do not treat stereochemistry, salt form, or tautomer changes as novelty restoration by themselves"
+    ],
+    "hard_parent_hashes": [],
+    "hard_structure_hashes": [],
+    "hard_tautomer_hashes": [],
+    "markush_envelopes": [],
+    "markush_family_counts": {},
+    "receipt_sha256": "1441b384f4f27848dfa9bc4fb0e0872dc8bbf9b09a585398ab7be8d851cff8ac",
+    "scaffold_pressure": [],
+    "schema": "oracle.noveltyforge.design_around.v1",
+    "status": "COMPLETE"
+  },
+  "differentiation": {
+    "baseline_core_novelty": 0.536477,
+    "differentiation_guard": "each pivot is re-scored against the same corpus; a change that does not lower measured collision is cosmetic and dropped.",
+    "novel_core_floor": 0.62,
+    "novelty_restorable": true,
+    "recommended_pivot": {
+      "baseline_novelty": 0.536477,
+      "description": "Claim the mechanism only in combination with the novel method ('well-ordering the vertex set, degeneracy and colouring numbe').",
+      "facet": "mechanism",
+      "feasibility": 0.72,
+      "injected_terms": [
+        "well-ordering",
+        "vertex",
+        "set",
+        "degeneracy",
+        "colouring",
+        "number",
+        "arguments",
+        "neighbourhood"
+      ],
+      "novelty_gain": 0.127765,
+      "projected_novelty": 0.664242,
+      "rationale": "Ties the crowded facet to an orthogonal novel facet, moving the claim into unclaimed combination space.",
+      "restores_novelty": true,
+      "strategy": "combine_orthogonal"
+    },
+    "strategy_summary": "8 measured differentiation vector(s); best restores core novelty to 0.664242.",
+    "target_facets": [
+      "mechanism",
+      "outcome"
+    ],
+    "vectors": [
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Claim the mechanism only in combination with the novel method ('well-ordering the vertex set, degeneracy and colouring numbe').",
+        "facet": "mechanism",
+        "feasibility": 0.72,
+        "injected_terms": [
+          "well-ordering",
+          "vertex",
+          "set",
+          "degeneracy",
+          "colouring",
+          "number",
+          "arguments",
+          "neighbourhood"
+        ],
+        "novelty_gain": 0.127765,
+        "projected_novelty": 0.664242,
+        "rationale": "Ties the crowded facet to an orthogonal novel facet, moving the claim into unclaimed combination space.",
+        "restores_novelty": true,
+        "strategy": "combine_orthogonal"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'real-time online closed-loop setting' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "real-time",
+          "online",
+          "closed-loop",
+          "setting"
+        ],
+        "novelty_gain": 0.125412,
+        "projected_novelty": 0.661889,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'the neighbourhood-chromatic upper bound on the triangle cover number' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "neighbourhood-chromatic",
+          "upper",
+          "bound",
+          "triangle",
+          "cover",
+          "number"
+        ],
+        "novelty_gain": 0.122116,
+        "projected_novelty": 0.658593,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'low-dose sustained regime' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "low-dose",
+          "sustained",
+          "regime"
+        ],
+        "novelty_gain": 0.121038,
+        "projected_novelty": 0.657515,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'pediatric population stratum' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "pediatric",
+          "population",
+          "stratum"
+        ],
+        "novelty_gain": 0.121038,
+        "projected_novelty": 0.657515,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'leak-controlled held-out validation' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "leak-controlled",
+          "held-out",
+          "validation"
+        ],
+        "novelty_gain": 0.121038,
+        "projected_novelty": 0.657515,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'federated multi-site cohort' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "federated",
+          "multi-site",
+          "cohort"
+        ],
+        "novelty_gain": 0.121038,
+        "projected_novelty": 0.657515,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      },
+      {
+        "baseline_novelty": 0.536477,
+        "description": "Narrow the mechanism to the 'out-of-distribution domain shift' regime, a condition absent from the nearest prior art.",
+        "facet": "mechanism",
+        "feasibility": 0.85,
+        "injected_terms": [
+          "out-of-distribution",
+          "domain",
+          "shift"
+        ],
+        "novelty_gain": 0.121038,
+        "projected_novelty": 0.657515,
+        "rationale": "Adds a distinctive limitation that the corpus does not teach, shrinking overlap on the crowded facet.",
+        "restores_novelty": true,
+        "strategy": "narrow"
+      }
+    ]
+  },
+  "discovery_verdict": "INCREMENTAL",
+  "domain": "infinite graph theory / edge decompositions",
+  "domain_completeness": {
+    "audit_depth": 6,
+    "audited_hits": [
+      {
+        "false_friend": false,
+        "identifier": "10.2307/2324291",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "https://openalex.org/W1974685141",
+        "title": "Pearls in Graph Theory, a Comprehensive Introduction."
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.17762/turcomat.v12i10.5555",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.17762/turcomat.v12i10.5555",
+        "title": "The Upper Total Triangle Free Detour Number of a Graph"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.1137/120900678",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.1137/120900678",
+        "title": "An Upper Bound on the Fractional Chromatic Number of Triangle-Free Subcubic Graphs"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.1002/jgt.70105",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.1002/jgt.70105",
+        "title": "On the 3‐Colorability of Triangle‐Free and Fork‐Free Graphs"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.1002/jgt.22223",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.1002/jgt.22223",
+        "title": "On Hamilton decompositions of infinite circulant graphs"
+      },
+      {
+        "false_friend": false,
+        "identifier": "10.37236/15125",
+        "reasons": [],
+        "record_domain": "unclassified",
+        "record_id": "10.37236/15125",
+        "title": "Proof of a Conjectured Spectral Upper Bound on the Chromatic Number of a Graph"
+      }
+    ],
+    "boundary": "Retrieval-quality gate. A clean status means the DECLARED families were found and the audited top hits are on-domain. It does NOT prove the corpus is exhaustive, and a large corpus or a high novelty score is never evidence for it.",
+    "claim_domain": "infinite graph theory / edge decompositions",
+    "claim_domain_family": "unclassified",
+    "corpus_size": 30,
+    "coverage_ledger": [],
+    "domain_completeness_sha256": "f9f75c307c4ed369aacbbb0a56185718f0d60e78ed38da0305b5e4e1baba9f7a",
+    "false_friend_ceiling": 0.1,
+    "false_friend_count": 0,
+    "false_friend_rate": 0.0,
+    "reasons": [
+      "no_known_neighbor_families_declared:neighbourhood_coverage_unproven"
+    ],
+    "required_neighbor_families": [],
+    "schema": "oracle.noveltyforge.domain-completeness.v1",
+    "status": "SEARCH_INCOMPLETE",
+    "uncovered_families": []
+  },
+  "facet_novelty": {
+    "entities": 0.45,
+    "mechanism": 0.45,
+    "method": 0.716638,
+    "outcome": 0.45,
+    "problem": 0.346759
+  },
+  "facet_views": [
+    {
+      "is_core": true,
+      "name": "mechanism",
+      "text": "colour each edge by the colour that the smaller endpoint's neighbourhood colouring assigns to the larger endpoint, so the two edges at the least vertex of any triangle differ",
+      "weight": 0.3
+    },
+    {
+      "is_core": true,
+      "name": "method",
+      "text": "well-ordering the vertex set, degeneracy and colouring number arguments, neighbourhood chromatic bounds",
+      "weight": 0.24
+    },
+    {
+      "is_core": true,
+      "name": "outcome",
+      "text": "an upper bound on the triangle cover number by a chromatic invariant, and the corollary that no graph on aleph-one vertices needs uncountably many triangle-free layers",
+      "weight": 0.2
+    },
+    {
+      "is_core": false,
+      "name": "problem",
+      "text": "infinite graph theory / edge decompositions",
+      "weight": 0.08
+    },
+    {
+      "is_core": false,
+      "name": "entities",
+      "text": "K4-free graphs, their triangle-free edge decompositions, neighbourhood subgraphs, linear orders on the vertex set",
+      "weight": 0.13
+    }
+  ],
+  "family_normalization": {
+    "double_count_prevented": 0,
+    "family_count": 0,
+    "patent_records": 0,
+    "receipt_sha256": "a188e80379a313059c8802beadec87d1f92b9eb9b141ca4d9c5a2cee3bbedb16",
+    "unique_structure_count": 0
+  },
+  "independent_quotas": {
+    "paper_quota_met": true,
+    "patent_quota_met": true,
+    "required_papers": 4,
+    "required_patents": 0,
+    "status": "COMPLETE"
+  },
+  "input_corpus_size": 30,
+  "ip_assessment": {
+    "boundary": "research-prioritization novelty screen; not legal advice or a patentability opinion.",
+    "freedom_to_operate_screen": {
+      "boundary": "keyword read-on screen against claim-grounded granted patent records; not a legal FTO opinion.",
+      "coverage": {
+        "official_claim_grounded_count": 15,
+        "official_provider_record_count": 69,
+        "official_search_complete": true,
+        "provider": "uspto_odp_keyed",
+        "query_coverage_complete": true,
+        "status": "official_coverage_verified",
+        "uncovered_patent_facets": [],
+        "warning": null
+      },
+      "exclusion_counts": {
+        "claims_unavailable": 30
+      },
+      "manual_review_queue": [
+        {
+          "context_collision": 0.381663,
+          "identifier": "10.2307/2324291",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "https://openalex.org/W1974685141"
+        },
+        {
+          "context_collision": 0.300997,
+          "identifier": "10.17762/turcomat.v12i10.5555",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.17762/turcomat.v12i10.5555"
+        },
+        {
+          "context_collision": 0.255466,
+          "identifier": "10.1137/120900678",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1137/120900678"
+        },
+        {
+          "context_collision": 0.215031,
+          "identifier": "10.1002/jgt.70105",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1002/jgt.70105"
+        },
+        {
+          "context_collision": 0.194428,
+          "identifier": "10.1002/jgt.22223",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1002/jgt.22223"
+        },
+        {
+          "context_collision": 0.187182,
+          "identifier": "10.37236/15125",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.37236/15125"
+        },
+        {
+          "context_collision": 0.173916,
+          "identifier": "10.14264/2649b0e",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.14264/2649b0e"
+        },
+        {
+          "context_collision": 0.157226,
+          "identifier": "10.1002/jgt.23234",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1002/jgt.23234"
+        },
+        {
+          "context_collision": 0.152655,
+          "identifier": "10.1002/jgt.10064",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1002/jgt.10064"
+        },
+        {
+          "context_collision": 0.150238,
+          "identifier": "10.1016/j.disc.2011.12.012",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1016/j.disc.2011.12.012"
+        },
+        {
+          "context_collision": 0.150238,
+          "identifier": "10.1007/978-3-642-16926-7_18",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.1007/978-3-642-16926-7_18"
+        },
+        {
+          "context_collision": 0.134231,
+          "identifier": "10.5614/ejgta.2022.10.2.22",
+          "legal_status": "unknown",
+          "patent_status": "unknown",
+          "reason": "claims_unavailable",
+          "record_id": "10.5614/ejgta.2022.10.2.22"
+        }
+      ],
+      "patent_read_ons": [],
+      "pending_application_watchlist": [],
+      "risk": false,
+      "screen_certifiable": true
+    },
+    "non_obviousness_103": {
+      "mosaic_risk": false,
+      "non_obvious": true,
+      "references_in_mosaic": []
+    },
+    "novelty_target": "paper",
+    "patent_novelty_102": {
+      "anticipating_reference": null,
+      "novel": true
+    },
+    "scientific_novelty": {
+      "band": "INCREMENTAL",
+      "core_novelty": 0.536477,
+      "paper_worthy": false
+    },
+    "verdict": "INCREMENTAL_STRENGTHEN_BEFORE_FILING"
+  },
+  "ledger_status": {
+    "checked": false,
+    "key": "9ee4cb838232343817f44ea861eef8f0e0efd0c36626996e080037315ae4669c",
+    "prior_verdict": null,
+    "reused": false
+  },
+  "legal_boundary": "Research prior-art screening only. This module does not determine claim construction, enablement, legal status, jurisdiction-specific prior-art effect, infringement, or freedom to operate.",
+  "mandatory_neighbor_queries": [],
+  "measured_effect": null,
+  "measured_reality": false,
+  "min_corpus_required": 20,
+  "mode_isolation": {
+    "checked_fields": [
+      "terminal_mode",
+      "mode_verdict",
+      "discovery_verdict",
+      "inadmissible_reasons",
+      "mode_reasons"
+    ],
+    "isolated": true,
+    "leaks": [],
+    "mode": "DISCOVERY_CLAIM",
+    "schema": "oracle.noveltyforge.mode-isolation.v1"
+  },
+  "mode_question": "Is this a novel AND measured discovery against a live keyed patent corpus?",
+  "mode_reasons": [
+    "band_does_not_assert_discovery"
+  ],
+  "mode_verdict": "INCREMENTAL",
+  "next_action": "Do not present the current result as a new mechanism. Narrow or pivot entities, mechanism, outcome, problem, prospectively measure the pivot, and rerun candidate-bound prior-art analysis.",
+  "novelty_band": "INCREMENTAL",
+  "novelty_mode": "DISCOVERY_CLAIM",
+  "novelty_scores_valid": false,
+  "novelty_target": "paper",
+  "overall_novelty": 0.508667,
+  "promotion_eligibility": {
+    "claim_sha256": "10ea1068bc2cc2841c74f0c4ee71abdddec3aa89b4a4dbd226604ff74096cc37",
+    "decision": "PROMOTION_BLOCKED",
+    "eligible": false,
+    "evidence_bindings": {
+      "acquired_utc": "2026-09-06T10:45:24Z",
+      "acquisition_output_file_sha256": "866999ef2999f403e9df73425caf6d5dd174fa9e4a40b1d7a5d2688552419874",
+      "acquisition_snapshot_sha256": "578bdc82497fbb892e7b6286efa0141502d9e7023a0f2c821ed5fbb421470d4e",
+      "adversarial_review_hash": "e5a8e6a8b225312a4051a0df5c4b9555eb56a8ffbe8f1090fa341d3cbe4da3c9",
+      "binding_receipt_sha256": "e693b055f5a04cb6d2af23d80896f4dd47ca1ab7578474a787926aa0eb78f335",
+      "corpus_sha256": "cdfcbfa2672c219798e965cf2355555f41cf5e259a5105e627eb030eab24a91b",
+      "corpus_size": 30,
+      "corpus_source": "auto_acquired_litacq_patents",
+      "deployment_evidence": {
+        "decision": "NOT_REQUIRED",
+        "ok": true,
+        "required": false
+      },
+      "provider_lineage_sha256": "c98277f94238d728cff6507fd448e4b8032414fa00f2e1a14f73f9ea2906f7df",
+      "report_payload_sha256": "5ef432d4aa60cb5847b575c2d698b74a70cf63c13211a847fdc2135a103aaf42",
+      "scientific_disposition_sha256": "111fbbc6a7edecf3bec04e91105f0cfd5616706bfc3ee6f70f4cbaf8dbee7195",
+      "structured_prior_art_receipt_sha256": "8d29fea0e9b4d96b2fe1874895fa1c0346dfd9f3e5f6cd10cace22a8ba238104"
+    },
+    "gate_sha256": "c2e4636d2412125222cb1759e9df275048e64da28405bb61e752c11a31e265b7",
+    "reasons": [
+      "discovery_verdict_not_novel:INCREMENTAL",
+      "measured_reality_not_verified",
+      "novelty_band_not_novel:INCREMENTAL",
+      "scientific_disposition_not_new_mechanism_candidate"
+    ],
+    "schema": "oracle.noveltyforge.promotion-gate.v1"
+  },
+  "receipt_hash": "5ef432d4aa60cb5847b575c2d698b74a70cf63c13211a847fdc2135a103aaf42",
+  "scientific_disposition": {
+    "category": "DESCRIPTIVE_OR_INCREMENTAL_SIGNAL",
+    "deep_remeasurement_required": true,
+    "disposition_sha256": "111fbbc6a7edecf3bec04e91105f0cfd5616706bfc3ee6f70f4cbaf8dbee7195",
+    "next_action": "Do not present the current result as a new mechanism. Narrow or pivot entities, mechanism, outcome, problem, prospectively measure the pivot, and rerun candidate-bound prior-art analysis.",
+    "prior_art_only_resume_allowed": false,
+    "reasons": [
+      "novelty_band:INCREMENTAL"
+    ],
+    "schema": "oracle.noveltyforge.scientific-disposition.v1",
+    "top_colliding_facets": [
+      "entities",
+      "mechanism",
+      "outcome",
+      "problem"
+    ]
+  },
+  "search_status": {
+    "law": "A provider failure must never become high novelty via an empty corpus. 'We found nothing' and 'we could not look' are different facts.",
+    "novelty_scores_valid": false,
+    "provider_completeness_measured": true,
+    "queries_executed": 2,
+    "queries_failed": 1,
+    "queries_throttled": 1,
+    "reasons": [
+      "failed_queries:n=1",
+      "throttled_queries:n=1"
+    ],
+    "records_retrieved": 69,
+    "retry_budget": null,
+    "schema": "oracle.noveltyforge.search-status.v1",
+    "search_status_sha256": "9a5bf61af9df83c5eac63b2b22eb07d914d2aa2d3d2efa0df961bc8efcdf4f89",
+    "status": "SEARCH_INCOMPLETE"
+  },
+  "structure_coverage": {
+    "applicable_patent_collision_count": 0,
+    "broad_external_provider_failure_count": 0,
+    "collision_scan_complete": true,
+    "configured_min_exclusions": 1,
+    "coverage_fraction": 0.0,
+    "external_live_structure_provider_count": 0,
+    "external_provider_attempt_count": 0,
+    "external_provider_failure_count": 0,
+    "min_exclusions": 1,
+    "patent_record_count": 0,
+    "patents_with_any_structure": 0,
+    "patents_with_trusted_structure": 0,
+    "provider_attempt_count": 0,
+    "provider_failure_count": 0,
+    "provider_outage_degraded": false,
+    "receipt_sha256": "936d264d795f6ff4866c55df73167741440c3353a5c51a78397033971047eb42",
+    "required": false,
+    "schema": "oracle.noveltyforge.structure_coverage.v4",
+    "shortfall": 1,
+    "status": "COMPLETE_NO_RELEVANT_PATENT_COLLISIONS",
+    "trusted_exclusion_count": 0,
+    "untrusted_evidence_count": 0
+  },
+  "structured_collision_set": [],
+  "structured_prior_art": {
+    "bounds": {
+      "collision_records": 12,
+      "per_collision": 64,
+      "total": 512,
+      "trusted_exclusions_prioritized": true
+    },
+    "collision_evidence": [],
+    "collision_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "coverage": {
+      "applicable_patent_collision_count": 0,
+      "broad_external_provider_failure_count": 0,
+      "collision_scan_complete": true,
+      "configured_min_exclusions": 1,
+      "coverage_fraction": 0.0,
+      "external_live_structure_provider_count": 0,
+      "external_provider_attempt_count": 0,
+      "external_provider_failure_count": 0,
+      "min_exclusions": 1,
+      "patent_record_count": 0,
+      "patents_with_any_structure": 0,
+      "patents_with_trusted_structure": 0,
+      "provider_attempt_count": 0,
+      "provider_failure_count": 0,
+      "provider_outage_degraded": false,
+      "receipt_sha256": "936d264d795f6ff4866c55df73167741440c3353a5c51a78397033971047eb42",
+      "required": false,
+      "schema": "oracle.noveltyforge.structure_coverage.v4",
+      "shortfall": 1,
+      "status": "COMPLETE_NO_RELEVANT_PATENT_COLLISIONS",
+      "trusted_exclusion_count": 0,
+      "untrusted_evidence_count": 0
+    },
+    "evidence": [],
+    "evidence_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "exclusion_smiles": [],
+    "markush_envelope_count": 0,
+    "markush_envelopes": [],
+    "markush_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "provider_attempts": [],
+    "receipt_sha256": "8d29fea0e9b4d96b2fe1874895fa1c0346dfd9f3e5f6cd10cace22a8ba238104",
+    "required": false,
+    "retrieval_coverage": {
+      "coverage_fraction": 0.0,
+      "external_live_structure_provider_count": 0,
+      "external_provider_attempt_count": 0,
+      "external_provider_failure_count": 0,
+      "min_exclusions": 1,
+      "patent_record_count": 0,
+      "patents_with_any_structure": 0,
+      "patents_with_trusted_structure": 0,
+      "provider_attempt_count": 0,
+      "provider_failure_count": 0,
+      "provider_outage_degraded": false,
+      "receipt_sha256": "1b820081369f0efb689530ed6b895da0115f9fa31ebaf9be125bca2fb03bed38",
+      "required": false,
+      "schema": "oracle.noveltyforge.structure_coverage.v4",
+      "shortfall": 1,
+      "status": "COMPLETE",
+      "trusted_exclusion_count": 0,
+      "untrusted_evidence_count": 0
+    },
+    "retrieval_evidence_count": 0,
+    "retrieval_evidence_set_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "schema": "oracle.noveltyforge.structured_prior_art.v4",
+    "status": "COMPLETE_NO_RELEVANT_PATENT_COLLISIONS",
+    "structured_collision_set": []
+  },
+  "temporal_eligibility": {
+    "boundary": "No critical date supplied; temporal prior-art eligibility was not asserted.",
+    "critical_date": null,
+    "eligible_count": 30,
+    "enabled": false,
+    "excluded_post_critical_count": 0,
+    "policy": "public_availability",
+    "receipt_sha256": "b4cd9fa6d073837b67f8f486741fcde85c9236a844c52f9f7254f5423b47ee81",
+    "rows": [],
+    "schema": "oracle.noveltyforge.temporal_gate.v1",
+    "uncertain_count": 0
+  },
+  "terminal_mode": "NOVEL_WITH_INCREMENTAL_RISK",
+  "top_collisions": [
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "mechanism",
+        "problem",
+        "entities"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.55,
+        "method": 0.215318,
+        "outcome": 0.110719,
+        "problem": 0.653241
+      },
+      "identifier": "10.2307/2324291",
+      "overall_collision": 0.381663,
+      "raw_facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.55,
+        "method": 0.215318,
+        "outcome": 0.110719,
+        "problem": 0.653241
+      },
+      "record_id": "https://openalex.org/W1974685141",
+      "shared_terms": {
+        "entities": [
+          [
+            "decompositions",
+            3.0477
+          ],
+          [
+            "vertex",
+            3.0477
+          ],
+          [
+            "edge",
+            2.3545
+          ],
+          [
+            "subgraphs",
+            2.3545
+          ],
+          [
+            "graphs",
+            1.869
+          ]
+        ],
+        "mechanism": [
+          [
+            "colour",
+            3.7408
+          ],
+          [
+            "vertex",
+            3.0477
+          ],
+          [
+            "edge",
+            2.3545
+          ]
+        ],
+        "problem": [
+          [
+            "decompositions",
+            3.0477
+          ],
+          [
+            "theory",
+            2.8245
+          ],
+          [
+            "infinite",
+            2.6422
+          ],
+          [
+            "edge",
+            2.3545
+          ],
+          [
+            "graph",
+            1.1382
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "Pearls in Graph Theory, a Comprehensive Introduction.",
+      "year": 1991
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "outcome",
+        "entities"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.150434,
+        "method": 0.226618,
+        "outcome": 0.55,
+        "problem": 0.061613
+      },
+      "identifier": "10.17762/turcomat.v12i10.5555",
+      "overall_collision": 0.300997,
+      "raw_facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.150434,
+        "method": 0.226618,
+        "outcome": 0.55,
+        "problem": 0.061613
+      },
+      "record_id": "10.17762/turcomat.v12i10.5555",
+      "shared_terms": {
+        "entities": [
+          [
+            "set",
+            3.0477
+          ],
+          [
+            "graphs",
+            1.869
+          ]
+        ],
+        "outcome": [
+          [
+            "triangle",
+            3.0477
+          ],
+          [
+            "vertices",
+            2.3545
+          ],
+          [
+            "upper",
+            2.1314
+          ],
+          [
+            "number",
+            1.3429
+          ],
+          [
+            "graph",
+            1.1382
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "The Upper Total Triangle Free Detour Number of a Graph",
+      "year": 2021
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "outcome"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.190207,
+        "mechanism": 0.116767,
+        "method": 0.283362,
+        "outcome": 0.55,
+        "problem": 0.061613
+      },
+      "identifier": "10.1137/120900678",
+      "overall_collision": 0.255466,
+      "raw_facet_collisions": {
+        "entities": 0.190207,
+        "mechanism": 0.116767,
+        "method": 0.283362,
+        "outcome": 0.55,
+        "problem": 0.061613
+      },
+      "record_id": "10.1137/120900678",
+      "shared_terms": {
+        "outcome": [
+          [
+            "triangle-free",
+            2.3545
+          ],
+          [
+            "vertices",
+            2.3545
+          ],
+          [
+            "bound",
+            2.1314
+          ],
+          [
+            "upper",
+            2.1314
+          ],
+          [
+            "chromatic",
+            2.0361
+          ],
+          [
+            "number",
+            1.3429
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "An Upper Bound on the Fractional Chromatic Number of Triangle-Free Subcubic Graphs",
+      "year": 2014
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.172075,
+        "mechanism": 0.21326,
+        "method": 0.198425,
+        "outcome": 0.27592,
+        "problem": 0.189075
+      },
+      "identifier": "10.1002/jgt.70105",
+      "overall_collision": 0.215031,
+      "raw_facet_collisions": {
+        "entities": 0.172075,
+        "mechanism": 0.21326,
+        "method": 0.198425,
+        "outcome": 0.27592,
+        "problem": 0.189075
+      },
+      "record_id": "10.1002/jgt.70105",
+      "shared_terms": {},
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "On the 3‐Colorability of Triangle‐Free and Fork‐Free Graphs",
+      "year": 2026
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [
+        "problem",
+        "entities"
+      ],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.145366,
+        "method": 0.084937,
+        "outcome": 0.026059,
+        "problem": 0.55
+      },
+      "identifier": "10.1002/jgt.22223",
+      "overall_collision": 0.194428,
+      "raw_facet_collisions": {
+        "entities": 0.55,
+        "mechanism": 0.145366,
+        "method": 0.084937,
+        "outcome": 0.026059,
+        "problem": 0.55
+      },
+      "record_id": "10.1002/jgt.22223",
+      "shared_terms": {
+        "entities": [
+          [
+            "decompositions",
+            3.0477
+          ],
+          [
+            "set",
+            3.0477
+          ],
+          [
+            "edge",
+            2.3545
+          ],
+          [
+            "graphs",
+            1.869
+          ]
+        ],
+        "problem": [
+          [
+            "decompositions",
+            3.0477
+          ],
+          [
+            "infinite",
+            2.6422
+          ],
+          [
+            "edge",
+            2.3545
+          ],
+          [
+            "graph",
+            1.1382
+          ]
+        ]
+      },
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "On Hamilton decompositions of infinite circulant graphs",
+      "year": 2017
+    },
+    {
+      "anticipates": false,
+      "anticipating_member": "",
+      "anticipation_eligible": true,
+      "colliding_facets": [],
+      "evidence_factor": 1.0,
+      "evidence_grade": "",
+      "evidence_note": "non_patent_reference",
+      "facet_collisions": {
+        "entities": 0.110483,
+        "mechanism": 0.163586,
+        "method": 0.198425,
+        "outcome": 0.258181,
+        "problem": 0.189075
+      },
+      "identifier": "10.37236/15125",
+      "overall_collision": 0.187182,
+      "raw_facet_collisions": {
+        "entities": 0.110483,
+        "mechanism": 0.163586,
+        "method": 0.198425,
+        "outcome": 0.258181,
+        "problem": 0.189075
+      },
+      "record_id": "10.37236/15125",
+      "shared_terms": {},
+      "source": "paper",
+      "source_reliability_weight": 1.0,
+      "structure_candidates": [],
+      "structure_coverage": {},
+      "structure_evidence": [],
+      "title": "Proof of a Conjectured Spectral Upper Bound on the Chromatic Number of a Graph",
+      "year": 2026
+    }
+  ],
+  "version": "4.0.0",
+  "whitespace": {
+    "crowded_cells": [
+      {
+        "axis": "pediatric population",
+        "facet": "outcome",
+        "max_collision": 0.342304,
+        "novelty": 0.657696
+      },
+      {
+        "axis": "federated multi-site",
+        "facet": "outcome",
+        "max_collision": 0.342304,
+        "novelty": 0.657696
+      },
+      {
+        "axis": "out-of-distribution shift",
+        "facet": "outcome",
+        "max_collision": 0.342304,
+        "novelty": 0.657696
+      },
+      {
+        "axis": "single-cell resolution",
+        "facet": "outcome",
+        "max_collision": 0.342304,
+        "novelty": 0.657696
+      },
+      {
+        "axis": "prospective deployment",
+        "facet": "outcome",
+        "max_collision": 0.342304,
+        "novelty": 0.657696
+      },
+      {
+        "axis": "cold-start data-sparse",
+        "facet": "outcome",
+        "max_collision": 0.342304,
+        "novelty": 0.657696
+      }
+    ],
+    "note": "coarse facet x regime map for prioritization; not an exhaustive freedom-to-operate search.",
+    "steer_toward": {
+      "axis": "low-dose sustained regime",
+      "facet": "method",
+      "max_collision": 0.232687,
+      "novelty": 0.767313
+    },
+    "whitespace_cells": [
+      {
+        "axis": "low-dose sustained regime",
+        "facet": "method",
+        "max_collision": 0.232687,
+        "novelty": 0.767313
+      },
+      {
+        "axis": "geriatric frail population",
+        "facet": "method",
+        "max_collision": 0.232687,
+        "novelty": 0.767313
+      },
+      {
+        "axis": "real-time online closed-loop",
+        "facet": "method",
+        "max_collision": 0.232687,
+        "novelty": 0.767313
+      },
+      {
+        "axis": "combination with orthogonal modality",
+        "facet": "method",
+        "max_collision": 0.232687,
+        "novelty": 0.767313
+      },
+      {
+        "axis": "resource-constrained edge",
+        "facet": "method",
+        "max_collision": 0.241458,
+        "novelty": 0.758542
+      },
+      {
+        "axis": "pediatric population",
+        "facet": "method",
+        "max_collision": 0.247437,
+        "novelty": 0.752563
+      },
+      {
+        "axis": "federated multi-site",
+        "facet": "method",
+        "max_collision": 0.247437,
+        "novelty": 0.752563
+      },
+      {
+        "axis": "out-of-distribution shift",
+        "facet": "method",
+        "max_collision": 0.247437,
+        "novelty": 0.752563
+      },
+      {
+        "axis": "single-cell resolution",
+        "facet": "method",
+        "max_collision": 0.247437,
+        "novelty": 0.752563
+      },
+      {
+        "axis": "prospective deployment",
+        "facet": "method",
+        "max_collision": 0.247437,
+        "novelty": 0.752563
+      }
+    ]
+  }
+}

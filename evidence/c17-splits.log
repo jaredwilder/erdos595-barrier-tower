@@ -1,0 +1,19 @@
+{
+ "triangles": 68,
+ "difference_splits_with_no_mono_triangle": [
+  {
+   "P": [
+    1,
+    4
+   ],
+   "mono": 0
+  },
+  {
+   "P": [
+    2,
+    8
+   ],
+   "mono": 0
+  }
+ ]
+}

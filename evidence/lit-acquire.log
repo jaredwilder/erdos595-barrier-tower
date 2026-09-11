@@ -1,0 +1,8 @@
+Using StandardEncoding for cid2unicode as Encoding has no meaningful glyphs: {49: 'a49'}
+{
+  "acquired": 30,
+  "corpus_source": "auto_acquired_litacq_patents",
+  "out": "oracle/evidence/erdos595/lit-corpus.json",
+  "paper_count": 30,
+  "patent_count": 0
+}
