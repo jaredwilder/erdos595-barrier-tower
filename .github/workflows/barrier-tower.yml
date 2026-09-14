@@ -28,11 +28,14 @@ jobs:
       - name: Fetch Mathlib cache
         run: lake exe cache get
 
-      - name: Audit sealed manifest, hashes, and escape surface
+      - name: Audit manifest, escape surface, and diagnose byte provenance
         run: |
           python - <<'PY'
           import hashlib, json, re
-          from pathlib import Path, PureWindowsPath
+          from pathlib import Path
+
+          def sha(data: bytes) -> str:
+              return hashlib.sha256(data).hexdigest()
 
           root = Path('barrier-tower/theorems')
           files = sorted(root.glob('*.lean'))
@@ -46,17 +49,32 @@ jobs:
           indexed = {}
           for a in idx['artifacts']:
               raw = a['lean'].replace('\\', '/')
-              name = raw.rsplit('/', 1)[-1]
-              indexed[name] = a
+              indexed[raw.rsplit('/', 1)[-1]] = a
           assert set(indexed) == {p.name for p in files}, (set(indexed) ^ {p.name for p in files})
 
+          mismatches = []
           for p in files:
               data = p.read_bytes()
-              got = hashlib.sha256(data).hexdigest()
+              got = sha(data)
               want = indexed[p.name]['sha256']
-              assert got == want, f'hash mismatch {p.name}: {got} != {want}'
 
-              text = data.decode('utf-8')
+              # Diagnose common byte-only migration changes without treating them as proof.
+              lf = data.replace(b'\r\n', b'\n')
+              crlf = lf.replace(b'\n', b'\r\n')
+              variants = {
+                  'as-published': got,
+                  'LF-normalized': sha(lf),
+                  'CRLF-normalized': sha(crlf),
+                  'LF-no-final-newline': sha(lf.rstrip(b'\n')),
+                  'CRLF-no-final-newline': sha(crlf.rstrip(b'\r\n')),
+                  'UTF8-BOM+LF': sha(b'\xef\xbb\xbf' + lf),
+                  'UTF8-BOM+CRLF': sha(b'\xef\xbb\xbf' + crlf),
+              }
+              matches = [label for label, digest in variants.items() if digest == want]
+              if got != want:
+                  mismatches.append((p.name, got, want, matches))
+
+              text = data.decode('utf-8-sig')
               lines = text.splitlines()
               standalone_sorry = [i+1 for i,l in enumerate(lines) if re.fullmatch(r'\s*sorry\s*', l)]
               top_axiom = [i+1 for i,l in enumerate(lines) if re.match(r'^\s*axiom\s+', l)]
@@ -65,7 +83,16 @@ jobs:
               assert not top_axiom, (p.name, 'axiom', top_axiom)
               assert not top_unsafe, (p.name, 'unsafe', top_unsafe)
 
-          print(f'PASS: {len(files)} sealed theorem files match INDEX hashes and escape-surface gate')
+          Path('/tmp/hash-mismatches.json').write_text(
+              json.dumps([
+                  {'file': n, 'published_sha256': g, 'index_sha256': w, 'matching_transform': m}
+                  for n,g,w,m in mismatches
+              ], indent=2), encoding='utf-8')
+
+          print(f'PASS: manifest shape and escape surface clean for {len(files)} files')
+          print(f'INDEX SHA-256 mismatches: {len(mismatches)}')
+          for n,g,w,m in mismatches:
+              print(f'MISMATCH {n}\n  published={g}\n  index={w}\n  transform_matches={m}')
           PY
 
       - name: Compile all 27 sealed theorem files
@@ -79,3 +106,16 @@ jobs:
           done
           test "$count" -eq 27
           echo "PASS: compiled $count sealed theorem files"
+
+      - name: Enforce byte provenance after compilation
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('/tmp/hash-mismatches.json')
+          rows = json.loads(p.read_text())
+          if rows:
+              print(json.dumps(rows, indent=2))
+              raise SystemExit(f'FAIL: {len(rows)} published theorem file(s) do not match INDEX SHA-256')
+          print('PASS: all 27 public theorem bytes match INDEX SHA-256')
+          PY
