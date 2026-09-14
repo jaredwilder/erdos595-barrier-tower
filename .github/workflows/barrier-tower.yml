@@ -1,0 +1,81 @@
+name: Barrier Tower Replay
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pinned Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          "$HOME/.elan/bin/elan" toolchain install "$(cat lean-toolchain)"
+          "$HOME/.elan/bin/elan" default "$(cat lean-toolchain)"
+          "$HOME/.elan/bin/lean" --version
+          "$HOME/.elan/bin/lake" --version
+
+      - name: Resolve pinned Mathlib release
+        run: lake update
+
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+
+      - name: Audit sealed manifest, hashes, and escape surface
+        run: |
+          python - <<'PY'
+          import hashlib, json, re
+          from pathlib import Path, PureWindowsPath
+
+          root = Path('barrier-tower/theorems')
+          files = sorted(root.glob('*.lean'))
+          idx = json.loads(Path('barrier-tower/INDEX.json').read_text(encoding='utf-8'))
+
+          assert idx['sealed_count'] == 27, idx['sealed_count']
+          assert idx['unclean'] == [], idx['unclean']
+          assert len(files) == idx['sealed_count'], (len(files), idx['sealed_count'])
+          assert len(idx['artifacts']) == idx['sealed_count'], len(idx['artifacts'])
+
+          indexed = {}
+          for a in idx['artifacts']:
+              raw = a['lean'].replace('\\', '/')
+              name = raw.rsplit('/', 1)[-1]
+              indexed[name] = a
+          assert set(indexed) == {p.name for p in files}, (set(indexed) ^ {p.name for p in files})
+
+          for p in files:
+              data = p.read_bytes()
+              got = hashlib.sha256(data).hexdigest()
+              want = indexed[p.name]['sha256']
+              assert got == want, f'hash mismatch {p.name}: {got} != {want}'
+
+              text = data.decode('utf-8')
+              lines = text.splitlines()
+              standalone_sorry = [i+1 for i,l in enumerate(lines) if re.fullmatch(r'\s*sorry\s*', l)]
+              top_axiom = [i+1 for i,l in enumerate(lines) if re.match(r'^\s*axiom\s+', l)]
+              top_unsafe = [i+1 for i,l in enumerate(lines) if re.match(r'^\s*unsafe\s+', l)]
+              assert not standalone_sorry, (p.name, 'sorry', standalone_sorry)
+              assert not top_axiom, (p.name, 'axiom', top_axiom)
+              assert not top_unsafe, (p.name, 'unsafe', top_unsafe)
+
+          print(f'PASS: {len(files)} sealed theorem files match INDEX hashes and escape-surface gate')
+          PY
+
+      - name: Compile all 27 sealed theorem files
+        run: |
+          set -euo pipefail
+          count=0
+          for f in barrier-tower/theorems/*.lean; do
+            echo "=== $f ==="
+            lake env lean "$f"
+            count=$((count + 1))
+          done
+          test "$count" -eq 27
+          echo "PASS: compiled $count sealed theorem files"
